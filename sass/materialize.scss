@@ -13,7 +13,6 @@
 // components
 @import "components/global";
 @import "components/icons-material-design";
-@import "components/color";
 @import "components/grid";
 @import "components/navbar";
 @import "components/roboto";
@@ -31,5 +30,8 @@
 @import "components/form";
 @import "components/table_of_contents";
 @import "components/sideNav";
-@import "components/will";
-@import "components/smoothState";
+@import "components/preloader";
+@import "components/slider";
+@import "components/date_picker/default.scss";
+@import "components/date_picker/default.date.scss";
+@import "components/date_picker/default.time.scss";
