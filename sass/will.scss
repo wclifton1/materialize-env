@@ -1,0 +1,73 @@
+$serif: "Georgia", serif;
+$env-color: #0091ea;
+
+#enventure, enventure {
+  font-family: $serif;
+  font-size:1.45em;
+  color:$env-color;
+}
+
+footer {
+  background-color: color("light-blue", "lighten-2");
+}
+
+nav {
+  ul li:hover, ul li.active {
+    background-color: color("light-blue", "lighten-1");
+  }
+}
+
+.header {
+  color: color("light-blue", "lighten-2");
+}
+
+ul.side-nav .collapsible-body li.active {
+  background-color: color("light-blue", "lighten-2");
+}
+
+#index-banner {
+  background-color: color("light-blue", "lighten-2");
+}
+
+#download-button {
+  background-color: color("light-blue", "lighten-3");
+  &:hover {
+    background-color: lighten(color("light-blue", "base"), 30%);
+  }
+}
+
+.promo{
+  i {
+    color: color("light-blue", "lighten-2");
+  }
+}
+
+#front-page-nav {
+  a {
+      color: color("light-blue", "lighten-2");
+    }
+  li {
+    &:hover {
+      background-color: color("light-blue", "lighten-5");
+    }
+    &.active {
+      background-color: color("light-blue", "lighten-5");
+    }
+  }
+}
+
+// Transifex Styling
+
+#tx-live-lang-container {
+  #tx-live-lang-picker {
+    li {
+      &:hover{
+      background-color: color("light-blue", "lighten-5");
+      }
+    }
+  }
+
+  .txlive-langselector-toggle {
+    border-bottom: 2px solid color("light-blue", "lighten-2");
+  }
+}
