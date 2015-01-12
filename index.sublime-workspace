@@ -1,0 +1,326 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"env",
+				"env-color"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"ou",
+				"outer-container"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"footer",
+				"footer-height"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"base",
+				"base-font-color"
+			],
+			[
+				"enven",
+				"enventure"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"grid",
+				"_grid-settings"
+			],
+			[
+				"wr",
+				"wrapper"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"se",
+				"secondary-font"
+			],
+			[
+				"color",
+				"color-light"
+			],
+			[
+				"col",
+				"color-brand"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"lor",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 425.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/wclifton1/Sites/materialize-env/index.sublime-workspace",
+		"/Users/wclifton1/Dropbox (Procyrion)/Procyrion - Quality System/~Working Copy/750 Clinical Study Protocols/750-0000-001 High-Risk PCI FIM.txt",
+		"/Users/wclifton1/Sites/2014 Enventure/js/jquery-scrolltofixed.js",
+		"/Users/wclifton1/Sites/ScrollToFixed/test.html",
+		"/Users/wclifton1/Sites/2014 Enventure/js/jquery.min.js",
+		"/Users/wclifton1/Sites/2014 Enventure/index-old.html",
+		"/Users/wclifton1/Google Drive/SeedSprout/MolecularMatch/Website Graphics/cloud/icon_33128.svg",
+		"/Users/wclifton1/Sites/2014 Enventure/grid-test.html",
+		"/Users/wclifton1/Sites/2014 Enventure/css/_gridset.scss",
+		"/Users/wclifton1/Sites/2014 Enventure/css/_grid-settings.scss",
+		"/Users/wclifton1/Sites/2014 Enventure/css/_normalize.scss",
+		"/Users/wclifton1/Sites/Startup Framework 1.1.3 Developer/ui-kit/ui-kit-footer/css/ui-kit-styles.css",
+		"/Users/wclifton1/Sites/Startup Framework 1.1.3 Developer/ui-kit/ui-kit-footer/css/style.css",
+		"/Users/wclifton1/Desktop/hallmark.svg",
+		"/Users/wclifton1/Sites/Flat UI HTML - Personal License/HTML/UI/Flat-UI-Pro-v1.3.1/docs/examples/select.html",
+		"/Users/wclifton1/Sites/Flat UI HTML - Personal License/HTML/UI/Flat-UI-Pro-v1.3.1/dist/index.html",
+		"/Users/wclifton1/Sites/Startup Framework 1.1.3 Developer/ui-kit/ui-kit-footer/index.html",
+		"/Users/wclifton1/Google Drive/SeedSprout/MolecularMatch/new logo/new words.svg",
+		"/Users/wclifton1/Downloads/Twitter-Bootstrap-for-Omnigraffle-master/README.markdown",
+		"/Users/wclifton1/Downloads/10 millions emails yandex mailru gmail w passwords 2014/5000000 Gmail.txt",
+		"/Users/wclifton1/Google Drive/SeedSprout/nano3D/test/index.html",
+		"/Users/wclifton1/Sites/SeedSprout/archive/css/style.scss",
+		"/Users/wclifton1/Sites/SeedSprout/css/style.scss",
+		"/Users/wclifton1/Sites/SeedSprout/css/reset.css",
+		"/Users/wclifton1/Sites/SeedSprout/css/style.css",
+		"/Users/wclifton1/Documents/test.html",
+		"/Users/wclifton1/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/wclifton1/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hero-color",
+			"grid-item",
+			"span-",
+			"summary",
+			"transition",
+			"header",
+			"main header",
+			"main-header",
+			"offset",
+			"right",
+			"undefin",
+			"font-fam",
+			"$large-screen",
+			"$base-font-color",
+			".svg",
+			"nav",
+			"v-align",
+			"grid",
+			"section",
+			" box",
+			"$marginright",
+			"$margin-right",
+			"margin-right",
+			"$grid",
+			"gs-span",
+			"-screen",
+			"ehrunner@gmail.com",
+			"lmclifton1@gmail.com",
+			"ginadestaffany@gmail.com",
+			"wclifton",
+			"joanna.c",
+			"515151",
+			"#333333",
+			"51B7B7",
+			"19949F",
+			"header",
+			"color-1",
+			"font-we",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			"                ",
+			"                    ",
+			"            ",
+			"                ",
+			"                    ",
+			"                        ",
+			"                            ",
+			"                                ",
+			"                            ",
+			"                        ",
+			"                            ",
+			"                ",
+			"        ",
+			"    ",
+			"            ",
+			"        ",
+			"                ",
+			"li",
+			" <",
+			" "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
