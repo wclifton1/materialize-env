@@ -1,11 +1,12 @@
 @charset "UTF-8";
-@import "components/variables";
 
 // Mixins
 @import "components/prefixer";
 @import "components/mixins";
 @import "components/color";
-@import "bourbon"; //background-image
+//@import "bourbon"; //background-image, ruins lighten
+
+@import "components/variables";
 
 // Reset
 @import "components/normalize";
@@ -35,3 +36,4 @@
 @import "components/date_picker/default.scss";
 @import "components/date_picker/default.date.scss";
 @import "components/date_picker/default.time.scss";
+@import "will"
