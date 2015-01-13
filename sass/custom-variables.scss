@@ -1,0 +1,54 @@
+$env-color:#0091ea;
+$env-dark-color:#01579B;
+$env-light-color:#B3E5FC;
+$accent-color:#FF4081;
+$base-accent-color:#FF4081;
+$b1-color:$off-black;
+$b2-color:rgba(black,.54);
+$b3-color:rgba(black,.26);
+$b4-color:rgba(black,.12);
+$w1-color:white;
+$w2-color:rgba(white,.87);
+$w3-color:rgba(white,.54);
+$background-color:#ebebeb;
+
+$base-font-color:$b2-color;
+
+$sliding-menu-border-color: $b1-color;
+$sliding-menu-background: lighten($sliding-menu-border-color, 5);
+$sliding-menu-color: #fff;
+$sliding-menu-border: 1px solid $sliding-menu-border-color;
+$sliding-menu-background-hover: $base-accent-color;
+$sliding-menu-color-hover: #fff;
+
+$footer-height:75px;
+
+$radish:#ac1b56;
+$wisteria:#b39ddb;
+$eucalyptus:#039487;
+$sage:#32b679;
+$blueberry:#3f51b5;
+$banana:#fbc02d;
+$pumpkin:#ef6c00;
+$grid-item-colors: $radish, $wisteria, $eucalyptus, $sage, $blueberry, $banana, $pumpkin, $radish, $wisteria, $eucalyptus, $sage, $blueberry, $banana, $pumpkin;
+
+$sans-serif: 'Roboto', sans-serif;
+$serif: 'Georgia', Times, "Times New Roman", serif;
+
+$icon-size: 56px;
+
+//_typography
+$nl-weight: 300;
+
+//_cards
+$default-color: $env-color; 
+//$card-padding: 8px;
+$card-color: #FFF;
+$font-color: $w1-color;
+$footer-font-color: $b1-color;
+$card-link-color: $env-color;
+$card-link-hover: $accent-color;
+$card-height:150px;
+
+//_buttons
+$button-floating-size: 56px;

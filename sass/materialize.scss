@@ -4,9 +4,9 @@
 @import "components/prefixer";
 @import "components/mixins";
 @import "components/color";
-//@import "bourbon"; //background-image, ruins lighten
 
 @import "components/variables";
+@import "custom-variables.scss";
 
 // Reset
 @import "components/normalize";

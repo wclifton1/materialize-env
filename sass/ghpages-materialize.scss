@@ -1,8 +1,11 @@
 @charset "UTF-8";
+//@import "bourbon";
+@import "bourbon-drops/background-image.scss";
 
 // import materialize
 @import "materialize";
 
 // Custom style
 @import "style.scss";
-@import "will.scss"
+@import "smoothState.scss";
+@import "will.scss";

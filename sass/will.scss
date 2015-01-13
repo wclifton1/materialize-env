@@ -1,11 +1,224 @@
-$serif: "Georgia", serif;
-$env-color: #0091ea;
+//NOTE: inport custom variables immediately after materialize variables
 
 #enventure, enventure {
   font-family: $serif;
   font-size:1.45em;
   color:$env-color;
 }
+
+//_typography
+html{ 
+  @media only screen and (min-width: 0) {
+      font-size: 16px;
+  }
+  
+  @media only screen and (min-width: $medium-screen) {
+      font-size: 18px;
+  }
+  
+  @media only screen and (min-width: $large-screen) {
+      font-size: 19px;
+  }
+  
+  font-family: $sans-serif;
+  font-weight: $nl-weight;
+  color: $off-black;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans-serif;
+  font-weight: 300;
+}
+
+.light { font-weight: 300; }
+
+//_cards
+.card {
+  color: $font-color;
+  h1 {
+    font-size: 1.71rem;
+    line-height:1.5;
+  }
+  h2 {
+    font-size: 1.14rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+
+  a {
+    color: $card-link-color;
+    &:hover { color: $card-link-hover; }
+  }
+
+  .card-content {
+    position: relative;
+    overflow: hidden;
+    padding: $gutter-width;
+    height:$card-height;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include border-radius(2px 2px 0 0);
+    &.dialog{
+      background-image: url(../img/byob-trans-24.png);
+      background-color:$env-color;
+    }
+
+    &.foundations{
+      background-image: url(../img/byob-trans-24.png);
+      @extend .deep-purple, .lighten-3;
+    }
+
+    &.mgmt{
+      background-image: url(../img/byob-trans-24.png);
+      @extend .light-green, .darken-1;
+    }
+  }
+}
+
+//_buttons
+.btn-floating{
+  background-color:$accent-color;
+  &:hover {
+    background-color: lighten($accent-color, 5%);
+  }
+}
+
+//WILL's styles
+#subscribe{
+position:relative;
+}
+
+#subbtn{
+  margin-top:1em;
+  position:absolute;
+  right:7.5px;
+}
+#enventure, enventure {
+  font-family: $serif;
+  font-size:1.1em;
+  color:$env-color;
+}
+#title{
+    font-size:1.45em;
+}
+
+light{
+  color:$b2-color;
+}
+
+a {
+  color:$env-color;
+  &:hover, &:active, &:focus{
+    //color:$accent-color;
+  }
+}
+
+#index-banner {
+  position:relative;
+  $hero-background-top: rgba(white, 0); 
+  $hero-background-bottom: rgba(white, 0.9);
+  $gradient-angle: 0deg;
+  $hero-image: '../img/possibilities.jpg';
+
+  @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top, $hero-background-top), url($hero-image));
+  background-color:$env-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: .1em;
+  height:400px;
+}
+
+#bioventures-banner {
+  position:relative;
+  $hero-background-top: rgba(white, 0); 
+  $hero-background-bottom: rgba(white, 0.9);
+  $gradient-angle: 0deg;
+  $hero-image: '../img/byob.jpg';
+
+  @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top, $hero-background-top), url($hero-image));
+  @extend .light-blue, .lighten-4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: .1em;
+  height:400px;
+}
+
+.env-header{
+  position:absolute;
+  bottom:0;
+  color: #FFF;
+  h2{font-size: $h2-fontsize*.8; line-height: 1.1*$h2-fontsize*.8; margin: .25rem 0 .7rem 0; }
+  h4 {font-size: $h4-fontsize*.8; line-height: 1.1*$h4-fontsize*.8; margin: .25rem 0 .7rem 0; letter-spacing: .05rem; color:$b2-color}
+}
+
+#about{
+  float:right;
+  background:none;
+  border:white;
+  text-transform:none;
+}
+
+.mission {
+    .bullets {
+      //$icon-bullet-size: 3.5em;
+      margin-bottom: 1.5em;
+
+      .bullet-icon {
+        @extend .btn-floating;
+        float:left;
+      }
+
+      .bullet-icon-1 {
+        $bullet-color:color("purple", "base");
+        background-color: darken($bullet-color, 5%);
+
+        &:hover, &:active, &:focus {
+          background-color: $bullet-color;
+        }
+      }
+
+      .bullet-icon-2 {
+        $bullet-color:color("pink", "base");
+        background-color: darken($bullet-color, 5%);
+
+        &:hover, &:active, &:focus {
+          background-color: $bullet-color;
+        }
+      }
+
+      .bullet-icon-3 {
+        $bullet-color:color("indigo", "base");
+        background-color: $bullet-color;
+
+        &:hover, &:active, &:focus {
+          background-color: lighten($bullet-color,5%);
+        }
+      }
+
+      .bullet-content {
+      margin-left: $icon-size *1.4;
+      margin-bottom: 2em;
+      }
+
+      h3 {
+      //font-size: $icon-size /2.5;
+      padding-top: $icon-size /7;
+      margin-bottom: $icon-size /6;
+      border-bottom: 1px solid $b3-color;
+      display: inline-block;
+      }
+    }
+  }
+  .modal{
+    position:absolute;
+    top:500;
+  }
 
 footer {
   background-color: color("light-blue", "lighten-2");
