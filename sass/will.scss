@@ -111,19 +111,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a.button-collapse.top-nav{
-  //position: relative;
+  position: relative;
   left: 0;
   margin-left: 0;
   margin-top: 1rem;
+  @media #{$large-and-up} {
+  display:none;
+  }
+
 }
 
 //WILL's styles
-#index-banner {
-  .container {
-    position: static;
-  }
-}
-
 #subscribe{
 position:relative;
 }
@@ -154,19 +152,20 @@ a {
 }
 
 #index-banner {
+  .container {
+    position: static;
+  }
   position:relative;
   $hero-background-top: rgba(white, 0); 
   $hero-background-bottom: rgba(white, 0.9);
   $gradient-angle: 0deg;
   $hero-image: '../img/2015.jpg';
-
   @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top, $hero-background-top), url($hero-image));
   background-color:$env-color;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: .1em;
   height:400px;
-
 
   h4 {
     margin-bottom: 0;

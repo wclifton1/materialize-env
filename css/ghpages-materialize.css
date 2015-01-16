@@ -11012,12 +11012,13 @@ h1, h2, h3, h4, h5, h6 {
   float: left; }
 
 a.button-collapse.top-nav {
+  position: relative;
   left: 0;
   margin-left: 0;
   margin-top: 1rem; }
-
-#index-banner .container {
-  position: static; }
+  @media only screen and (min-width: 993px) {
+    a.button-collapse.top-nav {
+      display: none; } }
 
 #subscribe {
   position: relative; }
@@ -11051,6 +11052,8 @@ a {
   background-size: cover;
   padding-bottom: .1em;
   height: 400px; }
+  #index-banner .container {
+    position: static; }
   #index-banner h4 {
     margin-bottom: 0; }
 
