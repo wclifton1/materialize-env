@@ -10,7 +10,7 @@
 .materialize-red-text.text-lighten-4 {
   color: #f8c1c3 !important; }
 
-.materialize-red.lighten-3, .card .materialize-red.card-content.foundations {
+.materialize-red.lighten-3, .card .materialize-red.card-image.foundations, .card .materialize-red.card-image.blank {
   background-color: #f3989b !important; }
 
 .materialize-red-text.text-lighten-3 {
@@ -34,7 +34,7 @@
 .materialize-red-text {
   color: #e51c23 !important; }
 
-.materialize-red.darken-1, .card .materialize-red.card-content.mgmt {
+.materialize-red.darken-1 {
   background-color: #d0181e !important; }
 
 .materialize-red-text.text-darken-1 {
@@ -46,7 +46,7 @@
 .materialize-red-text.text-darken-2 {
   color: #b9151b !important; }
 
-.materialize-red.darken-3 {
+.materialize-red.darken-3, .card .materialize-red.card-image.mgmt {
   background-color: #a21318 !important; }
 
 .materialize-red-text.text-darken-3 {
@@ -70,7 +70,7 @@
 .red-text.text-lighten-4 {
   color: #FFCDD2 !important; }
 
-.red.lighten-3, .card .red.card-content.foundations {
+.red.lighten-3, .card .red.card-image.foundations, .card .red.card-image.blank {
   background-color: #EF9A9A !important; }
 
 .red-text.text-lighten-3 {
@@ -94,7 +94,7 @@
 .red-text {
   color: #F44336 !important; }
 
-.red.darken-1, .card .red.card-content.mgmt {
+.red.darken-1 {
   background-color: #E53935 !important; }
 
 .red-text.text-darken-1 {
@@ -106,7 +106,7 @@
 .red-text.text-darken-2 {
   color: #D32F2F !important; }
 
-.red.darken-3 {
+.red.darken-3, .card .red.card-image.mgmt {
   background-color: #C62828 !important; }
 
 .red-text.text-darken-3 {
@@ -142,85 +142,85 @@
 .red-text.text-accent-4 {
   color: #D50000 !important; }
 
-.pink.lighten-5 {
+.pink.lighten-5, .card .lighten-5.card-image.mgmt {
   background-color: #fce4ec !important; }
 
 .pink-text.text-lighten-5 {
   color: #fce4ec !important; }
 
-.pink.lighten-4, .pink#bioventures-banner {
+.pink.lighten-4, .card .lighten-4.card-image.mgmt, .card .card-image.mgmt#bioventures-banner, .pink#bioventures-banner {
   background-color: #f8bbd0 !important; }
 
 .pink-text.text-lighten-4 {
   color: #f8bbd0 !important; }
 
-.pink.lighten-3, .card .pink.card-content.foundations {
+.pink.lighten-3, .card .pink.card-image.foundations, .card .card-image.foundations.mgmt, .card .lighten-3.card-image.mgmt, .card .card-image.mgmt.blank, .card .pink.card-image.blank {
   background-color: #f48fb1 !important; }
 
 .pink-text.text-lighten-3 {
   color: #f48fb1 !important; }
 
-.pink.lighten-2 {
+.pink.lighten-2, .card .lighten-2.card-image.mgmt {
   background-color: #f06292 !important; }
 
 .pink-text.text-lighten-2 {
   color: #f06292 !important; }
 
-.pink.lighten-1 {
+.pink.lighten-1, .card .lighten-1.card-image.mgmt {
   background-color: #ec407a !important; }
 
 .pink-text.text-lighten-1 {
   color: #ec407a !important; }
 
-.pink {
+.pink, .card .card-image.mgmt {
   background-color: #e91e63 !important; }
 
 .pink-text {
   color: #e91e63 !important; }
 
-.pink.darken-1, .card .pink.card-content.mgmt {
+.pink.darken-1, .card .darken-1.card-image.mgmt {
   background-color: #d81b60 !important; }
 
 .pink-text.text-darken-1 {
   color: #d81b60 !important; }
 
-.pink.darken-2 {
+.pink.darken-2, .card .darken-2.card-image.mgmt {
   background-color: #c2185b !important; }
 
 .pink-text.text-darken-2 {
   color: #c2185b !important; }
 
-.pink.darken-3 {
+.pink.darken-3, .card .card-image.mgmt {
   background-color: #ad1457 !important; }
 
 .pink-text.text-darken-3 {
   color: #ad1457 !important; }
 
-.pink.darken-4 {
+.pink.darken-4, .card .darken-4.card-image.mgmt {
   background-color: #880e4f !important; }
 
 .pink-text.text-darken-4 {
   color: #880e4f !important; }
 
-.pink.accent-1 {
+.pink.accent-1, .card .accent-1.card-image.mgmt {
   background-color: #ff80ab !important; }
 
 .pink-text.text-accent-1 {
   color: #ff80ab !important; }
 
-.pink.accent-2 {
+.pink.accent-2, .card .accent-2.card-image.mgmt {
   background-color: #ff4081 !important; }
 
 .pink-text.text-accent-2 {
   color: #ff4081 !important; }
 
-.pink.accent-3 {
+.pink.accent-3, .card .accent-3.card-image.mgmt {
   background-color: #f50057 !important; }
 
 .pink-text.text-accent-3 {
   color: #f50057 !important; }
 
-.pink.accent-4 {
+.pink.accent-4, .card .accent-4.card-image.mgmt {
   background-color: #c51162 !important; }
 
 .pink-text.text-accent-4 {
@@ -238,7 +238,7 @@
 .purple-text.text-lighten-4 {
   color: #e1bee7 !important; }
 
-.purple.lighten-3, .card .purple.card-content.foundations {
+.purple.lighten-3, .card .purple.card-image.foundations, .card .purple.card-image.blank {
   background-color: #ce93d8 !important; }
 
 .purple-text.text-lighten-3 {
@@ -262,7 +262,7 @@
 .purple-text {
   color: #9c27b0 !important; }
 
-.purple.darken-1, .card .purple.card-content.mgmt {
+.purple.darken-1 {
   background-color: #8e24aa !important; }
 
 .purple-text.text-darken-1 {
@@ -274,7 +274,7 @@
 .purple-text.text-darken-2 {
   color: #7b1fa2 !important; }
 
-.purple.darken-3 {
+.purple.darken-3, .card .purple.card-image.mgmt {
   background-color: #6a1b9a !important; }
 
 .purple-text.text-darken-3 {
@@ -310,85 +310,85 @@
 .purple-text.text-accent-4 {
   color: #aa00ff !important; }
 
-.deep-purple.lighten-5, .card .lighten-5.card-content.foundations {
+.deep-purple.lighten-5, .card .lighten-5.card-image.foundations {
   background-color: #ede7f6 !important; }
 
 .deep-purple-text.text-lighten-5 {
   color: #ede7f6 !important; }
 
-.deep-purple.lighten-4, .card .lighten-4.card-content.foundations, .card .card-content.foundations#bioventures-banner, .deep-purple#bioventures-banner {
+.deep-purple.lighten-4, .card .lighten-4.card-image.foundations, .card .card-image.foundations#bioventures-banner, .deep-purple#bioventures-banner {
   background-color: #d1c4e9 !important; }
 
 .deep-purple-text.text-lighten-4 {
   color: #d1c4e9 !important; }
 
-.deep-purple.lighten-3, .card .card-content.foundations {
+.deep-purple.lighten-3, .card .card-image.foundations, .card .deep-purple.card-image.blank {
   background-color: #b39ddb !important; }
 
 .deep-purple-text.text-lighten-3 {
   color: #b39ddb !important; }
 
-.deep-purple.lighten-2, .card .lighten-2.card-content.foundations {
+.deep-purple.lighten-2, .card .lighten-2.card-image.foundations {
   background-color: #9575cd !important; }
 
 .deep-purple-text.text-lighten-2 {
   color: #9575cd !important; }
 
-.deep-purple.lighten-1, .card .lighten-1.card-content.foundations {
+.deep-purple.lighten-1, .card .lighten-1.card-image.foundations {
   background-color: #7e57c2 !important; }
 
 .deep-purple-text.text-lighten-1 {
   color: #7e57c2 !important; }
 
-.deep-purple, .card .card-content.foundations {
+.deep-purple, .card .card-image.foundations {
   background-color: #673ab7 !important; }
 
 .deep-purple-text {
   color: #673ab7 !important; }
 
-.deep-purple.darken-1, .card .darken-1.card-content.foundations, .card .card-content.foundations.mgmt, .card .deep-purple.card-content.mgmt {
+.deep-purple.darken-1, .card .darken-1.card-image.foundations {
   background-color: #5e35b1 !important; }
 
 .deep-purple-text.text-darken-1 {
   color: #5e35b1 !important; }
 
-.deep-purple.darken-2, .card .darken-2.card-content.foundations {
+.deep-purple.darken-2, .card .darken-2.card-image.foundations {
   background-color: #512da8 !important; }
 
 .deep-purple-text.text-darken-2 {
   color: #512da8 !important; }
 
-.deep-purple.darken-3, .card .darken-3.card-content.foundations {
+.deep-purple.darken-3, .card .darken-3.card-image.foundations, .card .card-image.foundations.mgmt, .card .deep-purple.card-image.mgmt {
   background-color: #4527a0 !important; }
 
 .deep-purple-text.text-darken-3 {
   color: #4527a0 !important; }
 
-.deep-purple.darken-4, .card .darken-4.card-content.foundations {
+.deep-purple.darken-4, .card .darken-4.card-image.foundations {
   background-color: #311b92 !important; }
 
 .deep-purple-text.text-darken-4 {
   color: #311b92 !important; }
 
-.deep-purple.accent-1, .card .accent-1.card-content.foundations {
+.deep-purple.accent-1, .card .accent-1.card-image.foundations {
   background-color: #b388ff !important; }
 
 .deep-purple-text.text-accent-1 {
   color: #b388ff !important; }
 
-.deep-purple.accent-2, .card .accent-2.card-content.foundations {
+.deep-purple.accent-2, .card .accent-2.card-image.foundations {
   background-color: #7c4dff !important; }
 
 .deep-purple-text.text-accent-2 {
   color: #7c4dff !important; }
 
-.deep-purple.accent-3, .card .accent-3.card-content.foundations {
+.deep-purple.accent-3, .card .accent-3.card-image.foundations {
   background-color: #651fff !important; }
 
 .deep-purple-text.text-accent-3 {
   color: #651fff !important; }
 
-.deep-purple.accent-4, .card .accent-4.card-content.foundations {
+.deep-purple.accent-4, .card .accent-4.card-image.foundations {
   background-color: #6200ea !important; }
 
 .deep-purple-text.text-accent-4 {
@@ -406,7 +406,7 @@
 .indigo-text.text-lighten-4 {
   color: #c5cae9 !important; }
 
-.indigo.lighten-3, .card .indigo.card-content.foundations {
+.indigo.lighten-3, .card .indigo.card-image.foundations, .card .indigo.card-image.blank {
   background-color: #9fa8da !important; }
 
 .indigo-text.text-lighten-3 {
@@ -430,7 +430,7 @@
 .indigo-text {
   color: #3f51b5 !important; }
 
-.indigo.darken-1, .card .indigo.card-content.mgmt {
+.indigo.darken-1 {
   background-color: #3949ab !important; }
 
 .indigo-text.text-darken-1 {
@@ -442,7 +442,7 @@
 .indigo-text.text-darken-2 {
   color: #303f9f !important; }
 
-.indigo.darken-3 {
+.indigo.darken-3, .card .indigo.card-image.mgmt {
   background-color: #283593 !important; }
 
 .indigo-text.text-darken-3 {
@@ -490,7 +490,7 @@
 .blue-text.text-lighten-4 {
   color: #BBDEFB !important; }
 
-.blue.lighten-3, .card .blue.card-content.foundations {
+.blue.lighten-3, .card .blue.card-image.foundations, .card .blue.card-image.blank {
   background-color: #90CAF9 !important; }
 
 .blue-text.text-lighten-3 {
@@ -514,7 +514,7 @@
 .blue-text {
   color: #2196F3 !important; }
 
-.blue.darken-1, .card .blue.card-content.mgmt {
+.blue.darken-1 {
   background-color: #1E88E5 !important; }
 
 .blue-text.text-darken-1 {
@@ -526,7 +526,7 @@
 .blue-text.text-darken-2 {
   color: #1976D2 !important; }
 
-.blue.darken-3 {
+.blue.darken-3, .card .blue.card-image.mgmt {
   background-color: #1565C0 !important; }
 
 .blue-text.text-darken-3 {
@@ -574,7 +574,7 @@
 .light-blue-text.text-lighten-4 {
   color: #b3e5fc !important; }
 
-.light-blue.lighten-3, .card .light-blue.card-content.foundations, .card .card-content.foundations#bioventures-banner, .lighten-3#bioventures-banner {
+.light-blue.lighten-3, .card .light-blue.card-image.foundations, .card .card-image.foundations#bioventures-banner, .card .light-blue.card-image.blank, .card .card-image.blank#bioventures-banner, .lighten-3#bioventures-banner {
   background-color: #81d4fa !important; }
 
 .light-blue-text.text-lighten-3 {
@@ -598,7 +598,7 @@
 .light-blue-text {
   color: #03a9f4 !important; }
 
-.light-blue.darken-1, .card .light-blue.card-content.mgmt, .card .card-content.mgmt#bioventures-banner, .darken-1#bioventures-banner {
+.light-blue.darken-1, .darken-1#bioventures-banner {
   background-color: #039be5 !important; }
 
 .light-blue-text.text-darken-1 {
@@ -610,7 +610,7 @@
 .light-blue-text.text-darken-2 {
   color: #0288d1 !important; }
 
-.light-blue.darken-3, .darken-3#bioventures-banner {
+.light-blue.darken-3, .card .light-blue.card-image.mgmt, .card .card-image.mgmt#bioventures-banner, .darken-3#bioventures-banner {
   background-color: #0277bd !important; }
 
 .light-blue-text.text-darken-3 {
@@ -658,7 +658,7 @@
 .cyan-text.text-lighten-4 {
   color: #b2ebf2 !important; }
 
-.cyan.lighten-3, .card .cyan.card-content.foundations {
+.cyan.lighten-3, .card .cyan.card-image.foundations, .card .cyan.card-image.blank {
   background-color: #80deea !important; }
 
 .cyan-text.text-lighten-3 {
@@ -682,7 +682,7 @@
 .cyan-text {
   color: #00bcd4 !important; }
 
-.cyan.darken-1, .card .cyan.card-content.mgmt {
+.cyan.darken-1 {
   background-color: #00acc1 !important; }
 
 .cyan-text.text-darken-1 {
@@ -694,7 +694,7 @@
 .cyan-text.text-darken-2 {
   color: #0097a7 !important; }
 
-.cyan.darken-3 {
+.cyan.darken-3, .card .cyan.card-image.mgmt {
   background-color: #00838f !important; }
 
 .cyan-text.text-darken-3 {
@@ -742,7 +742,7 @@
 .teal-text.text-lighten-4 {
   color: #b2dfdb !important; }
 
-.teal.lighten-3, .card .teal.card-content.foundations {
+.teal.lighten-3, .card .teal.card-image.foundations, .card .teal.card-image.blank {
   background-color: #80cbc4 !important; }
 
 .teal-text.text-lighten-3 {
@@ -766,7 +766,7 @@
 .teal-text {
   color: #009688 !important; }
 
-.teal.darken-1, .card .teal.card-content.mgmt {
+.teal.darken-1 {
   background-color: #00897b !important; }
 
 .teal-text.text-darken-1 {
@@ -778,7 +778,7 @@
 .teal-text.text-darken-2 {
   color: #00796b !important; }
 
-.teal.darken-3 {
+.teal.darken-3, .card .teal.card-image.mgmt {
   background-color: #00695c !important; }
 
 .teal-text.text-darken-3 {
@@ -826,7 +826,7 @@
 .green-text.text-lighten-4 {
   color: #C8E6C9 !important; }
 
-.green.lighten-3, .card .green.card-content.foundations {
+.green.lighten-3, .card .green.card-image.foundations, .card .green.card-image.blank {
   background-color: #A5D6A7 !important; }
 
 .green-text.text-lighten-3 {
@@ -850,7 +850,7 @@
 .green-text {
   color: #4CAF50 !important; }
 
-.green.darken-1, .card .green.card-content.mgmt {
+.green.darken-1 {
   background-color: #43A047 !important; }
 
 .green-text.text-darken-1 {
@@ -862,7 +862,7 @@
 .green-text.text-darken-2 {
   color: #388E3C !important; }
 
-.green.darken-3 {
+.green.darken-3, .card .green.card-image.mgmt {
   background-color: #2E7D32 !important; }
 
 .green-text.text-darken-3 {
@@ -898,85 +898,85 @@
 .green-text.text-accent-4 {
   color: #00C853 !important; }
 
-.light-green.lighten-5, .card .lighten-5.card-content.mgmt {
+.light-green.lighten-5 {
   background-color: #f1f8e9 !important; }
 
 .light-green-text.text-lighten-5 {
   color: #f1f8e9 !important; }
 
-.light-green.lighten-4, .card .lighten-4.card-content.mgmt, .card .card-content.mgmt#bioventures-banner, .light-green#bioventures-banner {
+.light-green.lighten-4, .light-green#bioventures-banner {
   background-color: #dcedc8 !important; }
 
 .light-green-text.text-lighten-4 {
   color: #dcedc8 !important; }
 
-.light-green.lighten-3, .card .light-green.card-content.foundations, .card .card-content.foundations.mgmt, .card .lighten-3.card-content.mgmt {
+.light-green.lighten-3, .card .light-green.card-image.foundations, .card .light-green.card-image.blank {
   background-color: #c5e1a5 !important; }
 
 .light-green-text.text-lighten-3 {
   color: #c5e1a5 !important; }
 
-.light-green.lighten-2, .card .lighten-2.card-content.mgmt {
+.light-green.lighten-2 {
   background-color: #aed581 !important; }
 
 .light-green-text.text-lighten-2 {
   color: #aed581 !important; }
 
-.light-green.lighten-1, .card .lighten-1.card-content.mgmt {
+.light-green.lighten-1 {
   background-color: #9ccc65 !important; }
 
 .light-green-text.text-lighten-1 {
   color: #9ccc65 !important; }
 
-.light-green, .card .card-content.mgmt {
+.light-green {
   background-color: #8bc34a !important; }
 
 .light-green-text {
   color: #8bc34a !important; }
 
-.light-green.darken-1, .card .card-content.mgmt {
+.light-green.darken-1 {
   background-color: #7cb342 !important; }
 
 .light-green-text.text-darken-1 {
   color: #7cb342 !important; }
 
-.light-green.darken-2, .card .darken-2.card-content.mgmt {
+.light-green.darken-2 {
   background-color: #689f38 !important; }
 
 .light-green-text.text-darken-2 {
   color: #689f38 !important; }
 
-.light-green.darken-3, .card .darken-3.card-content.mgmt {
+.light-green.darken-3, .card .light-green.card-image.mgmt {
   background-color: #558b2f !important; }
 
 .light-green-text.text-darken-3 {
   color: #558b2f !important; }
 
-.light-green.darken-4, .card .darken-4.card-content.mgmt {
+.light-green.darken-4 {
   background-color: #33691e !important; }
 
 .light-green-text.text-darken-4 {
   color: #33691e !important; }
 
-.light-green.accent-1, .card .accent-1.card-content.mgmt {
+.light-green.accent-1 {
   background-color: #ccff90 !important; }
 
 .light-green-text.text-accent-1 {
   color: #ccff90 !important; }
 
-.light-green.accent-2, .card .accent-2.card-content.mgmt {
+.light-green.accent-2 {
   background-color: #b2ff59 !important; }
 
 .light-green-text.text-accent-2 {
   color: #b2ff59 !important; }
 
-.light-green.accent-3, .card .accent-3.card-content.mgmt {
+.light-green.accent-3 {
   background-color: #76ff03 !important; }
 
 .light-green-text.text-accent-3 {
   color: #76ff03 !important; }
 
-.light-green.accent-4, .card .accent-4.card-content.mgmt {
+.light-green.accent-4 {
   background-color: #64dd17 !important; }
 
 .light-green-text.text-accent-4 {
@@ -994,7 +994,7 @@
 .lime-text.text-lighten-4 {
   color: #f0f4c3 !important; }
 
-.lime.lighten-3, .card .lime.card-content.foundations {
+.lime.lighten-3, .card .lime.card-image.foundations, .card .lime.card-image.blank {
   background-color: #e6ee9c !important; }
 
 .lime-text.text-lighten-3 {
@@ -1018,7 +1018,7 @@
 .lime-text {
   color: #cddc39 !important; }
 
-.lime.darken-1, .card .lime.card-content.mgmt {
+.lime.darken-1 {
   background-color: #c0ca33 !important; }
 
 .lime-text.text-darken-1 {
@@ -1030,7 +1030,7 @@
 .lime-text.text-darken-2 {
   color: #afb42b !important; }
 
-.lime.darken-3 {
+.lime.darken-3, .card .lime.card-image.mgmt {
   background-color: #9e9d24 !important; }
 
 .lime-text.text-darken-3 {
@@ -1078,7 +1078,7 @@
 .yellow-text.text-lighten-4 {
   color: #fff9c4 !important; }
 
-.yellow.lighten-3, .card .yellow.card-content.foundations {
+.yellow.lighten-3, .card .yellow.card-image.foundations, .card .yellow.card-image.blank {
   background-color: #fff59d !important; }
 
 .yellow-text.text-lighten-3 {
@@ -1102,7 +1102,7 @@
 .yellow-text {
   color: #ffeb3b !important; }
 
-.yellow.darken-1, .card .yellow.card-content.mgmt {
+.yellow.darken-1 {
   background-color: #fdd835 !important; }
 
 .yellow-text.text-darken-1 {
@@ -1114,7 +1114,7 @@
 .yellow-text.text-darken-2 {
   color: #fbc02d !important; }
 
-.yellow.darken-3 {
+.yellow.darken-3, .card .yellow.card-image.mgmt {
   background-color: #f9a825 !important; }
 
 .yellow-text.text-darken-3 {
@@ -1162,7 +1162,7 @@
 .amber-text.text-lighten-4 {
   color: #ffecb3 !important; }
 
-.amber.lighten-3, .card .amber.card-content.foundations {
+.amber.lighten-3, .card .amber.card-image.foundations, .card .amber.card-image.blank {
   background-color: #ffe082 !important; }
 
 .amber-text.text-lighten-3 {
@@ -1186,7 +1186,7 @@
 .amber-text {
   color: #ffc107 !important; }
 
-.amber.darken-1, .card .amber.card-content.mgmt {
+.amber.darken-1 {
   background-color: #ffb300 !important; }
 
 .amber-text.text-darken-1 {
@@ -1198,7 +1198,7 @@
 .amber-text.text-darken-2 {
   color: #ffa000 !important; }
 
-.amber.darken-3 {
+.amber.darken-3, .card .amber.card-image.mgmt {
   background-color: #ff8f00 !important; }
 
 .amber-text.text-darken-3 {
@@ -1246,7 +1246,7 @@
 .orange-text.text-lighten-4 {
   color: #ffe0b2 !important; }
 
-.orange.lighten-3, .card .orange.card-content.foundations {
+.orange.lighten-3, .card .orange.card-image.foundations, .card .orange.card-image.blank {
   background-color: #ffcc80 !important; }
 
 .orange-text.text-lighten-3 {
@@ -1270,7 +1270,7 @@
 .orange-text {
   color: #ff9800 !important; }
 
-.orange.darken-1, .card .orange.card-content.mgmt {
+.orange.darken-1 {
   background-color: #fb8c00 !important; }
 
 .orange-text.text-darken-1 {
@@ -1282,7 +1282,7 @@
 .orange-text.text-darken-2 {
   color: #f57c00 !important; }
 
-.orange.darken-3 {
+.orange.darken-3, .card .orange.card-image.mgmt {
   background-color: #ef6c00 !important; }
 
 .orange-text.text-darken-3 {
@@ -1330,7 +1330,7 @@
 .deep-orange-text.text-lighten-4 {
   color: #ffccbc !important; }
 
-.deep-orange.lighten-3, .card .deep-orange.card-content.foundations {
+.deep-orange.lighten-3, .card .deep-orange.card-image.foundations, .card .deep-orange.card-image.blank {
   background-color: #ffab91 !important; }
 
 .deep-orange-text.text-lighten-3 {
@@ -1354,7 +1354,7 @@
 .deep-orange-text {
   color: #ff5722 !important; }
 
-.deep-orange.darken-1, .card .deep-orange.card-content.mgmt {
+.deep-orange.darken-1 {
   background-color: #f4511e !important; }
 
 .deep-orange-text.text-darken-1 {
@@ -1366,7 +1366,7 @@
 .deep-orange-text.text-darken-2 {
   color: #e64a19 !important; }
 
-.deep-orange.darken-3 {
+.deep-orange.darken-3, .card .deep-orange.card-image.mgmt {
   background-color: #d84315 !important; }
 
 .deep-orange-text.text-darken-3 {
@@ -1414,7 +1414,7 @@
 .brown-text.text-lighten-4 {
   color: #d7ccc8 !important; }
 
-.brown.lighten-3, .card .brown.card-content.foundations {
+.brown.lighten-3, .card .brown.card-image.foundations, .card .brown.card-image.blank {
   background-color: #bcaaa4 !important; }
 
 .brown-text.text-lighten-3 {
@@ -1438,7 +1438,7 @@
 .brown-text {
   color: #795548 !important; }
 
-.brown.darken-1, .card .brown.card-content.mgmt {
+.brown.darken-1 {
   background-color: #6d4c41 !important; }
 
 .brown-text.text-darken-1 {
@@ -1450,7 +1450,7 @@
 .brown-text.text-darken-2 {
   color: #5d4037 !important; }
 
-.brown.darken-3 {
+.brown.darken-3, .card .brown.card-image.mgmt {
   background-color: #4e342e !important; }
 
 .brown-text.text-darken-3 {
@@ -1462,61 +1462,61 @@
 .brown-text.text-darken-4 {
   color: #3e2723 !important; }
 
-.blue-grey.lighten-5 {
+.blue-grey.lighten-5, .card .lighten-5.card-image.blank {
   background-color: #eceff1 !important; }
 
 .blue-grey-text.text-lighten-5 {
   color: #eceff1 !important; }
 
-.blue-grey.lighten-4, .blue-grey#bioventures-banner {
+.blue-grey.lighten-4, .card .lighten-4.card-image.blank, .card .card-image.blank#bioventures-banner, .blue-grey#bioventures-banner {
   background-color: #cfd8dc !important; }
 
 .blue-grey-text.text-lighten-4 {
   color: #cfd8dc !important; }
 
-.blue-grey.lighten-3, .card .blue-grey.card-content.foundations {
+.blue-grey.lighten-3, .card .blue-grey.card-image.foundations, .card .card-image.blank {
   background-color: #b0bec5 !important; }
 
 .blue-grey-text.text-lighten-3 {
   color: #b0bec5 !important; }
 
-.blue-grey.lighten-2 {
+.blue-grey.lighten-2, .card .lighten-2.card-image.blank {
   background-color: #90a4ae !important; }
 
 .blue-grey-text.text-lighten-2 {
   color: #90a4ae !important; }
 
-.blue-grey.lighten-1 {
+.blue-grey.lighten-1, .card .lighten-1.card-image.blank {
   background-color: #78909c !important; }
 
 .blue-grey-text.text-lighten-1 {
   color: #78909c !important; }
 
-.blue-grey {
+.blue-grey, .card .card-image.blank {
   background-color: #607d8b !important; }
 
 .blue-grey-text {
   color: #607d8b !important; }
 
-.blue-grey.darken-1, .card .blue-grey.card-content.mgmt {
+.blue-grey.darken-1, .card .darken-1.card-image.blank {
   background-color: #546e7a !important; }
 
 .blue-grey-text.text-darken-1 {
   color: #546e7a !important; }
 
-.blue-grey.darken-2 {
+.blue-grey.darken-2, .card .darken-2.card-image.blank {
   background-color: #455a64 !important; }
 
 .blue-grey-text.text-darken-2 {
   color: #455a64 !important; }
 
-.blue-grey.darken-3 {
+.blue-grey.darken-3, .card .blue-grey.card-image.mgmt, .card .card-image.mgmt.blank, .card .darken-3.card-image.blank {
   background-color: #37474f !important; }
 
 .blue-grey-text.text-darken-3 {
   color: #37474f !important; }
 
-.blue-grey.darken-4 {
+.blue-grey.darken-4, .card .darken-4.card-image.blank {
   background-color: #263238 !important; }
 
 .blue-grey-text.text-darken-4 {
@@ -1534,7 +1534,7 @@
 .grey-text.text-lighten-4 {
   color: #f5f5f5 !important; }
 
-.grey.lighten-3, .card .grey.card-content.foundations {
+.grey.lighten-3, .card .grey.card-image.foundations, .card .grey.card-image.blank {
   background-color: #eeeeee !important; }
 
 .grey-text.text-lighten-3 {
@@ -1558,7 +1558,7 @@
 .grey-text {
   color: #9e9e9e !important; }
 
-.grey.darken-1, .card .grey.card-content.mgmt {
+.grey.darken-1 {
   background-color: #757575 !important; }
 
 .grey-text.text-darken-1 {
@@ -1570,7 +1570,7 @@
 .grey-text.text-darken-2 {
   color: #616161 !important; }
 
-.grey.darken-3 {
+.grey.darken-3, .card .grey.card-image.mgmt {
   background-color: #424242 !important; }
 
 .grey-text.text-darken-3 {
@@ -7806,7 +7806,7 @@ a.button-collapse.top-nav {
 
 /**********************
 **********************/
-.dynamic-color .red, .dynamic-color .pink, .dynamic-color .purple, .dynamic-color .deep-purple, .dynamic-color .card .card-content.foundations, .card .dynamic-color .card-content.foundations, .dynamic-color .indigo, .dynamic-color .blue, .dynamic-color .light-blue, .dynamic-color #bioventures-banner, .dynamic-color .cyan, .dynamic-color .teal, .dynamic-color .green, .dynamic-color .light-green, .dynamic-color .card .card-content.mgmt, .card .dynamic-color .card-content.mgmt, .dynamic-color .lime, .dynamic-color .yellow, .dynamic-color .amber, .dynamic-color .orange, .dynamic-color .deep-orange, .dynamic-color .brown, .dynamic-color .grey, .dynamic-color .blue-grey {
+.dynamic-color .red, .dynamic-color .pink, .dynamic-color .card .card-image.mgmt, .card .dynamic-color .card-image.mgmt, .dynamic-color .purple, .dynamic-color .deep-purple, .dynamic-color .card .card-image.foundations, .card .dynamic-color .card-image.foundations, .dynamic-color .indigo, .dynamic-color .blue, .dynamic-color .light-blue, .dynamic-color #bioventures-banner, .dynamic-color .cyan, .dynamic-color .teal, .dynamic-color .green, .dynamic-color .light-green, .dynamic-color .lime, .dynamic-color .yellow, .dynamic-color .amber, .dynamic-color .orange, .dynamic-color .deep-orange, .dynamic-color .brown, .dynamic-color .grey, .dynamic-color .blue-grey, .dynamic-color .card .card-image.blank, .card .dynamic-color .card-image.blank {
   height: 55px;
   width: 100%;
   padding: 0 15px;
@@ -10975,23 +10975,29 @@ h1, h2, h3, h4, h5, h6 {
     color: #0091ea; }
     .card a:hover {
       color: #FF4081; }
-  .card .card-content {
-    position: relative;
-    overflow: hidden;
-    padding: 1.5rem;
-    height: 150px;
+  .card .card-image {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border-radius: 2px 2px 0 0;
-    background-clip: padding-box; }
-    .card .card-content.dialog {
+    height: 200px; }
+    .card .card-image.dialog {
       background-image: url(../img/byob-trans-24.png);
       background-color: #0091ea; }
-    .card .card-content.foundations {
+    .card .card-image.foundations {
       background-image: url(../img/byob-trans-24.png); }
-    .card .card-content.mgmt {
+    .card .card-image.mgmt {
       background-image: url(../img/byob-trans-24.png); }
+    .card .card-image.blank {
+      background-image: url(../img/byob-trans-24.png); }
+  .card .card-reveal {
+    width: 100%; }
+
+.input-field label {
+  top: .6rem;
+  font-size: 1.25rem; }
+
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=tel], input[type=number], textarea.materialize-textarea {
+  font-size: 1.25rem; }
 
 .btn-floating, .mission .bullets .bullet-icon {
   background-color: #FF4081; }
@@ -11019,6 +11025,11 @@ a.button-collapse.top-nav {
   @media only screen and (min-width: 993px) {
     a.button-collapse.top-nav {
       display: none; } }
+
+#download-button {
+  background-color: #81d4fa; }
+  #download-button:hover {
+    background-color: #92dcfe; }
 
 #subscribe {
   position: relative; }
@@ -11122,14 +11133,6 @@ nav ul li:hover, nav ul li.active {
 
 ul.side-nav .collapsible-body li.active {
   background-color: #4fc3f7; }
-
-#index-banner {
-  background-color: #4fc3f7; }
-
-#download-button {
-  background-color: #81d4fa; }
-  #download-button:hover {
-    background-color: #92dcfe; }
 
 .promo i {
   color: #4fc3f7; }

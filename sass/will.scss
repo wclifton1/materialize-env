@@ -53,36 +53,48 @@ h1, h2, h3, h4, h5, h6 {
   p {
     font-size: 0.8rem;
   }
-
   a {
     color: $card-link-color;
     &:hover { color: $card-link-hover; }
   }
 
-  .card-content {
-    position: relative;
-    overflow: hidden;
-    padding: $gutter-width;
-    height:$card-height;
+  .card-image {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @include border-radius(2px 2px 0 0);
+    height:200px;
     &.dialog{
       background-image: url(../img/byob-trans-24.png);
       background-color:$env-color;
     }
-
     &.foundations{
       background-image: url(../img/byob-trans-24.png);
       @extend .deep-purple, .lighten-3;
     }
-
     &.mgmt{
       background-image: url(../img/byob-trans-24.png);
-      @extend .light-green, .darken-1;
+      @extend .pink, .darken-3;
+    }
+    &.blank{
+      background-image: url(../img/byob-trans-24.png);
+      @extend .blue-grey, .lighten-3;
     }
   }
+  // .card-footer{
+  //   padding: 2px 1rem 8px 1rem;
+  // }
+  .card-reveal{
+    width:100%;
+  }
+}
+
+//_form
+.input-field label{
+  top: .6rem;
+  font-size: 1.25rem;
+}
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=tel], input[type=number], textarea.materialize-textarea {
+  font-size: 1.25rem;
 }
 
 //_buttons
@@ -118,7 +130,14 @@ a.button-collapse.top-nav{
   @media #{$large-and-up} {
   display:none;
   }
+}
 
+
+#download-button {
+  background-color: color("light-blue", "lighten-3");
+  &:hover {
+    background-color: lighten(color("light-blue", "base"), 30%);
+  }
 }
 
 //WILL's styles
@@ -179,7 +198,6 @@ a {
   $hero-background-bottom: rgba(white, 0.9);
   $gradient-angle: 0deg;
   $hero-image: '../img/byob.jpg';
-
   @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top, $hero-background-top), url($hero-image));
   @extend .light-blue, .lighten-4;
   background-repeat: no-repeat;
@@ -269,17 +287,6 @@ nav {
 
 ul.side-nav .collapsible-body li.active {
   background-color: color("light-blue", "lighten-2");
-}
-
-#index-banner {
-  background-color: color("light-blue", "lighten-2");
-}
-
-#download-button {
-  background-color: color("light-blue", "lighten-3");
-  &:hover {
-    background-color: lighten(color("light-blue", "base"), 30%);
-  }
 }
 
 .promo{
