@@ -5434,9 +5434,9 @@ ul.tabs li.tab {
   display: inline-block;
   position: relative;
   z-index: 1;
-  width: 56px;
-  height: 56px;
-  line-height: 56px;
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
   padding: 0;
   background-color: #2196F3;
   border-radius: 50%;
@@ -5450,12 +5450,12 @@ ul.tabs li.tab {
     text-align: center;
     color: #FFF;
     font-size: 1.6rem;
-    line-height: 56px; }
+    line-height: 37px; }
   .btn-floating.btn-large, .mission .bullets .btn-large.bullet-icon {
-    width: 84px;
-    height: 84px; }
+    width: 55.5px;
+    height: 55.5px; }
     .btn-floating.btn-large i, .mission .bullets .btn-large.bullet-icon i {
-      line-height: 84px; }
+      line-height: 55.5px; }
 
 .btn-flat {
   box-shadow: none;
@@ -10998,6 +10998,9 @@ h1, h2, h3, h4, h5, h6 {
   .btn-floating:hover, .mission .bullets .bullet-icon:hover {
     background-color: #ff5a92; }
 
+#index-banner .container {
+  position: static; }
+
 #subscribe {
   position: relative; }
 
@@ -11022,15 +11025,16 @@ a {
 
 #index-banner {
   position: relative;
-  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/possibilities.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/possibilities.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/possibilities.jpg");
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015.jpg");
   background-color: #0091ea;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   padding-bottom: .1em;
   height: 400px; }
+  #index-banner h4 {
+    margin-bottom: 0; }
 
 #bioventures-banner {
   position: relative;
@@ -11050,13 +11054,12 @@ a {
   .env-header h2 {
     font-size: 2.848rem;
     line-height: 3.1328rem;
-    margin: .25rem 0 .7rem 0; }
+    margin: 0 0 1.1392rem 0; }
   .env-header h4 {
     font-size: 1.824rem;
     line-height: 2.0064rem;
-    margin: .25rem 0 .7rem 0;
-    letter-spacing: .05rem;
-    color: rgba(0, 0, 0, 0.54); }
+    margin: 0.912rem 0 0.7296rem 0;
+    letter-spacing: .05rem; }
 
 #about {
   float: right;
