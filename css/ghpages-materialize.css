@@ -10998,6 +10998,24 @@ h1, h2, h3, h4, h5, h6 {
   .btn-floating:hover, .mission .bullets .bullet-icon:hover {
     background-color: #ff5a92; }
 
+.frosted {
+  background: none;
+  border: white;
+  text-transform: none; }
+  .frosted:hover {
+    background-color: rgba(255, 255, 255, 0.26); }
+
+#about {
+  float: right; }
+
+#hamburger {
+  float: left; }
+
+a.button-collapse.top-nav {
+  left: 0;
+  margin-left: 0;
+  margin-top: 1rem; }
+
 #index-banner .container {
   position: static; }
 
@@ -11060,12 +11078,6 @@ a {
     line-height: 2.0064rem;
     margin: 0.912rem 0 0.7296rem 0;
     letter-spacing: .05rem; }
-
-#about {
-  float: right;
-  background: none;
-  border: white;
-  text-transform: none; }
 
 .mission .bullets {
   margin-bottom: 1.5em; }

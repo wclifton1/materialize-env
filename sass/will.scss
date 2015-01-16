@@ -6,6 +6,12 @@
   color:$env-color;
 }
 
+//nav
+nav{
+  //background-color:$w3-color;
+  @extend .z-depth-1;
+}
+
 //_typography
 html{ 
   @media only screen and (min-width: 0) {
@@ -87,6 +93,30 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.frosted{
+  background:none;
+  border:white;
+  text-transform:none;
+  &:hover {
+    background-color: $w4-color;
+  }
+}
+
+#about{
+  float:right;
+}
+
+#hamburger{
+  float:left;
+}
+
+a.button-collapse.top-nav{
+  //position: relative;
+  left: 0;
+  margin-left: 0;
+  margin-top: 1rem;
+}
+
 //WILL's styles
 #index-banner {
   .container {
@@ -166,13 +196,6 @@ a {
   color: #FFF;
   h2{font-size: $h2-fontsize*.8; line-height: 1.1*$h2-fontsize*.8; margin: 0 0 ($h2-fontsize*.8 / 2.5) 0;}
   h4 {font-size: $h4-fontsize*.8; line-height: 1.1*$h4-fontsize*.8; margin: ($h4-fontsize*.8 / 2) 0 ($h4-fontsize*.8 / 2.5) 0; letter-spacing: .05rem}
-}
-
-#about{
-  float:right;
-  background:none;
-  border:white;
-  text-transform:none;
 }
 
 .mission {

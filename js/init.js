@@ -122,6 +122,8 @@
       });
     });
 
+
+
     // Detect touch screen and enable scrollbar if necessary
     function is_touch_device() {
       try {
