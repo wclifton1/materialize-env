@@ -18,11 +18,11 @@
   </head>
   
   <body id="main" class="m-scene">
-    <header>
+    <!--header>
       <div class="container"><a id="hamburger" href="#" data-activates="nav-mobile" class="frosted button-collapse top-nav btn btn-floating btn-large"><i class="mdi-navigation-menu"></i></a></div>
       <ul id="nav-mobile" class="side-nav fixed">
         <li class="logo"><a id="logo-container" href="http://www.enventure.org" class="brand-logo">
-            <object id="front-page-logo" type="image/svg+xml" data="img/texas-coast.svg">Your browser does not support SVG</object></a></li>
+            <object id="front-page-logo" type="image/svg+xml" data="img/facebook.svg">Your browser does not support SVG</object></a></li>
         <li class="bold"><a href="about.html">About</a></li>
         <li class="bold active"><a href="getting-started.html">Getting Started</a></li>
         <li class="no-padding">
@@ -78,18 +78,18 @@
         <li class="bold"><a href="http://materializecss.com/mobile.html">Mobile</a></li>
         <li id="social">
           <a href="http://www.facebook.com/enventuremed" class="brand-logo">
-            <object id="front-page-logo" type="image/svg+xml" data="img/facebook.svg">Your browser does not support SVG</object>
+            <object type="image/svg+xml" data="img/facebook.svg">Your browser does not support SVG</object>
           </a>
           <a href="http://www.facebook.com/enventuremed" class="brand-logo">
-            <object id="front-page-logo" type="image/svg+xml" data="img/facebook.svg">Your browser does not support SVG</object>
+            <object type="image/svg+xml" data="img/facebook.svg">Your browser does not support SVG</object>
           </a>
           <a href="http://www.facebook.com/enventuremed" class="brand-logo">
-            <object id="front-page-logo" type="image/svg+xml" data="img/facebook.svg">Your browser does not support SVG</object>
+            <object type="image/svg+xml" data="img/facebook.svg">Your browser does not support SVG</object>
           </a>
         </li>
       </ul>
 
-    </header>
+    </header-->
     <main>
       <div class="section scene_element scene_element--fadein" id="index-banner">
         <div class="container">
@@ -104,12 +104,19 @@
       <div class="scene_element scene_element--fadeinup">
         <div class="container">
           <div id="subscribe" class="section row">
-            <div class="input-field col s10 m11">
-              <i class="mdi-content-send prefix"></i>
-              <input id="email" type="text">
-              <label for="email">Email Address</label>
+            <div class="col s12 m4">
+              <blockquote>sign up for our newsletter and join the community</blockquote>
             </div>
-            <div class="col s2 m1"><a id="subbtn" href="#" class="btn btn-large btn-floating tooltipped" data-position="bottom" data-tooltip="subscribe to our newsletter" type="submit" name="action"><i class="mdi-social-group-add"></i></a></div>
+            <form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+              <div class="input-field col s10 m7">
+                <i class="mdi-content-send prefix"></i>
+                <input id="email" name="EMAIL" type="email" class="validate">
+                <label for="email">Email Address</label>
+              </div>
+              <div class="col s2 m1">
+                <button id="subbtn" class="btn btn-large btn-floating tooltipped" data-position="bottom" data-tooltip="subscribe to our newsletter" type="submit" name="action"><i class="mdi-social-group-add"></i></button>
+              </div>
+            </form>
             <!--have this transition to mdi-action-favorite (heart)-->
           </div>
         </div>
@@ -119,19 +126,38 @@
         <div class="container">
           <div class="row">
             
+            <!--Meetups-->
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-image meetups waves-effect waves-block waves-light">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator">Meetups <i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Get to know your community</p>
+                  <p><a href="#">Monthly</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">Meetups <i class="mdi-navigation-close right"></i></span>
+                  <p>Enventure Meetups give entrepreneurs an avenue to connect with peers outside of your lab, class, or office. Use these meetups to build a multi-disciplinary team, build relationships with experienced entrepreneurs, or find a job you didn’t know existed.</p>
+                  <p><a href="#">Learn More</a></p>
+                </div>
+              </div>
+            </div>
+
             <!--Dialog-->
             <div class="col s12 m6 l4">
               <div class="card">
                 <div class="card-image foundations waves-effect waves-block waves-light">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Dialog <i class="mdi-navigation-more-vert right"></i></span>
-                  <p><a href="#">Register</a></p>
+                  <span class="card-title activator">Dialog <i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Hear from locals who walk the walk</p>
+                  <p><a href="#">Quarterly</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Dialog <i class="mdi-navigation-close right"></i></span>
-                  <p>Where scientists, physicians, entrepreneurs, and students share their stories and big ideas.</p>
-                  <p><a href="#">Register</a></p>
+                  <span class="card-title">Dialog <i class="mdi-navigation-close right"></i></span>
+                  <p>Dialog is a forum where scientists and physicians, entrepreneurs and investors, students and seasoned mentors alike share their stories, their path to industry, and their big ideas with Houston's life science entrepreneurship community.</p>
+                  <p><a href="#">Learn More</a></p>
                 </div>
               </div>
             </div>
@@ -139,18 +165,18 @@
             <!--bioventures-->
             <div class="col s12 m6 l4">
               <div class="card">
-                <div class="card-image dialog waves-effect waves-block waves-light">
+                <div class="card-image bioventures waves-effect waves-block waves-light">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">bio<enventure>ventures</enventure> <i class="mdi-navigation-more-vert right"></i></span>
+                  <span class="card-title activator"><span style="font-weight:300">bio</span><enventure>ventures</enventure> <i class="mdi-navigation-more-vert right"></i></span>
                   <p>Take your idea from concept to company</p>
-                  <p><a href="#">Spring 2015</a></p>
+                  <p><a href="#">Spring</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">bio<enventure>ventures</enventure> <i class="mdi-navigation-close right"></i></span>
+                  <span class="card-title"><span style="font-weight:300">bio</span><enventure>ventures</enventure> <i class="mdi-navigation-close right"></i></span>
                   <p>BioVentures gives students practical experience commercializing their <strong>ideas</strong> or <strong>existing IP</strong>.</p>
                   <p>Mentored by experienced life science entrepreneurs, each team develops a business plan for our investor pitch day.</p>
-                  <p><a href="#">What role will you take?</a></p>
+                  <p><a href="#">Learn More</a></p>
                 </div>
               </div>
             </div>
@@ -158,15 +184,17 @@
             <!--Foundations-->
             <div class="col s12 m6 l4">
               <div class="card">
-                <div class="card-image mgmt waves-effect waves-block waves-light">
+                <div class="card-image foundations waves-effect waves-block waves-light">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Foundations <i class="mdi-navigation-more-vert right"></i></span>
-                  <p><a href="#">This is a link</a></p>
+                  <span class="card-title activator">Foundations <i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Entry-level startup curriculum for budding entrepreneurs</p>
+                  <p><a href="#">Monthly</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Foundations <i class="mdi-navigation-close right"></i></span>
+                  <span class="card-title">Foundations <i class="mdi-navigation-close right"></i></span>
                   <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <p><a href="#">Learn More</a></p>
                 </div>
               </div>
             </div>
@@ -178,14 +206,14 @@
                 <div class="card-image mgmt waves-effect waves-block waves-light">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">MGMT 633 <i class="mdi-navigation-more-vert right"></i></span>
-                  <p><a href="#">Register</a></p>
+                  <span class="card-title activator">MGMT 633 <i class="mdi-navigation-more-vert right"></i></span>
+                  <p>The class that started it all...</p>
+                  <p><a href="#">Spring</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">MGMT 633 <i class="mdi-navigation-close right"></i></span>
-                  <p>MGMT / BIOE 633 Course Info</p>
-                  <p>March - April</p>
-                  <p><a href="#">Register</a></p>
+                  <span class="card-title">MGMT 633 <i class="mdi-navigation-close right"></i></span>
+                  <p>Jack Gill, a silicon valley VC, and George McLendon, former Provost at Rice University, teach this inspiring featuring top local entrepreneurs.</p>
+                  <p><a href="#">Learn More</a></p>
                 </div>
               </div>
             </div>
@@ -196,13 +224,13 @@
                 <div class="card-image blank waves-effect waves-block waves-light">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Your Class Here <i class="mdi-navigation-more-vert right"></i></span>
-                  <p><a href="#">Register</a></p>
+                  <span class="card-title activator">Your Class Here <i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Be a part of the <enventure>enventure</enventure> ecosystem.</p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Foundations <i class="mdi-navigation-close right"></i></span>
-                  <p>Be a part of the <enventure>enventure</enventure> ecosystem.</p>
-                  <p><a href="#">Register</a></p>
+                  <span class="card-title">Your Class Here <i class="mdi-navigation-close right"></i></span>
+                  <p>Our curriculum is constantly growing. Let us know about your school's offerings so we can share it with the community.</p>
+                  <p><a href="#">Learn More</a></p>
                 </div>
               </div>
             </div>
@@ -218,9 +246,9 @@
                     <i class="mdi-social-school"></i>
                   </div>
                   <div class="bullet-content">
-                    <h4>free + open</h4>
+                    <h4>free +<br>open</h4>
                   </div>
-                  <p class="flow-text">We know what it's like to be a student or budding entrepreneur. That's why all of our events are free: so there's no reason you can't find the resources you need.</p>                  
+                  <p>We know what it's like to be a student or budding entrepreneur. That's why all of our events are <strong>free</strong>: so there's no reason you can't have the resources you need.</p>                  
                 </li>  
                 <li class="bullet col s12 l4">
                   <div class="bullet-icon bullet-icon-2">
@@ -229,7 +257,7 @@
                   <div class="bullet-content">
                     <h4>healthcare focused</h4>
                   </div>
-                   <p class="flow-text">We love entrepreneurs of all sorts. But healthcare entrepreneurs have a <strong>special set of challenges</strong> that we need to talk about.</p>
+                   <p>We love entrepreneurs of all sorts. But healthcare entrepreneurs have a <strong>special set of challenges</strong> that we need to talk about.</p>
                 </li>
                 <li class="bullet col s12 l4">
                   <div class="bullet-icon bullet-icon-3">
@@ -238,7 +266,7 @@
                   <div class="bullet-content">
                     <h4>community driven</h4>
                   </div>
-                  <p class="flow-text">Enventure is run by people like you. Send us an <a href="mailto:team@enventure.org">email</a> and learn how you can <strong>get involved</strong>. We love to help.</p>                
+                  <p>Enventure is run by people like you. Send us an <a href="mailto:team@enventure.org">email</a> and learn how you can <strong>get involved</strong>. We want to hear your ideas.</p>            
                 </li> 
               </ul>
             </div>
@@ -252,22 +280,22 @@
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            <h5 class="white-text">Write us a letter</h5>
+            <p class="white-text">6500 Main St #1040<br>
+            Houston, TX 77030</p>
           </div>
           <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            <h5 class="white-text">Social</h5>
+            <li><a target="blank" href="http://www.facebook.com/enventuremed">Facebook</a></li>
+            <li><a target="blank" href="http://www.twitter.com/enventuremed">Twitter</a></li>
+            <li><a target="blank" href="http://www.meetup.com/enventure">Meetup</a></li>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
         <div class="container">
-        © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        © 2014 enventure.org, llc
+        <span class="right">Questions? We love email! <a class="white-link" href="mailto:team@enventure.org">team@enventure.org</a></span>
         </div>
       </div>
     </footer>  

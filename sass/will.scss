@@ -1,18 +1,24 @@
 //NOTE: inport custom variables immediately after materialize variables
-
+//NOTE: get rid of roboto from materialize
 //nav
 nav{
   //background-color:$w3-color;
   @extend .z-depth-1;
 }
 
+//_global
+blockquote {
+  border-left: 5px solid $env-color;
+}
+
 #social{
   position:absolute;
   bottom:1rem;
   a{
-    height:32px;
     display:inline-block;
     object{
+      height:32px;
+      display:inline-block;
       @include transition(.25s ease);
       &:hover{
       @extend .z-depth-4;
@@ -66,32 +72,37 @@ h1, h2, h3, h4, h5, h6 {
 
 //_cards
 .card {
-  height: 16rem;
-    color: $font-color;
-    h1 {
-      font-size: 1.71rem;
-      line-height:1.5;
-    }
-    h2 {
-      font-size: 1.14rem;
-    }
-    h3 {
-      font-size: 1rem;
-    }
-    p {
-      font-size: 0.8rem;
-      display: block;
-    }
-    a {
-      color: $card-link-color;
-      &:hover { color: $card-link-hover; }
-      padding-top:10px;
-    }
+  $card-height:28rem;
+  //height: $card-height;
+  color: $font-color;
+
+  .card-title{
+    color: $b2-color;
+    font-weight:900;
+  }
+
+  h1 {
+    font-size: 1.71rem;
+    line-height:1.5;
+  }
+  h2 {
+    font-size: 1.14rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+    display: block;
+  }
+  a {
+    color: $card-link-color;
+    &:hover { color: $card-link-hover; }
+    padding-top:10px;
+  }
 
   .card-content{
     p {
-      font-size: 0.8rem;
-      display: block;
       margin: .8em 0 1em 0;
     }
   }
@@ -101,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-size: cover;
     //height:8.84rem;
-    height:7.16rem;
+    height:$card-height*.4472;
     &.dialog{
       background-image: url(../img/byob-trans-24.png);
       background-color:$env-color;
@@ -109,6 +120,14 @@ h1, h2, h3, h4, h5, h6 {
     &.foundations{
       background-image: url(../img/byob-trans-24.png);
       @extend .deep-purple, .lighten-3;
+    }
+    &.meetups{
+      background-image: url(../img/byob-trans-24.png);
+      @extend .red, .lighten-2;
+    }
+    &.bioventures{
+      background-image: url(../img/byob-trans-24.png);
+      @extend .deep-orange, .darken-1;
     }
     &.mgmt{
       background-image: url(../img/byob-trans-24.png);
@@ -139,11 +158,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media #{$large-and-down} {
+//@media #{$large-and-down} {
   header, main, footer {
     padding-left: 0;
   }
-}
+//}
 
 //_form
 .input-field label{
@@ -160,6 +179,10 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
   &:hover {
     background-color: lighten($accent-color, 5%);
   }
+}
+
+.footer-copyright{
+  object{height:32px}
 }
 
 .frosted{
@@ -213,6 +236,7 @@ a.button-collapse.top-nav{
   font-family: $serif;
   font-size:1.1em;
   color:$env-color;
+  font-weight:300;
 }
 
 #title{
@@ -222,11 +246,21 @@ a.button-collapse.top-nav{
 light{
   color:$b2-color;
 }
+accent{
+  color:$accent-color;
+}
 
 a {
   color:$env-color;
   &:hover, &:active, &:focus{
     color:$accent-color;
+  }
+  font-weight:500;
+  &.white-link{
+    color:$w1-color;
+    &:hover, &:active, &:focus{
+      color:$accent-color;
+    }
   }
 }
 
@@ -348,32 +382,36 @@ a {
   }
 
 footer {
-  background-color: color("light-blue", "lighten-2");
+  background-color: color("light-blue", "lighten-3");
+}
+
+footer .footer-copyright {
+  background-color: $env-color;
 }
 
 nav {
   ul li:hover, ul li.active {
-    background-color: color("light-blue", "lighten-1");
+    background-color: color("light-blue", "lighten-3");
   }
 }
 
 .header {
-  color: color("light-blue", "lighten-2");
+  color: color("light-blue", "lighten-3");
 }
 
 ul.side-nav .collapsible-body li.active {
-  background-color: color("light-blue", "lighten-2");
+  background-color: color("light-blue", "lighten-3");
 }
 
 .promo{
   i {
-    color: color("light-blue", "lighten-2");
+    color: color("light-blue", "lighten-3");
   }
 }
 
 #front-page-nav {
   a {
-      color: color("light-blue", "lighten-2");
+      color: color("light-blue", "lighten-3");
     }
   li {
     &:hover {
@@ -397,6 +435,6 @@ ul.side-nav .collapsible-body li.active {
   }
 
   .txlive-langselector-toggle {
-    border-bottom: 2px solid color("light-blue", "lighten-2");
+    border-bottom: 2px solid color("light-blue", "lighten-3");
   }
 }

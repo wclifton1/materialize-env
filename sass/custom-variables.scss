@@ -13,7 +13,10 @@ $w3-color:rgba(white,.54);
 $w4-color:rgba(white,.26);
 $background-color:#ebebeb;
 
+//_typography
+$nl-weight: 300;
 $base-font-color:$b2-color;
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,300,900);
 
 $sliding-menu-border-color: $b1-color;
 $sliding-menu-background: lighten($sliding-menu-border-color, 5);
@@ -37,9 +40,6 @@ $sans-serif: 'Roboto', sans-serif;
 $serif: 'Georgia', Times, "Times New Roman", serif;
 
 $icon-size: 56px;
-
-//_typography
-$nl-weight: 300;
 
 //_cards
 $default-color: $env-color;
