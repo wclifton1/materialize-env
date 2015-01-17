@@ -1,11 +1,5 @@
 //NOTE: inport custom variables immediately after materialize variables
 
-#enventure, enventure {
-  font-family: $serif;
-  font-size:1.45em;
-  color:$env-color;
-}
-
 //nav
 nav{
   //background-color:$w3-color;
@@ -39,31 +33,42 @@ h1, h2, h3, h4, h5, h6 {
 
 //_cards
 .card {
-  color: $font-color;
-  h1 {
-    font-size: 1.71rem;
-    line-height:1.5;
-  }
-  h2 {
-    font-size: 1.14rem;
-  }
-  h3 {
-    font-size: 1rem;
-  }
-  p {
-    font-size: 0.8rem;
-  }
-  a {
-    color: $card-link-color;
-    &:hover { color: $card-link-hover; }
-  }
   height: 16rem;
+    color: $font-color;
+    h1 {
+      font-size: 1.71rem;
+      line-height:1.5;
+    }
+    h2 {
+      font-size: 1.14rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.8rem;
+      display: block;
+    }
+    a {
+      color: $card-link-color;
+      &:hover { color: $card-link-hover; }
+      padding-top:10px;
+    }
+
+  .card-content{
+    p {
+      font-size: 0.8rem;
+      display: block;
+      margin: .8em 0 1em 0;
+    }
+  }
 
   .card-image {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height:8.84rem;
+    //height:8.84rem;
+    height:7.16rem;
     &.dialog{
       background-image: url(../img/byob-trans-24.png);
       background-color:$env-color;

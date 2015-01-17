@@ -5042,9 +5042,6 @@ strong {
 small {
   font-size: 75%; }
 
-.light, footer .footer-copyright {
-  font-weight: 300; }
-
 .flow-text {
   font-weight: 300; }
   @media only screen and (min-width: 360px) {
@@ -10934,11 +10931,6 @@ Copyright (c) 2014 Daniel Eden
   .m-scene .scene_element--fadeinright-wide {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight; } }
-#enventure, enventure {
-  font-family: "Georgia", Times, "Times New Roman", serif;
-  font-size: 1.45em;
-  color: #0091ea; }
-
 html {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -10961,8 +10953,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
 .card {
-  color: white;
-  height: 16rem; }
+  height: 16rem;
+  color: rgba(0, 0, 0, 0.87); }
   .card h1 {
     font-size: 1.71rem;
     line-height: 1.5; }
@@ -10971,16 +10963,22 @@ h1, h2, h3, h4, h5, h6 {
   .card h3 {
     font-size: 1rem; }
   .card p {
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    display: block; }
   .card a {
-    color: #0091ea; }
+    color: #0091ea;
+    padding-top: 10px; }
     .card a:hover {
       color: #FF4081; }
+  .card .card-content p {
+    font-size: 0.8rem;
+    display: block;
+    margin: .8em 0 1em 0; }
   .card .card-image {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 8.84rem; }
+    height: 7.16rem; }
     .card .card-image.dialog {
       background-image: url(../img/byob-trans-24.png);
       background-color: #0091ea; }
