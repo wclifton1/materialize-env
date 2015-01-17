@@ -49,3 +49,9 @@ $footer-font-color: $b1-color;
 $card-link-color: $env-color;
 $card-link-hover: $accent-color;
 $card-height:150px;
+
+//size
+$smallest-screen: 480px;
+$large-and-down: "only screen and (max-width : #{$large-screen})";
+$smallest-and-down: "only screen and (max-width : #{$smallest-screen})";
+

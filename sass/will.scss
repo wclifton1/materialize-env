@@ -57,12 +57,13 @@ h1, h2, h3, h4, h5, h6 {
     color: $card-link-color;
     &:hover { color: $card-link-hover; }
   }
+  height: 16rem;
 
   .card-image {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height:200px;
+    height:8.84rem;
     &.dialog{
       background-image: url(../img/byob-trans-24.png);
       background-color:$env-color;
@@ -85,6 +86,24 @@ h1, h2, h3, h4, h5, h6 {
   // }
   .card-reveal{
     width:100%;
+  }
+}
+
+//_sidenav
+@media #{$large-and-down} {
+  ul.side-nav.fixed {
+    left: -1 * ($sidenav-width + 10);
+
+    &.right-aligned {
+      right: -1 * ($sidenav-width + 10);
+      left: auto;
+    }
+  }
+}
+
+@media #{$large-and-down} {
+  header, main, footer {
+    padding-left: 0;
   }
 }
 
@@ -127,8 +146,9 @@ a.button-collapse.top-nav{
   left: 0;
   margin-left: 0;
   margin-top: 1rem;
-  @media #{$large-and-up} {
   display:none;
+  @media #{$large-and-down} {
+    display:inherit;
   }
 }
 
@@ -140,9 +160,8 @@ a.button-collapse.top-nav{
   }
 }
 
-//WILL's styles
 #subscribe{
-position:relative;
+  position:relative;
 }
 
 #subbtn{
@@ -150,13 +169,16 @@ position:relative;
   position:absolute;
   right:7.5px;
 }
+
+//WILL's styles
 #enventure, enventure {
   font-family: $serif;
   font-size:1.1em;
   color:$env-color;
 }
+
 #title{
-    font-size:1.45em;
+  font-size:1.45em;
 }
 
 light{
@@ -169,6 +191,10 @@ a {
     //color:$accent-color;
   }
 }
+
+// .container{
+//   width:100%;
+// }
 
 #index-banner {
   .container {
@@ -189,7 +215,6 @@ a {
   h4 {
     margin-bottom: 0;
   }
-
 }
 
 #bioventures-banner {
@@ -209,10 +234,21 @@ a {
 
 .env-header{
   position:absolute;
+  padding-right: 1.5rem;
   bottom:0;
   color: #FFF;
   h2{font-size: $h2-fontsize*.8; line-height: 1.1*$h2-fontsize*.8; margin: 0 0 ($h2-fontsize*.8 / 2.5) 0;}
-  h4 {font-size: $h4-fontsize*.8; line-height: 1.1*$h4-fontsize*.8; margin: ($h4-fontsize*.8 / 2) 0 ($h4-fontsize*.8 / 2.5) 0; letter-spacing: .05rem}
+  h4 {
+    font-size: 1.66rem; line-height: 1.1*1.66rem; margin: (1.66rem / 2) 0 (1.66rem / 2.5) 0; letter-spacing: .05rem;
+    @media #{$smallest-and-down}{
+      display:none;
+    }
+  }
+  light{
+    @media #{$smallest-and-down}{
+      display:none;
+    }
+  }
 }
 
 .mission {
