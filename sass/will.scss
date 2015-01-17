@@ -6,18 +6,37 @@ nav{
   @extend .z-depth-1;
 }
 
+#social{
+  position:absolute;
+  bottom:1rem;
+  a{
+    height:32px;
+    display:inline-block;
+    object{
+      @include transition(.25s ease);
+      &:hover{
+      @extend .z-depth-4;
+    }
+    }
+    
+  }
+  &:hover, &.active {
+    background-color: white;
+  }
+}
+
 //_typography
 html{ 
   @media only screen and (min-width: 0) {
-      font-size: 16px;
+    font-size: 16px;
   }
   
   @media only screen and (min-width: $medium-screen) {
-      font-size: 18px;
+    font-size: 18px;
   }
   
   @media only screen and (min-width: $large-screen) {
-      font-size: 19px;
+    font-size: 19px;
   }
   
   font-family: $sans-serif;
@@ -30,6 +49,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .light { font-weight: 300; }
+
+.flow-text{
+  font-weight: 300;
+  $i: 0;
+  @while $i <= $intervals {
+    @media only screen and (min-width : 360 + ($i * $interval-size)) {
+      font-size: 1.2rem * (1 + (.0075 * $i));
+    }
+    @media only screen and (min-width : 0 + ($i * $interval-size)) {
+      line-height: .8rem * (1 + (.05 * $i));
+    }
+    $i: $i + 1;
+  }
+}
 
 //_cards
 .card {
@@ -193,7 +226,7 @@ light{
 a {
   color:$env-color;
   &:hover, &:active, &:focus{
-    //color:$accent-color;
+    color:$accent-color;
   }
 }
 
@@ -262,7 +295,7 @@ a {
       margin-bottom: 1.5em;
 
       .bullet-icon {
-        @extend .btn-floating;
+        @extend .btn, .btn-floating, .btn-large;
         float:left;
       }
 
@@ -298,12 +331,14 @@ a {
       margin-bottom: 2em;
       }
 
-      h3 {
+      h4 {
       //font-size: $icon-size /2.5;
-      padding-top: $icon-size /7;
+      //padding-top: $icon-size /7;
+      margin-top: 0;
       margin-bottom: $icon-size /6;
-      border-bottom: 1px solid $b3-color;
+      //border-bottom: 1px solid $b3-color;
       display: inline-block;
+      color:$b2-color;
       }
     }
   }
