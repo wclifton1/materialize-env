@@ -186,6 +186,12 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
   }
 }
 
+a.btn{
+  &:hover, &:active, &:focus {
+    color: white;
+  }
+}
+
 .footer-copyright{
   object{height:32px}
 }

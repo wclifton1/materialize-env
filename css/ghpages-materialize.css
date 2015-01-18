@@ -11147,6 +11147,9 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
   .btn-floating:hover, .mission .bullets .bullet-icon:hover {
     background-color: #ff5a92; }
 
+a.btn:hover, a.btn-large:hover, .mission .bullets a.bullet-icon:hover, a.btn:active, a.btn-large:active, .mission .bullets a.bullet-icon:active, a.btn:focus, a.btn-large:focus, .mission .bullets a.bullet-icon:focus {
+  color: white; }
+
 .footer-copyright object {
   height: 32px; }
 
