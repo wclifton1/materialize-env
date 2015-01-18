@@ -459,6 +459,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/billy-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60031,
+		"inputAbbreviatedPath": "\/img\/billy-sm.jpg",
+		"outputAbbreviatedPath": "\/img\/billy-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/byob-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51933,
+		"inputAbbreviatedPath": "\/img\/byob-sm.jpg",
+		"outputAbbreviatedPath": "\/img\/byob-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/byob-trans-24.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -481,17 +503,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/byob.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 123316,
-		"inputAbbreviatedPath": "\/img\/byob.jpg",
-		"outputAbbreviatedPath": "\/img\/byob.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/idea-machine-white.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -499,6 +510,39 @@
 		"initialSize": 9819,
 		"inputAbbreviatedPath": "\/img\/idea-machine-white.png",
 		"outputAbbreviatedPath": "\/img\/idea-machine-white.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/jack-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 96538,
+		"inputAbbreviatedPath": "\/img\/jack-sm.jpg",
+		"outputAbbreviatedPath": "\/img\/jack-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/morning-meetup-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66012,
+		"inputAbbreviatedPath": "\/img\/morning-meetup-sm.jpg",
+		"outputAbbreviatedPath": "\/img\/morning-meetup-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/possibilities-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.37369e+06,
+		"inputAbbreviatedPath": "\/img\/possibilities-sm.jpg",
+		"outputAbbreviatedPath": "\/img\/possibilities-sm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -514,13 +558,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/tmc.jpg": {
+	"\/img\/tmc-sm.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 257080,
-		"inputAbbreviatedPath": "\/img\/tmc.jpg",
-		"outputAbbreviatedPath": "\/img\/tmc.jpg",
+		"initialSize": 64844,
+		"inputAbbreviatedPath": "\/img\/tmc-sm.jpg",
+		"outputAbbreviatedPath": "\/img\/tmc-sm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -106,32 +106,46 @@ h1, h2, h3, h4, h5, h6 {
       margin: .8em 0 1em 0;
     }
   }
-
+//make them 780px wide
   .card-image {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height:8.84rem;
     height:$card-height*.4472;
     &.dialog{
-      background-image: url(../img/byob-trans-24.png);
-      background-color:$env-color;
+      $hero-background-top: rgba($env-color, .6); 
+      $hero-background-bottom: rgba($env-color, .4);
+      $gradient-angle: 0deg;
+      $hero-image: '../img/billy-sm.jpg';
+      @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-bottom, $hero-background-top), url($hero-image));
     }
     &.foundations{
-      background-image: url(../img/byob-trans-24.png);
-      @extend .deep-purple, .lighten-3;
+      $hero-background-top: rgba(color('deep-purple','lighten-3'), .6); 
+      $hero-background-bottom: rgba(color('deep-purple','lighten-3'), .4);
+      $gradient-angle: 0deg;
+      $hero-image: '../img/byob-sm.jpg';
+      @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-bottom, $hero-background-top), url($hero-image));
     }
     &.meetups{
-      background-image: url(../img/byob-trans-24.png);
-      @extend .red, .lighten-2;
+      $hero-background-top: rgba(color('red','lighten-2'), .6); 
+      $hero-background-bottom: rgba(color('red','lighten-2'), .4);
+      $gradient-angle: 0deg;
+      $hero-image: '../img/morning-meetup-sm.jpg';
+      @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-bottom, $hero-background-top), url($hero-image));
     }
     &.bioventures{
-      background-image: url(../img/byob-trans-24.png);
-      @extend .deep-orange, .darken-1;
+      $hero-background-top: rgba(color('deep-orange','darken-1'), .6); 
+      $hero-background-bottom: rgba(color('deep-orange','darken-1'), .4);
+      $gradient-angle: 0deg;
+      $hero-image: '../img/possibilities-sm.jpg';
+      @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-bottom, $hero-background-top), url($hero-image));
     }
     &.mgmt{
-      background-image: url(../img/byob-trans-24.png);
-      @extend .pink, .darken-3;
+      $hero-background-top: rgba(color('pink','darken-3'), .6); 
+      $hero-background-bottom: rgba(color('pink','darken-3'), .4);
+      $gradient-angle: 0deg;
+      $hero-image: '../img/jack-sm.jpg';
+      @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-bottom, $hero-background-top), url($hero-image));
     }
     &.blank{
       background-image: url(../img/byob-trans-24.png);
