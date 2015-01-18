@@ -301,7 +301,7 @@ a {
   $hero-background-top: rgba(white, 0); 
   $hero-background-bottom: rgba(white, 0.9);
   $gradient-angle: 0deg;
-  $hero-image: '../img/2015.jpg';
+  $hero-image: '../img/2015-sm.jpg';
   @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top, $hero-background-top), url($hero-image));
   background-color:$env-color;
   background-repeat: no-repeat;

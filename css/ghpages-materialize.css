@@ -11224,9 +11224,9 @@ a {
 
 #index-banner {
   position: relative;
-  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015.jpg");
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
   background-color: #0091ea;
   background-repeat: no-repeat;
   background-size: cover;
