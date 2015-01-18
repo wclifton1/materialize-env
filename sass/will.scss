@@ -72,8 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 
 //_cards
 .card {
-  $card-height:28rem;
-  //height: $card-height;
+  $card-height:18rem;
+  height: $card-height;
   color: $font-color;
 
   .card-title{
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    //height:8.84rem;
+    height:8.84rem;
     height:$card-height*.4472;
     &.dialog{
       background-image: url(../img/byob-trans-24.png);
@@ -143,6 +143,11 @@ h1, h2, h3, h4, h5, h6 {
   // }
   .card-reveal{
     width:100%;
+  }
+
+  .card-action {
+    border-top: none;
+    padding: 0;
   }
 }
 
