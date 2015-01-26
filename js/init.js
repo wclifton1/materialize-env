@@ -59,25 +59,23 @@
 
 
     // Plugin initialization
-    $('.slider').slider({full_width: true});
-    $('.dropdown-button').dropdown({hover: false});
-    if (window_width > 600) {
-      $('ul.tabs').tabs();
-    }
-    else {
-      $('ul.tabs').hide();
-    }
-    $('.tab-demo').show().tabs();
-    $('.parallax').parallax();
-    $('.modal-trigger').leanModal();
+    // $('.slider').slider({full_width: true});
+    // $('.dropdown-button').dropdown({hover: false});
+    // if (window_width > 600) {
+    //   $('ul.tabs').tabs();
+    // }
+    // else {
+    //   $('ul.tabs').hide();
+    // }
+    // $('.tab-demo').show().tabs();
+    // $('.parallax').parallax();
+    // $('.modal-trigger').leanModal();
     $('.tooltipped').tooltip({"delay": 300});
-    $('.collapsible-accordion').collapsible();
-    
-    $('.collapsible-expandable').collapsible({"accordion": false});
-    $('.materialboxed').materialbox();
-    $('.scrollspy').scrollSpy();
-    $('.button-collapse').sideNav({'menuWidth': 400, activationWidth: 70});
-    $('.datepicker').pickadate();
+    $('.collapsible').collapsible();
+    // $('.materialboxed').materialbox();
+    // $('.scrollspy').scrollSpy();
+    // $('.button-collapse').sideNav({'menuWidth': 400, activationWidth: 70});
+    // $('.datepicker').pickadate();
     $('select').not('.disabled').material_select();
 
 

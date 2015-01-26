@@ -1,5 +1,8 @@
 //NOTE: inport custom variables immediately after materialize variables
 //NOTE: get rid of roboto from materialize
+//NOTE: materialize.js is a compiled version of all the separate *.js files, can slim it down. init.js initializes all of them, or you can do it individually
+
+
 //nav
 nav{
   //background-color:$w3-color;
