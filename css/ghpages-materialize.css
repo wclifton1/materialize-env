@@ -10952,10 +10952,10 @@ h1, h2, h3, h4, h5, h6 {
 .medium {
   font-weight: 500; }
 
-.heavy {
+.heavy, h1 {
   font-weight: 700; }
 
-.light, footer .footer-copyright {
+.light, footer .footer-copyright, h1 {
   color: rgba(0, 0, 0, 0.54); }
 
 .card {
