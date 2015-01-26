@@ -261,6 +261,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/foundation.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/foundation.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/images\/Alan.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -959,6 +968,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/mgmt633.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mgmt633.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/mstile-144x144.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1649,12 +1667,12 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/tmp.js": {
+	"\/sync works.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/tmp.js",
-		"outputAbbreviatedPath": "\/min\/tmp-min.js",
+		"inputAbbreviatedPath": "\/sync works.js",
+		"outputAbbreviatedPath": "\/min\/sync works-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
