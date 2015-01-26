@@ -10946,8 +10946,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 300; }
 
-.light, footer .footer-copyright {
+.thin {
   font-weight: 300; }
+
+.medium {
+  font-weight: 500; }
+
+.heavy {
+  font-weight: 700; }
+
+.light, footer .footer-copyright {
+  color: rgba(0, 0, 0, 0.54); }
 
 .flow-text {
   font-weight: 300; }
