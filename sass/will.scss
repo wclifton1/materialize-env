@@ -54,24 +54,29 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
+h1{
+  @extend .light;
+  @extend .heavy;
+}
+
 .thin {font-weight: 300}
 .medium {font-weight: 500}
 .heavy {font-weight: 700}
 .light{color:$b2-color}
 
-.flow-text{
-  font-weight: 300;
-  $i: 0;
-  @while $i <= $intervals {
-    @media only screen and (min-width : 360 + ($i * $interval-size)) {
-      font-size: 1.2rem * (1 + (.0075 * $i));
-    }
-    @media only screen and (min-width : 0 + ($i * $interval-size)) {
-      line-height: .8rem * (1 + (.05 * $i));
-    }
-    $i: $i + 1;
-  }
-}
+// .flow-text{
+//   font-weight: 300;
+//   $i: 0;
+//   @while $i <= $intervals {
+//     @media only screen and (min-width : 360 + ($i * $interval-size)) {
+//       font-size: 1.2rem * (1 + (.0075 * $i));
+//     }
+//     @media only screen and (min-width : 0 + ($i * $interval-size)) {
+//       line-height: .8rem * (1 + (.05 * $i));
+//     }
+//     $i: $i + 1;
+//   }
+// }
 
 //_cards
 .card {
