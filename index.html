@@ -46,7 +46,7 @@
     <main>
       <div class="section scene_element scene_element--fadein" id="index-banner">
         <div class="container">
-          <a id="about" href="about.html" class="frosted btn btn-floating btn-large tooltipped" data-position="bottom" data-tooltip="we love to help"><i class="mdi-communication-textsms"></i></a>
+          <!--a id="about" href="about.html" class="frosted btn btn-floating btn-large tooltipped" data-position="bottom" data-tooltip="we love to help"><i class="mdi-communication-textsms"></i></a-->
           <div class="env-header">
             <h4 id="tagline">houston's home for entrepreneurs.</h4>
             <h2><enventure id="title">enventure.</enventure> <light>2015</light></h2>
@@ -60,7 +60,7 @@
             <div class="col s12 m4">
               <blockquote>sign up for our newsletter and join the community</blockquote>
             </div>
-            <form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+            <form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe" target="_blank" novalidate="">
               <div class="input-field col s10 m7">
                 <i class="mdi-content-send prefix"></i>
                 <input id="email" name="EMAIL" type="email" class="validate">
@@ -76,29 +76,49 @@
 
       <div class="scene_element scene_element--fadeinup scene_element--delayed">
         <div class="container">
-          <div class="collection">
-            <a href="#!" class="collection-item active">Event 1</a>
-            <a href="#!" class="collection-item">Event 2</a>
-            <a href="#!" class="collection-item">Event 3</a>
-            <a href="#!" class="collection-item">Event 4</a>
+          <h3 class="medium light">Upcoming Events</h3>
+
+          <div class="row event">
+            <div class="col s12 m2 l1 hide-on-small-only">
+              <h3>5</h3>
+              <h5>Feb</h5>
+            </div>
+            <div class="col s12 hide-on-med-and-up">
+              <h5>Thursday, Feb 5</h5>
+            </div>
+            <div class="col s12 m10 l11">
+              <a href="http://www.eventbrite.com/e/you-dont-know-jack-george-a-fireside-chat-tickets-15530120007" target="_blank">
+                <div class="card-panel pink darken-3">
+                  <h5 class="medium">Meet the Faculty: You Don't Know Jack and George</h5>
+                  <p class="thin">6:00p at Nouveau Antique Art Bar</p>
+                  <p>Meet Jack Gill, co-founder of Vanguard Ventures and George McLendon, former Provost of Rice University at this intimate happy hour. This is your chance to get to know the faculty for 'Life Science Entrepreneurship: the Role of Physicians, Scientist, and Engineers in High-Tech Startups'. This free class begins in March and is open to anyone interested in getting involved with life science entrepreneurship.</p>
+                  <button class="waves-effect waves-light btn frosted">Learn More + RSVP</button>
+                </div>
+              </a>
+            </div>
           </div>
 
-          <ul class="collapsible">
-            <li>
-              <div class="collapsible-header"><i class="mdi-image-filter-drama"></i>First</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="mdi-maps-place"></i>Second</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="mdi-social-whatshot"></i>Third</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-            </li>
-          </ul>
+          <div class="row event">
+            <div class="col s12 m2 l1 hide-on-small-only">
+              <h3>12</h3>
+              <h5>Feb</h5>
+            </div>
+            <div class="col s12 hide-on-med-and-up">
+              <h5>Thursday, Feb 12</h5>
+            </div>
+            <div class="col s12 m10 l11">
+              <a href="http://www.meetup.com/enventure/events/214620882/" target="_blank">
+                <div class="card-panel deep-purple lighten-3">
+                  <h5 class="medium">Network Now: How Networking Will Jump Start Your Career</h5>
+                  <p class="thin">6:30p at Platform Houston</p>
+                  <p>Networking is an essential skill that can unlock opportunities for your career regardless of the path or industry you pursue. Jacqueline Northcut, CEO of BioHouston, will lead our practical panel discussion.</p>
+                  <button class="waves-effect waves-light btn frosted">Learn More + RSVP</button>
+                </div>
+              </a>
+            </div>
+          </div>
+
         </div>
-      </div>
 
       <div class="scene_element scene_element--fadeinup scene_element--delayed">
         <div class="container">
@@ -185,8 +205,8 @@
                 <div class="card-image mgmt waves-effect waves-block waves-light">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator">MGMT 633 <i class="mdi-navigation-more-vert right"></i></span>
-                  <h6>The class that started it all...</h6>
+                  <span class="card-title activator">Life Science Entrepreneurship<i class="mdi-navigation-more-vert right"></i></span>
+                  <h6>MGMT 633: The class that started it all... w/ Jack Gill and George McLendon</h6>
                   <p><a href="#">Spring</a></p>
                 </div>
                 <div class="card-reveal">
@@ -258,13 +278,13 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Write us a letter</h5>
-            <p class="white-text">6500 Main St #1040<br>
+          <div class="col m6 s12">
+            <h5>Write us a letter</h5>
+            <p>6500 Main St #1040<br>
             Houston, TX 77030</p>
           </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Social</h5>
+          <div class="col m4 offset-m2 s12">
+            <h5>Social</h5>
             <li><div class="fb-follow" data-href="https://www.facebook.com/enventuremed" data-width="300" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div></li>
             <li><a href="https://twitter.com/enventuremed" class="twitter-follow-button" data-show-count="false">Follow @enventuremed</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
             <li><a class="waves-effect waves-light btn" target="blank" href="http://www.meetup.com/enventure"><i class="mdi-social-people left"></i>Meetup</a></li>

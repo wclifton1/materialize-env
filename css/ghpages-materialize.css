@@ -1786,7 +1786,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -1893,8 +1892,7 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -1916,7 +1914,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -1974,12 +1971,10 @@ th {
   padding: 0; }
 
 html {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box; }
+  box-sizing: border-box; }
 
 *, *:before, *:after {
-  -moz-box-sizing: inherit;
-       box-sizing: inherit; }
+  box-sizing: inherit; }
 
 ul {
   list-style-type: none; }
@@ -1989,12 +1984,15 @@ a {
   text-decoration: none; }
 
 .valign-wrapper {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -2013,7 +2011,7 @@ li {
 .z-depth-1-half, .btn:hover, .btn-large:hover, .mission .bullets .bullet-icon:hover, .btn-floating:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
-.z-depth-2 {
+.z-depth-2, .event .card-panel:hover {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .z-depth-3 {
@@ -2207,7 +2205,6 @@ span.badge {
   line-height: inherit;
   color: #757575;
   float: right;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
   span.badge.new {
     font-weight: 300;
@@ -4545,7 +4542,6 @@ span.badge {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     float: left;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 0.75rem; }
     .row .col.s1 {
@@ -4938,7 +4934,6 @@ small {
   overflow: hidden;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 2px;
   background-clip: padding-box; }
@@ -4991,7 +4986,6 @@ small {
     padding: 16px;
     border-radius: 0 0 2px 2px;
     background-clip: padding-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box; }
     .card .card-content p {
       margin: 0;
@@ -5007,7 +5001,6 @@ small {
     background-color: #FFF;
     top: 100%;
     height: 100%;
-    -moz-box-sizing: border-box;
     box-sizing: border-box; }
     .card .card-reveal .card-title {
       cursor: pointer;
@@ -5265,7 +5258,6 @@ small {
   overflow: hidden;
   display: none;
   border-bottom: 1px solid #ddd;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
   .collapsible-body p {
     margin: 0;
@@ -5385,7 +5377,6 @@ textarea {
   margin: 0 0 15px 0;
   padding: 0;
   box-shadow: none;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
@@ -6123,7 +6114,6 @@ a.button-collapse.top-nav {
   font-weight: 500;
   font-size: 12px;
   display: block;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 .dynamic-color .col {
   margin-bottom: 55px; }
@@ -6457,13 +6447,13 @@ h1, h2, h3, h4, h5, h6 {
       background-image: linear-gradient(0deg, rgba(179, 157, 219, 0.4), rgba(179, 157, 219, 0.4), rgba(179, 157, 219, 0.6)), url("../img/byob-sm.jpg");
       background-image: linear-gradient(0deg, rgba(179, 157, 219, 0.4), rgba(179, 157, 219, 0.4), rgba(179, 157, 219, 0.6)), url("../img/byob-sm.jpg"); }
     .card .card-image.meetups {
-      background-image: -webkit-linear-gradient(90deg, rgba(229, 115, 115, 0.4), rgba(229, 115, 115, 0.4), rgba(229, 115, 115, 0.6)), url("../img/morning-meetup-sm.jpg");
-      background-image: linear-gradient(0deg, rgba(229, 115, 115, 0.4), rgba(229, 115, 115, 0.4), rgba(229, 115, 115, 0.6)), url("../img/morning-meetup-sm.jpg");
-      background-image: linear-gradient(0deg, rgba(229, 115, 115, 0.4), rgba(229, 115, 115, 0.4), rgba(229, 115, 115, 0.6)), url("../img/morning-meetup-sm.jpg"); }
+      background-image: -webkit-linear-gradient(90deg, rgba(239, 108, 0, 0.4), rgba(239, 108, 0, 0.4), rgba(239, 108, 0, 0.6)), url("../img/morning-meetup-sm.jpg");
+      background-image: linear-gradient(0deg, rgba(239, 108, 0, 0.4), rgba(239, 108, 0, 0.4), rgba(239, 108, 0, 0.6)), url("../img/morning-meetup-sm.jpg");
+      background-image: linear-gradient(0deg, rgba(239, 108, 0, 0.4), rgba(239, 108, 0, 0.4), rgba(239, 108, 0, 0.6)), url("../img/morning-meetup-sm.jpg"); }
     .card .card-image.bioventures {
-      background-image: -webkit-linear-gradient(90deg, rgba(244, 81, 30, 0.4), rgba(244, 81, 30, 0.4), rgba(244, 81, 30, 0.6)), url("../img/possibilities-sm.jpg");
-      background-image: linear-gradient(0deg, rgba(244, 81, 30, 0.4), rgba(244, 81, 30, 0.4), rgba(244, 81, 30, 0.6)), url("../img/possibilities-sm.jpg");
-      background-image: linear-gradient(0deg, rgba(244, 81, 30, 0.4), rgba(244, 81, 30, 0.4), rgba(244, 81, 30, 0.6)), url("../img/possibilities-sm.jpg"); }
+      background-image: -webkit-linear-gradient(90deg, rgba(63, 81, 181, 0.4), rgba(63, 81, 181, 0.4), rgba(63, 81, 181, 0.6)), url("../img/possibilities-sm.jpg");
+      background-image: linear-gradient(0deg, rgba(63, 81, 181, 0.4), rgba(63, 81, 181, 0.4), rgba(63, 81, 181, 0.6)), url("../img/possibilities-sm.jpg");
+      background-image: linear-gradient(0deg, rgba(63, 81, 181, 0.4), rgba(63, 81, 181, 0.4), rgba(63, 81, 181, 0.6)), url("../img/possibilities-sm.jpg"); }
     .card .card-image.mgmt {
       background-image: -webkit-linear-gradient(90deg, rgba(173, 20, 87, 0.4), rgba(173, 20, 87, 0.4), rgba(173, 20, 87, 0.6)), url("../img/jack-sm.jpg");
       background-image: linear-gradient(0deg, rgba(173, 20, 87, 0.4), rgba(173, 20, 87, 0.4), rgba(173, 20, 87, 0.6)), url("../img/jack-sm.jpg");
@@ -6492,7 +6482,16 @@ header, main, footer {
 input[type=text], input[type=password], input[type=email], input[type=date], input[type=tel], input[type=number], textarea.materialize-textarea {
   font-size: 1.25rem; }
 
+form.subscribe {
+  padding-top: 1em; }
+
+.btn, .btn-large, .mission .bullets .bullet-icon {
+  -webkit-transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.2s;
+          transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.2s; }
+
 .btn-floating, .mission .bullets .bullet-icon {
+  -webkit-transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.3s;
+          transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.3s;
   background-color: #FF4081; }
   .btn-floating:hover, .mission .bullets .bullet-icon:hover {
     background-color: #ff5a92; }
@@ -6535,7 +6534,6 @@ a.button-collapse.top-nav {
   position: relative; }
 
 #subbtn {
-  margin-top: 1em;
   position: absolute;
   right: 7.5px; }
 
@@ -6553,6 +6551,25 @@ light {
 
 accent {
   color: #FF4081; }
+
+.event h3 {
+  margin-top: .2rem;
+  margin-bottom: 0.5rem; }
+.event h5 {
+  margin-top: 0; }
+.event .card-panel {
+  -webkit-transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.3s;
+          transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.3s;
+  color: white; }
+  .event .card-panel .frosted {
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: none; }
+    .event .card-panel .frosted:hover {
+      background-color: rgba(255, 255, 255, 0.25); }
+  .event .card-panel p {
+    color: white; }
+  .event .card-panel h5 {
+    margin-top: 0.2rem; }
 
 a {
   color: #0091ea;
@@ -6641,7 +6658,7 @@ a {
   top: 500; }
 
 footer {
-  background-color: #81d4fa; }
+  background-color: #b3e5fc; }
 
 footer .footer-copyright {
   background-color: #0091ea; }
@@ -6664,10 +6681,5 @@ ul.side-nav .collapsible-body li.active {
   background-color: #e1f5fe; }
 #front-page-nav li.active {
   background-color: #e1f5fe; }
-
-#tx-live-lang-container #tx-live-lang-picker li:hover {
-  background-color: #e1f5fe; }
-#tx-live-lang-container .txlive-langselector-toggle {
-  border-bottom: 2px solid #81d4fa; }
 
 /*# sourceMappingURL=ghpages-materialize.css.map */
