@@ -6560,14 +6560,14 @@ accent {
 .event .card-panel {
   -webkit-transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.3s;
           transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.3s;
-  color: white; }
+  border-style: solid;
+  border-width: medium;
+  border-color: #4fc3f7; }
   .event .card-panel .frosted {
     background-color: rgba(255, 255, 255, 0.15);
     box-shadow: none; }
     .event .card-panel .frosted:hover {
       background-color: rgba(255, 255, 255, 0.25); }
-  .event .card-panel p {
-    color: white; }
   .event .card-panel h5 {
     margin-top: 0.2rem; }
 
