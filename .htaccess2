@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^enventure\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.enventure\.org$
+RewriteRule ^bioventures$ "https\:\/\/docs\.google\.com\/forms\/d\/1bdCyObC_Vsf_xiNXAcoJHbvUaMNd0teTDRwQldh4Uxo\/viewform\?c\=0\&w\=1" [R=302,L]
+
