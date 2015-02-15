@@ -123,37 +123,38 @@ h1{
     background-position: center;
     background-size: cover;
     height:$card-height*.4472;
-    &.dialog{
+
+    &.dialog{//enventure
       $hero-background-top: rgba($env-color, .6); 
       $hero-background-bottom: rgba($env-color, .4);
       $gradient-angle: 0deg;
       $hero-image: '../img/billy-sm.jpg';
       @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-bottom, $hero-background-top), url($hero-image));
     }
-    &.foundations{
-      $hero-background-top: rgba(color('deep-purple','lighten-3'), .6); 
-      $hero-background-bottom: rgba(color('deep-purple','lighten-3'), .4);
+    &.foundations{//wisteria
+      $hero-background-top: rgba($wisteria, .6); 
+      $hero-background-bottom: rgba($wisteria, .4);
       $gradient-angle: 0deg;
       $hero-image: '../img/byob-sm.jpg';
       @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-bottom, $hero-background-top), url($hero-image));
     }
     &.meetups{
-      $hero-background-top: rgba(color('red','lighten-2'), .6); 
-      $hero-background-bottom: rgba(color('red','lighten-2'), .4);
+      $hero-background-top: rgba($pumpkin, .6); 
+      $hero-background-bottom: rgba($pumpkin, .4);
       $gradient-angle: 0deg;
       $hero-image: '../img/morning-meetup-sm.jpg';
       @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-bottom, $hero-background-top), url($hero-image));
     }
-    &.bioventures{
-      $hero-background-top: rgba(color('deep-orange','darken-1'), .6); 
-      $hero-background-bottom: rgba(color('deep-orange','darken-1'), .4);
+    &.bioventures{//indigo
+      $hero-background-top: rgba($indigo, .6); 
+      $hero-background-bottom: rgba($indigo, .4);
       $gradient-angle: 0deg;
       $hero-image: '../img/possibilities-sm.jpg';
       @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-bottom, $hero-background-top), url($hero-image));
     }
-    &.mgmt{
-      $hero-background-top: rgba(color('pink','darken-3'), .6); 
-      $hero-background-bottom: rgba(color('pink','darken-3'), .4);
+    &.mgmt{//radish
+      $hero-background-top: rgba($radish, .6); 
+      $hero-background-bottom: rgba($radish, .4);
       $gradient-angle: 0deg;
       $hero-image: '../img/jack-sm.jpg';
       @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-bottom, $hero-background-top), url($hero-image));
@@ -202,9 +203,17 @@ h1{
 input[type=text], input[type=password], input[type=email], input[type=date], input[type=tel], input[type=number], textarea.materialize-textarea {
   font-size: 1.25rem;
 }
+form.subscribe{
+  padding-top:1em
+}
 
 //_buttons
+.btn{
+  transition: all cubic-bezier(.62,.28,.23,.99) 0.2s;
+}
+
 .btn-floating{
+  transition: all cubic-bezier(.62,.28,.23,.99) 0.3s;
   background-color:$accent-color;
   &:hover {
     background-color: lighten($accent-color, 5%);
@@ -262,7 +271,6 @@ a.button-collapse.top-nav{
 }
 
 #subbtn{
-  margin-top:1em;
   position:absolute;
   right:7.5px;
 }
@@ -284,6 +292,39 @@ light{
 }
 accent{
   color:$accent-color;
+}
+
+.event{
+  h3{
+    margin-top:.2rem;
+    margin-bottom:.5rem
+  }
+  h5{
+    margin-top :0
+  }
+  .card-panel{
+    transition: all cubic-bezier(.62,.28,.23,.99) 0.3s;
+    border-style: solid;
+    border-width: medium;
+    border-color: color(light-blue, lighten-2);
+    &:hover{
+      @extend .z-depth-2;
+    }
+    .frosted{
+      background-color:rgba(255, 255, 255, 0.15);
+      box-shadow:none;
+      &:hover{
+        background-color:rgba(255, 255, 255, 0.25);
+      }
+    }
+    //color:white;
+    p{
+      //color:white;
+    }
+    h5{
+      margin-top:.2rem
+    }
+  }
 }
 
 a {
@@ -418,7 +459,7 @@ a {
   }
 
 footer {
-  background-color: color("light-blue", "lighten-3");
+  background-color: color("light-blue", "lighten-4");
 }
 
 footer .footer-copyright {
@@ -459,18 +500,5 @@ ul.side-nav .collapsible-body li.active {
   }
 }
 
-// Transifex Styling
-
-#tx-live-lang-container {
-  #tx-live-lang-picker {
-    li {
-      &:hover{
-      background-color: color("light-blue", "lighten-5");
-      }
-    }
-  }
-
-  .txlive-langselector-toggle {
-    border-bottom: 2px solid color("light-blue", "lighten-3");
-  }
-}
+//animation
+//transition: all cubic-bezier(.62,.28,.23,.99) 0.7s;

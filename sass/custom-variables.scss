@@ -27,14 +27,14 @@ $sliding-menu-color-hover: #fff;
 
 $footer-height:75px;
 
-$radish:#ac1b56;
-$wisteria:#b39ddb;
-$eucalyptus:#039487;
-$sage:#32b679;
-$blueberry:#3f51b5;
-$banana:#fbc02d;
-$pumpkin:#ef6c00;
-$grid-item-colors: $radish, $wisteria, $eucalyptus, $sage, $blueberry, $banana, $pumpkin, $radish, $wisteria, $eucalyptus, $sage, $blueberry, $banana, $pumpkin;
+$radish:#ad1457; //pink darken-3
+$wisteria:#b39ddb; //deep-purple lighten-3
+$teal:#009688; //teal
+$sage:#32b679; //
+$indigo:#3f51b5; //indigo
+$banana:#fbc02d; //yellow darken-2
+$pumpkin:#ef6c00; //orange darken-3
+$grid-item-colors: $radish, $wisteria, $teal, $sage, $indigo, $banana, $pumpkin, $radish, $wisteria, $teal, $sage, $indigo, $banana, $pumpkin;
 
 $sans-serif: 'Roboto', sans-serif;
 $serif: 'Georgia', Times, "Times New Roman", serif;

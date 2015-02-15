@@ -4,8 +4,40 @@
 		"selected_items":
 		[
 			[
+				"ligh",
+				"lighten-3"
+			],
+			[
 				"margin",
-				"margin-bottom"
+				"margin-top"
+			],
+			[
+				"1em",
+				"1em"
+			],
+			[
+				"light",
+				"lighten-2"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"acce",
+				"accent-color"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"padidn",
+				"padding-top"
+			],
+			[
+				"padding-",
+				"padding-top"
 			],
 			[
 				"env",
@@ -83,7 +115,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 9238,
+				"buffer_size": 18505,
 				"line_ending": "Unix"
 			}
 		},
@@ -91,7 +123,7 @@
 			"file": "sass/ghpages-materialize.scss",
 			"settings":
 			{
-				"buffer_size": 102,
+				"buffer_size": 243,
 				"line_ending": "Unix"
 			}
 		},
@@ -99,7 +131,47 @@
 			"file": "sass/materialize.scss",
 			"settings":
 			{
-				"buffer_size": 1074,
+				"buffer_size": 1093,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/components/_typography.scss",
+			"settings":
+			{
+				"buffer_size": 1655,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/will.scss",
+			"settings":
+			{
+				"buffer_size": 10418,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/bin/materialize.js",
+			"settings":
+			{
+				"buffer_size": 218886,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/init.js",
+			"settings":
+			{
+				"buffer_size": 2371,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/custom-variables.scss",
+			"settings":
+			{
+				"buffer_size": 1615,
 				"line_ending": "Unix"
 			}
 		},
@@ -112,43 +184,11 @@
 			}
 		},
 		{
-			"file": "sass/components/_global.scss",
-			"settings":
-			{
-				"buffer_size": 9400,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/components/_buttons.scss",
-			"settings":
-			{
-				"buffer_size": 2211,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "sass/components/_variables.scss",
 			"settings":
 			{
-				"buffer_size": 2829,
+				"buffer_size": 2679,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/_will.scss",
-			"settings":
-			{
-				"buffer_size": 136,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/components/_typography.scss",
-			"settings":
-			{
-				"buffer_size": 1655,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -187,8 +227,32 @@
 	},
 	"file_history":
 	[
+		"/Users/wclifton1/Sites/materialize-env/.htaccess",
+		"/Applications/Steam.app/Contents/MacOS/controller_base/gamepad_generic.vdf",
+		"/Users/wclifton1/Sites/materialize-env/sass/materialize.scss",
+		"/Users/wclifton1/Sites/materialize/js/collapsible.js",
+		"/Users/wclifton1/Sites/materialize-env/js/init.js",
+		"/Users/wclifton1/Sites/materialize/bin/materialize.js",
+		"/Users/wclifton1/Dropbox (Procyrion)/Procyrion - Quality System/~Working Copy/TOC.txt",
+		"/Users/wclifton1/Sites/materialize-env/index.html",
+		"/Users/wclifton1/Sites/materialize-env/sass/_parallax.scss",
+		"/Users/wclifton1/Dropbox (Procyrion)/Procyrion/Accounting/Purchase Orders/~NOT UP TO DATE- use inflow",
+		"/Users/wclifton1/Sites/materialize-env/css/will.css",
 		"/Users/wclifton1/Sites/materialize-env/sass/will.scss",
+		"/Users/wclifton1/Sites/materialize-env beta/sass/components/_typography.scss",
+		"/Users/wclifton1/Sites/materialize-env beta/sass/components/_cards.scss",
+		"/Users/wclifton1/Sites/materialize-env/sass/components/_cards.scss",
+		"/Users/wclifton1/Sites/materialize-env beta/sass/components/_buttons.scss",
+		"/Users/wclifton1/Sites/materialize-env/sass/components/_buttons.scss",
+		"/Users/wclifton1/Sites/materialize-env/sass/variables.scss",
+		"/Users/wclifton1/Sites/materialize-env/sass/bourbon-drops/background-image.scss",
+		"/Users/wclifton1/Sites/materialize-env/sass/style.scss",
 		"/Users/wclifton1/Sites/materialize-env/sass/ghpages-materialize.scss",
+		"/Users/wclifton1/Sites/materialize-env/sass/components/_typography.scss",
+		"/Users/wclifton1/Sites/materialize-env/sass/will restored.scss",
+		"/Users/wclifton1/Sites/materialize-env/sass/_will.scss",
+		"/Users/wclifton1/Sites/materialize-env/sass/components/_global.scss",
+		"/Users/wclifton1/Sites/materialize-env/sass/components/_variables.scss",
 		"/Users/wclifton1/Sites/materialize-env/index.sublime-workspace",
 		"/Users/wclifton1/Dropbox (Procyrion)/Procyrion - Quality System/~Working Copy/750 Clinical Study Protocols/750-0000-001 High-Risk PCI FIM.txt",
 		"/Users/wclifton1/Sites/2014 Enventure/js/jquery-scrolltofixed.js",
@@ -224,9 +288,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -234,6 +299,57 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"card-panel",
+			"footer",
+			"transition",
+			"collap",
+			"$('.collapsible').collapsible();",
+			" $(document).ready(function(){\n        $('.collapsible').collapsible();\n      });",
+			"font-weight",
+			";\n",
+			"light",
+			"weight",
+			"head",
+			"fb",
+			"byob.jpg",
+			"meetup",
+			"foundations",
+			"email",
+			"footer",
+			"input",
+			"accent",
+			"&:hover",
+			"700",
+			"a{",
+			"grey-text text-darken-4",
+			"grey",
+			"large",
+			"front-pa",
+			"links",
+			"facebook",
+			"transition",
+			"exten",
+			"accent",
+			"a{",
+			"student",
+			"@extend",
+			"container",
+			"form",
+			".input-field",
+			"download",
+			"$hero-ima",
+			"label",
+			"floating",
+			"about",
+			"h4",
+			"large",
+			"$card-padding",
+			"$button-floating",
+			"$button-line",
+			"card-color",
+			"background-image",
+			"materi",
+			"materialize-red",
 			"$serif",
 			"$progress-bar-color",
 			"base",
@@ -318,7 +434,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -327,23 +443,114 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9238,
+						"buffer_size": 18505,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7314,
-								7314
+								5719,
+								5064
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": false
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1868.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "sass/ghpages-materialize.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								131,
+								131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "sass/materialize.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1093,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								385,
+								385
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "sass/components/_typography.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1655,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								381,
+								381
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -353,55 +560,59 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "sass/ghpages-materialize.scss",
+					"buffer": 4,
+					"file": "sass/will.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 102,
+						"buffer_size": 10418,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								6484,
+								6484
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4522.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "sass/materialize.scss",
+					"buffer": 5,
+					"file": "js/bin/materialize.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1074,
+						"buffer_size": 218886,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								204,
-								204
+								90067,
+								90077
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
+						"translation.x": 157.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -409,110 +620,56 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "sass/style.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12838,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12838,
-								12838
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 11357.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "sass/components/_global.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9400,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7414,
-								7421
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 6674.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "sass/components/_buttons.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2211,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 347.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
 					"buffer": 6,
-					"file": "sass/components/_variables.scss",
+					"file": "js/init.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2829,
+						"buffer_size": 2371,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2309,
-								2309
+								866,
+								866
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 224.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "sass/custom-variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								827,
+								833
 							]
 						],
 						"settings":
@@ -527,49 +684,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "sass/_will.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 136,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								46,
-								46
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
-							"tab_size": 2
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
 					"buffer": 8,
-					"file": "sass/components/_typography.scss",
+					"file": "sass/style.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1655,
+						"buffer_size": 12838,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3566,
+								3576
 							]
 						],
 						"settings":
@@ -578,11 +706,39 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
+						"translation.x": -0.0,
+						"translation.y": 3232.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "sass/components/_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2679,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								936,
+								936
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
+						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -605,11 +761,25 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.355447591146,
+			0.633979876738,
 			1.0
 		],
 		"rows":
