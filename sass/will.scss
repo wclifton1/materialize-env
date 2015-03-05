@@ -178,16 +178,16 @@ h1{
 }
 
 //_sidenav
-@media #{$large-and-down} {
-  ul.side-nav.fixed {
-    left: -1 * ($sidenav-width + 10);
+// @media #{$large-and-down} {
+//   ul.side-nav.fixed {
+//     left: -1 * ($sidenav-width + 10);
 
-    &.right-aligned {
-      right: -1 * ($sidenav-width + 10);
-      left: auto;
-    }
-  }
-}
+//     &.right-aligned {
+//       right: -1 * ($sidenav-width + 10);
+//       left: auto;
+//     }
+//   }
+// }
 
 //@media #{$large-and-down} {
   header, main, footer {
@@ -210,6 +210,10 @@ form.subscribe{
 //_buttons
 .btn{
   transition: all cubic-bezier(.62,.28,.23,.99) 0.2s;
+  background-color: color("light-blue","base");
+  &:hover {
+    background-color: lighten(color("light-blue", "base"), 30%);
+  }
 }
 
 .btn-floating{
@@ -491,6 +495,10 @@ ul.side-nav .collapsible-body li.active {
       background-color: color("light-blue", "lighten-5");
     }
   }
+}
+
+ul li, li {
+  list-style-type: initial;
 }
 
 //animation
