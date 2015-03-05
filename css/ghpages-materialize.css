@@ -5899,8 +5899,7 @@ ul.side-nav.fixed li.logo {
     background-color: transparent; }
 
 ul.side-nav.fixed {
-  overflow: hidden;
-  padding-bottom: 50px; }
+  overflow: hidden; }
   ul.side-nav.fixed li {
     line-height: 44px; }
     ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active {
@@ -5914,11 +5913,6 @@ ul.side-nav.fixed {
 
 .bold > a {
   font-weight: bold; }
-
-ul.side-nav .collapsible-body li.active {
-  background-color: #ee6e73; }
-  ul.side-nav .collapsible-body li.active a {
-    color: #fff; }
 
 #logo-container {
   height: 57px;
@@ -6233,9 +6227,6 @@ a.button-collapse.top-nav {
   right: 0;
   margin-top: -27px; }
 
-@media only screen and (max-width: 992px) {
-  .parallax-container {
-    height: auto; } }
 ul.table-of-contents {
   margin-top: 0;
   padding-top: 48px; }
@@ -6266,7 +6257,12 @@ pre[class*="language-"] {
     border-top: none;
     border-left: none; }
 
+.toc-wrapper {
+  position: relative;
+  margin-top: 42px; }
+
 #carbonads {
+  max-width: 150px;
   display: inline-block;
   position: relative;
   text-align: left;
@@ -6279,7 +6275,8 @@ pre[class*="language-"] {
     height: 100px;
     display: inline-block;
     margin-right: 10px; }
-  #carbonads a.carbon-text {
+  #carbonads a.carbon-text,
+  #carbonads input[type="submit"] {
     position: relative;
     top: 0;
     width: 150px;
@@ -6293,23 +6290,19 @@ pre[class*="language-"] {
     font-size: 11px;
     color: #EF9A9A; }
 
-.buysellads #carbonads {
-  position: absolute;
-  top: 50px;
-  right: 0; }
-  .buysellads #carbonads > span,
-  .buysellads #carbonads span.carbon-wrap {
-    height: auto; }
-  .buysellads #carbonads a.carbon-text {
-    top: 5px;
-    left: 0;
-    width: 130px;
-    display: block;
-    font-size: 13px;
-    -webkit-font-smoothing: antialiased;
-    color: #E57373; }
-  .buysellads #carbonads a.carbon-poweredby {
-    top: 5px; }
+.buysellads #carbonads > span,
+.buysellads #carbonads span.carbon-wrap {
+  height: auto; }
+.buysellads #carbonads a.carbon-text {
+  top: 5px;
+  left: 0;
+  width: 130px;
+  display: block;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  color: #E57373; }
+.buysellads #carbonads a.carbon-poweredby {
+  top: 5px; }
 
 .buysellads-header #carbonads > span,
 .buysellads-header #carbonads span.carbon-wrap {
@@ -6405,6 +6398,18 @@ body.parallax-demo footer {
 .valign-demo {
   height: 400px;
   background-color: #ddd; }
+
+.talign-demo {
+  height: 100px;
+  background-color: #ddd; }
+
+#staggered-test li,
+#image-test {
+  -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+  filter: "alpha(opacity=(${iefactor}))";
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0; }
 
 #tx-live-lang-container {
   background-color: #fcfcfc;

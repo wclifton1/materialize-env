@@ -1,3 +1,4 @@
+
 /***************
   HTML Styles
 ***************/
@@ -20,6 +21,7 @@ h1,h2,h3,h4,h5,h6 {
 
 nav {
   overflow: hidden;
+  // background-color: color("materialize-red", "lighten-2");
 
   a {
     -webkit-font-smoothing: antialiased;
@@ -81,7 +83,6 @@ ul.side-nav.fixed li.logo {
 }
 ul.side-nav.fixed {
   overflow: hidden;
-  padding-bottom: 50px;
 
   li {
     line-height: 44px;
@@ -105,13 +106,6 @@ ul.side-nav.fixed {
 
 .bold > a {
   font-weight: bold;
-}
-
-ul.side-nav .collapsible-body li.active {
-  a {
-  color: #fff;
-  }
-  background-color: color('materialize-red', 'lighten-2');
 }
 
 #logo-container {
@@ -537,11 +531,6 @@ $height: auto;
   }
 
 }
-@media #{$medium-and-down} {
-  .parallax-container {
-    height: auto;
-  }
-}
 
 // Table of contents
 ul.table-of-contents {
@@ -581,7 +570,13 @@ pre[class*="language-"] {
 
 
 // Carbon Ads styling
+.toc-wrapper {
+  position: relative;
+  margin-top: 42px;
+}
+
 #carbonads {
+  max-width: 150px;
   display: inline-block;
   position: relative;
   text-align: left;
@@ -597,7 +592,8 @@ pre[class*="language-"] {
     display: inline-block;
     margin-right: 10px;
   }
-  a.carbon-text {
+  a.carbon-text,
+  input[type="submit"] {
     position: relative;
     top: 0;
     width: 150px;
@@ -614,9 +610,6 @@ pre[class*="language-"] {
   }
 }
 .buysellads #carbonads {
-  position: absolute;
-  top: 50px;
-  right: 0;
 
   & > span,
   span.carbon-wrap { height: auto; }
@@ -765,6 +758,16 @@ body.parallax-demo footer {
 .valign-demo {
   height: 400px;
   background-color: #ddd;
+}
+.talign-demo {
+  height: 100px;
+  background-color: #ddd;
+}
+
+// Transitions demos
+#staggered-test li,
+#image-test {
+  @include opacity(0);
 }
 
 // Transifex Styling

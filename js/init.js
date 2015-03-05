@@ -27,22 +27,77 @@
 
 
     // Floating-Fixed table of contents
-    if ($('.table-of-contents').length) {
-      var toc_offset = $('.table-of-contents').first().offset().top;
-      $('.table-of-contents').each(function() {
-        var origin = $(this);
-        origin.pushpin({ top: toc_offset,
-          bottom: $(document).height() - window.innerHeight });
+    if ($('nav').length) {
+      $('.toc-wrapper').pushpin({ top: $('nav').height() });
+    }
+    else if ($('#index-banner').length) {
+      $('.toc-wrapper').pushpin({ top: $('#index-banner').height() });
+    }
+    else {
+      $('.toc-wrapper').pushpin({ top: 0 });
+    }
+
+
+
+    // BuySellAds Detection
+    var $bsa = $(".buysellads"),
+        $timesToCheck = 3;
+    function checkForChanges() {
+        if (!$bsa.find('#carbonads').length) {
+          $timesToCheck -= 1;
+          if ($timesToCheck >= 0) {
+            setTimeout(checkForChanges, 500);
+          }
+          else {
+            var donateAd = $('<div id="carbonads"><span><a class="carbon-text" href="#" onclick="document.getElementById("paypal_donate").submit();"><img src="images/donate.png" /> Help support us by turning off adblock. If you still prefer to keep adblock on for this page but still want to support us, feel free to donate. Any little bit helps.</a></form></span></div>');
+
+            $bsa.append(donateAd);
+          }
+        }
+
+    }
+    checkForChanges();
+
+
+    // Github Latest Commit
+    if ($('.github-commit').length) { // Checks if widget div exists (Index only)
+      $.ajax({
+        url: "https://api.github.com/repos/dogfalo/materialize/commits/master",
+        dataType: "json",
+        success: function (data) {
+          var sha = data.sha,
+              date = jQuery.timeago(data.commit.author.date);
+          if (window_width < 1120) {
+            sha = sha.substring(0,7);
+          }
+          $('.github-commit').find('.date').html(date);
+          $('.github-commit').find('.sha').html(sha).attr('href', data.html_url);
+        }
       });
     }
 
+    // Toggle Flow Text
+    var toggleFlowTextButton = $('#flow-toggle')
+    toggleFlowTextButton.click( function(){
+      $('#flow-text-demo').children('p').each(function(){
+          $(this).toggleClass('flow-text');
+        })
+    });
 
-    // Tabs Fixed
-    if ($('.tabs-wrapper').length) {
-      $('.tabs-wrapper .row').pushpin({ top: $('.tabs-wrapper').offset().top });
-    }
-
-
+//    Toggle Containers on page
+    var toggleContainersButton = $('#container-toggle-button');
+    toggleContainersButton.click(function(){
+      $('body .browser-window .container, .had-container').each(function(){
+        $(this).toggleClass('had-container');
+        $(this).toggleClass('container');
+        if ($(this).hasClass('container')) {
+          toggleContainersButton.text("Turn off Containers");
+        }
+        else {
+          toggleContainersButton.text("Turn on Containers");
+        }
+      });
+    });
 
     // Detect touch screen and enable scrollbar if necessary
     function is_touch_device() {
@@ -59,23 +114,14 @@
 
 
     // Plugin initialization
-    // $('.slider').slider({full_width: true});
-    // $('.dropdown-button').dropdown({hover: false});
-    // if (window_width > 600) {
-    //   $('ul.tabs').tabs();
-    // }
-    // else {
-    //   $('ul.tabs').hide();
-    // }
-    // $('.tab-demo').show().tabs();
-    // $('.parallax').parallax();
-    // $('.modal-trigger').leanModal();
-    $('.tooltipped').tooltip({"delay": 300});
-    $('.collapsible').collapsible();
-    // $('.materialboxed').materialbox();
-    // $('.scrollspy').scrollSpy();
-    // $('.button-collapse').sideNav({'menuWidth': 400, activationWidth: 70});
-    // $('.datepicker').pickadate();
+    $('.slider').slider({full_width: true});
+    $('.dropdown-button').dropdown({hover: false});
+    $('.tab-demo').show().tabs();
+    $('.parallax').parallax();
+    $('.modal-trigger').leanModal();
+    $('.scrollspy').scrollSpy();
+    $('.button-collapse').sideNav({'edge': 'left'});
+    $('.datepicker').pickadate({selectYears: 20});
     $('select').not('.disabled').material_select();
 
 
