@@ -159,17 +159,6 @@ h1{
   }
 }
 
-//_sidenav
-// @media #{$large-and-down} {
-//   ul.side-nav.fixed {
-//     left: -1 * ($sidenav-width + 10);
-
-//     &.right-aligned {
-//       right: -1 * ($sidenav-width + 10);
-//       left: auto;
-//     }
-//   }
-// }
 
 //@media #{$large-and-down} {
   header, main, footer {
@@ -188,6 +177,35 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 form.subscribe{
   padding-top:1em
 }
+.input-field {
+  .prefix.active{
+    color:$env-color;
+  }
+  input[type=text]:focus,
+  input[type=password]:focus,
+  input[type=email]:focus,
+  input[type=url]:focus,
+  input[type=date]:focus,
+  input[type=tel]:focus,
+  input[type=number]:focus,
+  input[type=search]:focus,
+  textarea:focus.materialize-textarea {
+    border-bottom: 1px solid color("light-blue", "lighten-3");
+    @include box-shadow(0 1px 0 0 $env-color);
+  }
+  input[type=text]:focus + label,
+  input[type=password]:focus + label,
+  input[type=email]:focus + label,
+  input[type=url]:focus + label,
+  input[type=date]:focus + label,
+  input[type=tel]:focus + label,
+  input[type=number]:focus + label,
+  input[type=search]:focus + label,
+  textarea:focus.materialize-textarea + label {
+    color: $env-color;
+  }
+}
+
 
 //_buttons
 .btn{
@@ -331,7 +349,7 @@ a {
   background-size: cover;
   padding-bottom: .1em;
   height:400px;
-
+  background-color:$env-color;
   h4 {
     margin-bottom: 0;
   }
@@ -342,7 +360,6 @@ a {
   $hero-background-bottom: rgba(white, 0.9);
   $hero-image: '../img/2015-sm.jpg';
   @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top, $hero-background-top), url($hero-image));
-  background-color:$env-color;
 }
 
 .bioventures-banner{
@@ -351,7 +368,6 @@ a {
   $hero-background-bottom: rgba(white, .9);
   $hero-image: '../img/possibilities-sm.jpg';
   @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top, $hero-background-top), url($hero-image));
-  background-color:$indigo;
 }
 
 .env-header{

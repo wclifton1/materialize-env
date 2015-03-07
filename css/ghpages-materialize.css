@@ -2329,27 +2329,6 @@ td, th {
     padding: 10px 20px; }
   .collection.with-header .collection-item {
     padding-left: 30px; }
-  .collection .secondary-content {
-    float: right; }
-  .collection.pagination {
-    display: inline-block; }
-    .collection.pagination ul {
-      background-color: transparent;
-      font-size: 0;
-      display: inline-block; }
-    .collection.pagination li {
-      display: inline;
-      font-weight: 500;
-      margin: 0px;
-      padding: 0px;
-      font-size: 1rem; }
-      .collection.pagination li a {
-        padding: 0px 5px; }
-      .collection.pagination li.active {
-        background-color: #03a9f4;
-        color: #FFF; }
-      .collection.pagination li:hover {
-        background-color: #e1f5fe; }
 
 .secondary-content {
   float: right;
@@ -6993,6 +6972,30 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 form.subscribe {
   padding-top: 1em; }
 
+.input-field .prefix.active {
+  color: #0091ea; }
+.input-field input[type=text]:focus,
+.input-field input[type=password]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=url]:focus,
+.input-field input[type=date]:focus,
+.input-field input[type=tel]:focus,
+.input-field input[type=number]:focus,
+.input-field input[type=search]:focus,
+.input-field textarea:focus.materialize-textarea {
+  border-bottom: 1px solid #81d4fa;
+  box-shadow: 0 1px 0 0 #0091ea; }
+.input-field input[type=text]:focus + label,
+.input-field input[type=password]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=url]:focus + label,
+.input-field input[type=date]:focus + label,
+.input-field input[type=tel]:focus + label,
+.input-field input[type=number]:focus + label,
+.input-field input[type=search]:focus + label,
+.input-field textarea:focus.materialize-textarea + label {
+  color: #0091ea; }
+
 .btn, .btn-large, .mission .bullets .bullet-icon {
   -webkit-transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.2s;
           transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.2s;
@@ -7103,7 +7106,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: .1em;
-  height: 400px; }
+  height: 400px;
+  background-color: #0091ea; }
   #index-banner .container {
     position: static; }
   #index-banner h4 {
@@ -7112,14 +7116,12 @@ a {
 .index-banner {
   background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
-  background-color: #0091ea; }
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg"); }
 
 .bioventures-banner {
   background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-sm.jpg");
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-sm.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-sm.jpg");
-  background-color: #3f51b5; }
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-sm.jpg"); }
 
 .env-header {
   position: absolute;
