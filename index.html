@@ -44,7 +44,7 @@
   
   <body>
     <main>
-      <div class="section scene_element scene_element--fadein" id="index-banner">
+      <div class="section scene_element scene_element--fadein index-banner" id="index-banner">
         <div class="container">
           <!--a id="about" href="about.html" class="frosted btn btn-floating btn-large tooltipped" data-position="bottom" data-tooltip="we love to help"><i class="mdi-communication-textsms"></i></a-->
           <div class="env-header">
@@ -213,7 +213,7 @@
             <div class="row">
               <h3><enventure>enventure</enventure> is...</h3>
               <ul class="bullets">
-                <li class="bullet col s12 l4">
+                <li class="col s12 l4">
                   <div class="bullet-icon bullet-icon-1">
                     <i class="mdi-social-school"></i>
                   </div>
@@ -222,7 +222,7 @@
                   </div>
                   <p>We know what it's like to be a student or budding entrepreneur. That's why all of our events are <strong>free</strong>: so there's no reason you can't have the resources you need.</p>                  
                 </li>  
-                <li class="bullet col s12 l4">
+                <li class="col s12 l4">
                   <div class="bullet-icon bullet-icon-2">
                     <i class="mdi-image-healing"></i>
                   </div>
@@ -231,7 +231,7 @@
                   </div>
                    <p>We love entrepreneurs of all sorts. But healthcare entrepreneurs have a <strong>special set of challenges</strong> that we need to talk about.</p>
                 </li>
-                <li class="bullet col s12 l4">
+                <li class="col s12 l4">
                   <div class="bullet-icon bullet-icon-3">
                     <i class="mdi-maps-location-history"></i>
                   </div>
@@ -258,9 +258,11 @@
           </div>
           <div class="col m4 offset-m2 s12">
             <h5>Social</h5>
-            <li><div class="fb-follow" data-href="https://www.facebook.com/enventuremed" data-width="300" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div></li>
-            <li><a href="https://twitter.com/enventuremed" class="twitter-follow-button" data-show-count="false">Follow @enventuremed</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
-            <li><a class="waves-effect waves-light btn" target="blank" href="http://www.meetup.com/enventure"><i class="mdi-social-people left"></i>Meetup</a></li>
+            <ul>
+              <li><div class="fb-follow" data-href="https://www.facebook.com/enventuremed" data-width="300" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div></li>
+              <li><a href="https://twitter.com/enventuremed" class="twitter-follow-button" data-show-count="false">Follow @enventuremed</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+              <li><a class="waves-effect waves-light btn" target="blank" href="http://www.meetup.com/enventure"><i class="mdi-social-people left"></i>Meetup</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -393,6 +395,7 @@
     <script>
       $(document).ready(function(){
         $('.collapsible').collapsible();
+        $('.tooltipped').tooltip({delay: 50});
       });
     </script>
     <script type="text/javascript" src="https://www.universe.com/embed.js"></script>

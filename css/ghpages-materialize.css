@@ -5,7 +5,7 @@
 .materialize-red-text.text-lighten-5 {
   color: #fdeaeb !important; }
 
-.materialize-red.lighten-4, .materialize-red#bioventures-banner {
+.materialize-red.lighten-4 {
   background-color: #f8c1c3 !important; }
 
 .materialize-red-text.text-lighten-4 {
@@ -65,7 +65,7 @@
 .red-text.text-lighten-5 {
   color: #FFEBEE !important; }
 
-.red.lighten-4, .red#bioventures-banner {
+.red.lighten-4 {
   background-color: #FFCDD2 !important; }
 
 .red-text.text-lighten-4 {
@@ -149,7 +149,7 @@
 .pink-text.text-lighten-5 {
   color: #fce4ec !important; }
 
-.pink.lighten-4, .pink#bioventures-banner {
+.pink.lighten-4 {
   background-color: #f8bbd0 !important; }
 
 .pink-text.text-lighten-4 {
@@ -233,7 +233,7 @@
 .purple-text.text-lighten-5 {
   color: #f3e5f5 !important; }
 
-.purple.lighten-4, .purple#bioventures-banner {
+.purple.lighten-4 {
   background-color: #e1bee7 !important; }
 
 .purple-text.text-lighten-4 {
@@ -317,7 +317,7 @@
 .deep-purple-text.text-lighten-5 {
   color: #ede7f6 !important; }
 
-.deep-purple.lighten-4, .deep-purple#bioventures-banner {
+.deep-purple.lighten-4 {
   background-color: #d1c4e9 !important; }
 
 .deep-purple-text.text-lighten-4 {
@@ -401,7 +401,7 @@
 .indigo-text.text-lighten-5 {
   color: #e8eaf6 !important; }
 
-.indigo.lighten-4, .indigo#bioventures-banner {
+.indigo.lighten-4 {
   background-color: #c5cae9 !important; }
 
 .indigo-text.text-lighten-4 {
@@ -485,7 +485,7 @@
 .blue-text.text-lighten-5 {
   color: #E3F2FD !important; }
 
-.blue.lighten-4, .blue#bioventures-banner {
+.blue.lighten-4 {
   background-color: #BBDEFB !important; }
 
 .blue-text.text-lighten-4 {
@@ -563,85 +563,85 @@
 .blue-text.text-accent-4 {
   color: #2962FF !important; }
 
-.light-blue.lighten-5, .lighten-5#bioventures-banner {
+.light-blue.lighten-5 {
   background-color: #e1f5fe !important; }
 
 .light-blue-text.text-lighten-5 {
   color: #e1f5fe !important; }
 
-.light-blue.lighten-4, #bioventures-banner {
+.light-blue.lighten-4 {
   background-color: #b3e5fc !important; }
 
 .light-blue-text.text-lighten-4 {
   color: #b3e5fc !important; }
 
-.light-blue.lighten-3, .card .light-blue.card-image.blank, .card .card-image.blank#bioventures-banner, .lighten-3#bioventures-banner {
+.light-blue.lighten-3, .card .light-blue.card-image.blank {
   background-color: #81d4fa !important; }
 
 .light-blue-text.text-lighten-3 {
   color: #81d4fa !important; }
 
-.light-blue.lighten-2, .lighten-2#bioventures-banner {
+.light-blue.lighten-2 {
   background-color: #4fc3f7 !important; }
 
 .light-blue-text.text-lighten-2 {
   color: #4fc3f7 !important; }
 
-.light-blue.lighten-1, .lighten-1#bioventures-banner {
+.light-blue.lighten-1 {
   background-color: #29b6f6 !important; }
 
 .light-blue-text.text-lighten-1 {
   color: #29b6f6 !important; }
 
-.light-blue, #bioventures-banner {
+.light-blue {
   background-color: #03a9f4 !important; }
 
 .light-blue-text {
   color: #03a9f4 !important; }
 
-.light-blue.darken-1, .darken-1#bioventures-banner {
+.light-blue.darken-1 {
   background-color: #039be5 !important; }
 
 .light-blue-text.text-darken-1 {
   color: #039be5 !important; }
 
-.light-blue.darken-2, .darken-2#bioventures-banner {
+.light-blue.darken-2 {
   background-color: #0288d1 !important; }
 
 .light-blue-text.text-darken-2 {
   color: #0288d1 !important; }
 
-.light-blue.darken-3, .darken-3#bioventures-banner {
+.light-blue.darken-3 {
   background-color: #0277bd !important; }
 
 .light-blue-text.text-darken-3 {
   color: #0277bd !important; }
 
-.light-blue.darken-4, .darken-4#bioventures-banner {
+.light-blue.darken-4 {
   background-color: #01579b !important; }
 
 .light-blue-text.text-darken-4 {
   color: #01579b !important; }
 
-.light-blue.accent-1, .accent-1#bioventures-banner {
+.light-blue.accent-1 {
   background-color: #80d8ff !important; }
 
 .light-blue-text.text-accent-1 {
   color: #80d8ff !important; }
 
-.light-blue.accent-2, .accent-2#bioventures-banner {
+.light-blue.accent-2 {
   background-color: #40c4ff !important; }
 
 .light-blue-text.text-accent-2 {
   color: #40c4ff !important; }
 
-.light-blue.accent-3, .accent-3#bioventures-banner {
+.light-blue.accent-3 {
   background-color: #00b0ff !important; }
 
 .light-blue-text.text-accent-3 {
   color: #00b0ff !important; }
 
-.light-blue.accent-4, .accent-4#bioventures-banner {
+.light-blue.accent-4 {
   background-color: #0091ea !important; }
 
 .light-blue-text.text-accent-4 {
@@ -653,7 +653,7 @@
 .cyan-text.text-lighten-5 {
   color: #e0f7fa !important; }
 
-.cyan.lighten-4, .cyan#bioventures-banner {
+.cyan.lighten-4 {
   background-color: #b2ebf2 !important; }
 
 .cyan-text.text-lighten-4 {
@@ -737,7 +737,7 @@
 .teal-text.text-lighten-5 {
   color: #e0f2f1 !important; }
 
-.teal.lighten-4, .teal#bioventures-banner {
+.teal.lighten-4 {
   background-color: #b2dfdb !important; }
 
 .teal-text.text-lighten-4 {
@@ -821,7 +821,7 @@
 .green-text.text-lighten-5 {
   color: #E8F5E9 !important; }
 
-.green.lighten-4, .green#bioventures-banner {
+.green.lighten-4 {
   background-color: #C8E6C9 !important; }
 
 .green-text.text-lighten-4 {
@@ -905,7 +905,7 @@
 .light-green-text.text-lighten-5 {
   color: #f1f8e9 !important; }
 
-.light-green.lighten-4, .light-green#bioventures-banner {
+.light-green.lighten-4 {
   background-color: #dcedc8 !important; }
 
 .light-green-text.text-lighten-4 {
@@ -989,7 +989,7 @@
 .lime-text.text-lighten-5 {
   color: #f9fbe7 !important; }
 
-.lime.lighten-4, .lime#bioventures-banner {
+.lime.lighten-4 {
   background-color: #f0f4c3 !important; }
 
 .lime-text.text-lighten-4 {
@@ -1073,7 +1073,7 @@
 .yellow-text.text-lighten-5 {
   color: #fffde7 !important; }
 
-.yellow.lighten-4, .yellow#bioventures-banner {
+.yellow.lighten-4 {
   background-color: #fff9c4 !important; }
 
 .yellow-text.text-lighten-4 {
@@ -1157,7 +1157,7 @@
 .amber-text.text-lighten-5 {
   color: #fff8e1 !important; }
 
-.amber.lighten-4, .amber#bioventures-banner {
+.amber.lighten-4 {
   background-color: #ffecb3 !important; }
 
 .amber-text.text-lighten-4 {
@@ -1241,7 +1241,7 @@
 .orange-text.text-lighten-5 {
   color: #fff3e0 !important; }
 
-.orange.lighten-4, .orange#bioventures-banner {
+.orange.lighten-4 {
   background-color: #ffe0b2 !important; }
 
 .orange-text.text-lighten-4 {
@@ -1325,7 +1325,7 @@
 .deep-orange-text.text-lighten-5 {
   color: #fbe9e7 !important; }
 
-.deep-orange.lighten-4, .deep-orange#bioventures-banner {
+.deep-orange.lighten-4 {
   background-color: #ffccbc !important; }
 
 .deep-orange-text.text-lighten-4 {
@@ -1409,7 +1409,7 @@
 .brown-text.text-lighten-5 {
   color: #efebe9 !important; }
 
-.brown.lighten-4, .brown#bioventures-banner {
+.brown.lighten-4 {
   background-color: #d7ccc8 !important; }
 
 .brown-text.text-lighten-4 {
@@ -1469,7 +1469,7 @@
 .blue-grey-text.text-lighten-5 {
   color: #eceff1 !important; }
 
-.blue-grey.lighten-4, .card .lighten-4.card-image.blank, .card .card-image.blank#bioventures-banner, .blue-grey#bioventures-banner {
+.blue-grey.lighten-4, .card .lighten-4.card-image.blank {
   background-color: #cfd8dc !important; }
 
 .blue-grey-text.text-lighten-4 {
@@ -1529,7 +1529,7 @@
 .grey-text.text-lighten-5 {
   color: #fafafa !important; }
 
-.grey.lighten-4, .grey#bioventures-banner {
+.grey.lighten-4 {
   background-color: #f5f5f5 !important; }
 
 .grey-text.text-lighten-4 {
@@ -6196,6 +6196,31 @@ select {
   border-radius: 2px;
   height: 3rem; }
 
+/***************
+    Nav List
+***************/
+ul.table-of-contents.fixed {
+  position: fixed; }
+ul.table-of-contents li {
+  padding: 2px 0; }
+ul.table-of-contents a {
+  display: inline-block;
+  font-weight: 300;
+  color: #757575;
+  padding-left: 20px;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: .4;
+  display: inline-block; }
+  ul.table-of-contents a:hover {
+    color: #a8a8a8;
+    padding-left: 19px;
+    border-left: 1px solid #ea4a4f; }
+  ul.table-of-contents a.active {
+    font-weight: 500;
+    padding-left: 18px;
+    border-left: 2px solid #ea4a4f; }
+
 .slider {
   position: relative;
   height: 440px;
@@ -6596,7 +6621,7 @@ a.button-collapse.top-nav {
 
 /**********************
 **********************/
-.dynamic-color .red, .dynamic-color .pink, .dynamic-color .purple, .dynamic-color .deep-purple, .dynamic-color .indigo, .dynamic-color .blue, .dynamic-color .light-blue, .dynamic-color #bioventures-banner, .dynamic-color .cyan, .dynamic-color .teal, .dynamic-color .green, .dynamic-color .light-green, .dynamic-color .lime, .dynamic-color .yellow, .dynamic-color .amber, .dynamic-color .orange, .dynamic-color .deep-orange, .dynamic-color .brown, .dynamic-color .grey, .dynamic-color .blue-grey, .dynamic-color .card .card-image.blank, .card .dynamic-color .card-image.blank {
+.dynamic-color .red, .dynamic-color .pink, .dynamic-color .purple, .dynamic-color .deep-purple, .dynamic-color .indigo, .dynamic-color .blue, .dynamic-color .light-blue, .dynamic-color .cyan, .dynamic-color .teal, .dynamic-color .green, .dynamic-color .light-green, .dynamic-color .lime, .dynamic-color .yellow, .dynamic-color .amber, .dynamic-color .orange, .dynamic-color .deep-orange, .dynamic-color .brown, .dynamic-color .grey, .dynamic-color .blue-grey, .dynamic-color .card .card-image.blank, .card .dynamic-color .card-image.blank {
   height: 55px;
   width: 100%;
   padding: 0 15px;
@@ -6899,18 +6924,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 300; }
 
-.thin {
-  font-weight: 300; }
-
-.medium {
-  font-weight: 500; }
-
-.heavy, h1 {
-  font-weight: 700; }
-
-.light, footer.page-footer .footer-copyright, h1 {
-  color: rgba(0, 0, 0, 0.54); }
-
 .card {
   height: 18rem;
   color: rgba(0, 0, 0, 0.87); }
@@ -6985,7 +6998,7 @@ form.subscribe {
           transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.2s;
   background-color: #03a9f4; }
   .btn:hover, .btn-large:hover, .mission .bullets .bullet-icon:hover {
-    background-color: #92dcfe; }
+    background-color: #14b4fc; }
 
 .btn-floating, .mission .bullets .bullet-icon {
   -webkit-transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.3s;
@@ -7044,7 +7057,16 @@ a.button-collapse.top-nav {
 #title {
   font-size: 1.45em; }
 
-light {
+.thin, thin {
+  font-weight: 300; }
+
+.medium, medium {
+  font-weight: 500; }
+
+.heavy, h1, heavy {
+  font-weight: 700; }
+
+.light, footer.page-footer .footer-copyright, h1, light {
   color: rgba(0, 0, 0, 0.54); }
 
 accent {
@@ -7078,10 +7100,6 @@ a {
 
 #index-banner {
   position: relative;
-  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
-  background-color: #0091ea;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: .1em;
@@ -7091,16 +7109,17 @@ a {
   #index-banner h4 {
     margin-bottom: 0; }
 
-#bioventures-banner {
-  position: relative;
-  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/byob.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/byob.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/byob.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-bottom: .1em;
-  height: 400px; }
+.index-banner {
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
+  background-color: #0091ea; }
+
+.bioventures-banner {
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-sm.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-sm.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-sm.jpg");
+  background-color: #3f51b5; }
 
 .env-header {
   position: absolute;
@@ -7120,7 +7139,7 @@ a {
       .env-header h4 {
         display: none; } }
   @media only screen and (max-width: 480px) {
-    .env-header light {
+    .env-header light.hide-me {
       display: none; } }
 
 .mission .bullets {
@@ -7177,7 +7196,13 @@ ul.side-nav .collapsible-body li.active {
 #front-page-nav li.active {
   background-color: #e1f5fe; }
 
-ul li, li {
+ul li.bullet {
   list-style-type: initial; }
+
+ul.table-of-contents a {
+  color: rgba(0, 0, 0, 0.54); }
+  ul.table-of-contents a:hover {
+    color: rgba(0, 0, 0, 0.26);
+    border-left: 1px solid #FF4081; }
 
 /*# sourceMappingURL=ghpages-materialize.css.map */
