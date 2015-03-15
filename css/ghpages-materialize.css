@@ -6869,6 +6869,88 @@ body.parallax-demo footer {
   #tx-live-lang-container .txlive-langselector-marker {
     border-bottom: 4px solid rgba(0, 0, 0, 0.61); }
 
+/*
+ * Keyframes
+ */
+@-webkit-keyframes fadeIn{
+  0%{
+    opacity: 0; }
+  100%{
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes fadeInUp{
+  0%{
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0); }
+  100%{
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+@-webkit-keyframes fadeInRight{
+  0%{
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0); }
+  100%{
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+.m-scene {
+  /** Basic styles for an animated element */
+  /** An element that fades in */
+  /** An element that fades in and slides up */
+  /** An element that fades in and slides from the right */
+  /** Reverse "exit" animations */ }
+  .m-scene .scene_element {
+    -webkit-animation-duration: 0.25s;
+            animation-duration: 0.25s;
+    -webkit-transition-timing-function: cubic-bezier(0.62, 0.28, 0.23, 0.99);
+            transition-timing-function: cubic-bezier(0.62, 0.28, 0.23, 0.99);
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
+  .m-scene .delay {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s; }
+  .m-scene .scene_element--fadein {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn; }
+  .m-scene .scene_element--fadeinup {
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp; }
+  .m-scene .scene_element--fadeinright {
+    -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight; }
+  .m-scene.is-exiting .scene_element {
+    -webkit-animation-direction: alternate-reverse;
+            animation-direction: alternate-reverse; }
+
 blockquote {
   border-left: 5px solid #0091ea; }
 
