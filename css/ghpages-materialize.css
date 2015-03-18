@@ -6929,8 +6929,8 @@ body.parallax-demo footer {
   /** An element that fades in and slides from the right */
   /** Reverse "exit" animations */ }
   .m-scene .scene_element {
-    -webkit-animation-duration: 0.25s;
-            animation-duration: 0.25s;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
     -webkit-transition-timing-function: cubic-bezier(0.62, 0.28, 0.23, 0.99);
             transition-timing-function: cubic-bezier(0.62, 0.28, 0.23, 0.99);
     -webkit-animation-fill-mode: both;
@@ -7127,7 +7127,8 @@ a.button-collapse.top-nav {
     background-color: #92dcfe; }
 
 #subscribe {
-  position: relative; }
+  position: relative;
+  margin-bottom: 0; }
 
 #subbtn {
   position: absolute;
