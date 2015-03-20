@@ -1,0 +1,1 @@
+!function($){var e=$(document);$.readyFn={list:[],register:function(e){$.readyFn.list.push(e)},execute:function(){for(var e=0;e<$.readyFn.list.length;e++)try{$.readyFn.list[e].apply(document,[$])}catch(n){throw n}}},e.ready(function(){$.readyFn.execute()}),$.fn.ready=function(e){$.readyFn.register(e)}}(jQuery);

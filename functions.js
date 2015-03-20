@@ -7,7 +7,7 @@
         pageCacheSize: 4,
         // Runs when a link has been activated
         onStart: {
-          duration: 400, // Duration of our animation
+          duration: 500, // Duration of our animation
           render: function () {
             // toggleAnimationClass() is a public method
             // for restarting css animations with a class
@@ -17,6 +17,9 @@
               scrollTop: 0
             });
           }
+        },
+        callback : function() {
+            $.readyFn.execute();
         }
       }).data('smoothState');
       //.data('smoothState') makes public methods available

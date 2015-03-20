@@ -1,1 +1,1 @@
-!function($){"use strict";var t=$("html, body"),a=$("#main").smoothState({prefetch:!0,pageCacheSize:4,onStart:{duration:400,render:function(){a.toggleAnimationClass("is-exiting"),t.animate({scrollTop:0})}}}).data("smoothState")}(jQuery);
+!function($){"use strict";var t=$("html, body"),e=$("#main").smoothState({prefetch:!0,pageCacheSize:4,onStart:{duration:500,render:function(){e.toggleAnimationClass("is-exiting"),t.animate({scrollTop:0})}},callback:function(){$.readyFn.execute()}}).data("smoothState")}(jQuery);

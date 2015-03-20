@@ -270,7 +270,7 @@
 
   	
     <!--  Scripts-->
-<!--  calendar-->
+    <!--  calendar-->
     <script type="text/javascript">
         // this apiKey is managed in shane's google developer account
         var apiKey = 'AIzaSyA7vutcePGMNNPpjnuUW3JxuCHDy_4_Mm0';
@@ -389,6 +389,21 @@
     <script src="bin/materialize.js"></script>
     <script src="jquery.smoothState.js"></script>
     <script src="functions.js"></script>
+    <script src="readyExec.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+        if ($('nav').length) {
+          $('.toc-wrapper').pushpin({ top: $('nav').height() });
+        }
+        else if ($('#index-banner').length) {
+          $('.toc-wrapper').pushpin({ top: $('#index-banner').height() });
+        }
+        else {
+          $('.toc-wrapper').pushpin({ top: 0 });
+        }
+      });
+    </script>
 
     
     <script type="text/javascript" src="https://www.universe.com/embed.js"></script>
