@@ -7140,6 +7140,9 @@ a.button-collapse.top-nav {
   color: #0091ea;
   font-weight: 300; }
 
+.env-color {
+  color: #0091ea; }
+
 #title {
   font-size: 1.45em; }
 
@@ -7197,14 +7200,22 @@ a {
     margin-bottom: 0; }
 
 .index-banner {
-  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../img/2015-sm.jpg"); }
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(0, 145, 234, 0.25), rgba(0, 145, 234, 0.25)), url("../img/sky.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(0, 145, 234, 0.25), rgba(0, 145, 234, 0.25)), url("../img/sky.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(0, 145, 234, 0.25), rgba(0, 145, 234, 0.25)), url("../img/sky.jpg");
+  background-position: center, center; }
 
 .bioventures-banner {
-  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-sm.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-sm.jpg");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-sm.jpg"); }
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-web.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-web.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(63, 81, 181, 0.33), rgba(63, 81, 181, 0.33)), url("../img/possibilities-web.jpg");
+  background-position: center, center; }
+
+.foundations-banner {
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(179, 157, 219, 0.33), rgba(179, 157, 219, 0.33)), url("../img/foundations.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(179, 157, 219, 0.33), rgba(179, 157, 219, 0.33)), url("../img/foundations.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(179, 157, 219, 0.33), rgba(179, 157, 219, 0.33)), url("../img/foundations.jpg");
+  background-position: center, center; }
 
 .env-header {
   position: absolute;
@@ -7266,7 +7277,7 @@ nav ul li:hover, nav ul li.active {
   background-color: #81d4fa; }
 
 .header {
-  color: #81d4fa; }
+  color: #4fc3f7; }
 
 ul.side-nav .collapsible-body li.active {
   background-color: #81d4fa; }

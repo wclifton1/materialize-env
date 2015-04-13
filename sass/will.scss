@@ -286,6 +286,10 @@ a.button-collapse.top-nav{
   font-weight:300;
 }
 
+.env-color{
+  color:$env-color;
+}
+
 #title{
   font-size:1.45em;
 }
@@ -355,18 +359,29 @@ a {
 }
 .index-banner{
   $gradient-angle: 0deg;
-  $hero-background-top: rgba(white, 0); 
+  $hero-background-top: rgba($env-color, .25); 
   $hero-background-bottom: rgba(white, 0.9);
-  $hero-image: '../img/2015-sm.jpg';
+  $hero-image: '../img/sky.jpg';
   @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top, $hero-background-top), url($hero-image));
+  background-position: center, center;
 }
 
 .bioventures-banner{
   $gradient-angle: 0deg;
   $hero-background-top: rgba($indigo, .33); 
   $hero-background-bottom: rgba(white, .9);
-  $hero-image: '../img/possibilities-sm.jpg';
+  $hero-image: '../img/possibilities-web.jpg';
   @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top, $hero-background-top), url($hero-image));
+  background-position: center, center;
+}
+
+.foundations-banner{
+  $gradient-angle: 0deg;
+  $hero-background-top: rgba($wisteria, .33);
+  $hero-background-bottom: rgba(white, .9);
+  $hero-image: '../img/foundations.jpg';
+  @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top, $hero-background-top), url($hero-image));
+  background-position: center, center;
 }
 
 .env-header{
@@ -461,7 +476,7 @@ nav {
 }
 
 .header {
-  color: color("light-blue", "lighten-3");
+  color: color("light-blue", "lighten-2");
 }
 
 ul.side-nav .collapsible-body li.active {
