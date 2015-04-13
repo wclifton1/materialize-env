@@ -9,20 +9,20 @@
     <meta name="author" content="enventure">
     <!-- Favicons -->
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 
@@ -43,13 +43,13 @@
   </head>
   
   <body>
-    <main>
-      <div class="section scene_element scene_element--fadein index-banner" id="index-banner">
+    <main id="main" class="m-scene">
+      <div class="index-banner scene_element scene_element--fadein" id="index-banner">
         <div class="container">
           <!--a id="about" href="about.html" class="frosted btn btn-floating btn-large tooltipped" data-position="bottom" data-tooltip="we love to help"><i class="mdi-communication-textsms"></i></a-->
           <div class="env-header">
             <h4 id="tagline">houston's home for entrepreneurs</h4>
-            <h2><enventure id="title">enventure.</enventure> <light>2015</light></h2>
+            <h2><enventure id="title">enventure.</enventure> <light class="hide-me">2015</light></h2>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
         </div>
       </div>
 
-      <div class="scene_element scene_element--fadeinup scene_element--delayed">
+      <div class="scene_element scene_element--fadeinup">
         <div class="container">
           <div class="row">
             <div class="col s12">
@@ -87,28 +87,28 @@
             <div id="myEvent" class="event"></div>
           </div>
 
+        <div class="divider"></div>
           
         </div>
+
       </div>
 
-      <div class="scene_element scene_element--fadeinup scene_element--delayed">
+      <div class="scene_element scene_element--fadeinup delay">
         
         <div class="container">
-        <div class="divider"></div>
           <div class="row section">
 
             <!--MGMT 633-->
             <div class="col s12 m6 l4">
               <div class="card">
-                <div class="card-image mgmt waves-effect waves-block waves-light">
-                </div>
+                <div class="card-image mgmt waves-effect waves-block waves-light activator"></div>
                 <div class="card-content">
-                  <span class="card-title activator" style="line-height:24px">Life Science Entrepreneurship<i class="mdi-navigation-more-vert right"></i></span>
+                  <span class="card-title activator" style="line-height:24px">Intro to Life Science Entrepreneurship<i class="mdi-navigation-more-vert right"></i></span>
                   <h6>The class that started it all w/ Jack Gill and George McLendon</h6>
                   <p><a href="http://mgmt.enventure.org/">Spring</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title">MGMT 633 <i class="mdi-navigation-close right"></i></span>
+                  <span class="card-title">Intro to Life Science Entrepreneurship <i class="mdi-navigation-close right"></i></span>
                   <p>Jack Gill, a silicon valley VC, and George McLendon, former Provost at Rice University, teach this inspiring course featuring top local entrepreneurs.</p>
                   <p><a href="http://mgmt.enventure.org/">Learn More</a></p>
                 </div>
@@ -118,17 +118,17 @@
             <!--Foundations-->
             <div class="col s12 m6 l4">
               <div class="card">
-                <div class="card-image foundations waves-effect waves-block waves-light">
+                <div class="card-image foundations waves-effect waves-block waves-light activator">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator">Foundations <i class="mdi-navigation-more-vert right"></i></span>
-                  <h6>Entry-level startup curriculum for budding entrepreneurs</h6>
-                  <p><a href="#">Monthly</a></p>
+                  <h6>Practical skills for budding entrepreneurs</h6>
+                  <p><a href="foundations.html">Monthly</a></p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title">Foundations <i class="mdi-navigation-close right"></i></span>
-                  <p>Whether you're a physician full of ideas or an engineer looking for a new medical challenge, these classes will address the early obstacles and pitfalls encountered when starting up a medical startup.</p>
-                  <p><a href="#">Learn More</a></p>
+                  <p>Whether you're an MD with an idea or a scientist with new tech, Foundations' experienced, approachable lecturers will address early obstacles and strategy for launching your medical startup.</p>
+                  <p><a href="foundations.html">Begins May 2015</a></p>
                 </div>
               </div>
             </div>
@@ -136,37 +136,34 @@
             <!--bioventures-->
             <div class="col s12 m6 l4">
               <div class="card">
-                <div class="card-image bioventures waves-effect waves-block waves-light">
+                <div class="card-image bioventures waves-effect waves-block waves-light activator">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator"><span style="font-weight:300">bio</span><enventure>ventures</enventure> <i class="mdi-navigation-more-vert right"></i></span>
+                  <span class="card-title activator"><span class="activator" style="font-weight:300">bio</span><enventure class="activator">ventures</enventure> <i class="mdi-navigation-more-vert right"></i></span>
                   <h6>Take your idea from concept to company</h6>
                   <p><a href="bioventures.html">Spring</a></p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title"><span style="font-weight:300">bio</span><enventure>ventures</enventure> <i class="mdi-navigation-close right"></i></span>
-                  <p>BioVentures gives students practical experience commercializing their <strong>ideas</strong> or <strong>existing IP</strong>.</p>
-                  <p>Mentored by experienced life science entrepreneurs, each team develops a business plan for our investor pitch day.</p>
+                  <p>BioVentures gives students practical experience commercializing their ideas or existing IP. Local life science mentors coach each team to develop a business plan for our investor pitch day.</p>
                   <p><a href="bioventures.html">Learn More</a></p>
                 </div>
               </div>
             </div>
 
-            <!--Meetups-->
+            <!--Network-->
             <div class="col s12 m6 l4">
               <div class="card">
-                <div class="card-image meetups waves-effect waves-block waves-light">
+                <div class="card-image meetups waves-effect waves-block waves-light activator">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator">Meetups <i class="mdi-navigation-more-vert right"></i></span>
+                  <span class="card-title activator">Network <i class="mdi-navigation-more-vert right"></i></span>
                   <h6>Get to know your community</h6>
-                  <p><a href="http://www.meetup.com/enventure">Monthly</a></p>
+                  <p><a href="#!">Monthly</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title">Meetups <i class="mdi-navigation-close right"></i></span>
-                  <p>Enventure Meetups give entrepreneurs an avenue to connect outside of the lab, class, or office.</p>
-                  <p>Meetups are a great way to find your multi-disciplinary team, build relationships with experienced entrepreneurs, or find a job you didn’t know existed.</p>
-                  <p><a href="http://www.meetup.com/enventure">Learn More</a></p>
+                  <span class="card-title">Network <i class="mdi-navigation-close right"></i></span>
+                  <p>Enventure gives entrepreneurs an avenue to connect outside of the lab, class, or office. Networking events are a great way to find your multi-disciplinary team, build relationships with experienced entrepreneurs, or find a job you didn’t know existed.</p>
                 </div>
               </div>
             </div>
@@ -174,17 +171,16 @@
             <!--Dialog-->
             <div class="col s12 m6 l4">
               <div class="card">
-                <div class="card-image dialog waves-effect waves-block waves-light">
+                <div class="card-image dialog waves-effect waves-block waves-light activator">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator">Dialog <i class="mdi-navigation-more-vert right"></i></span>
                   <h6>Hear from entrepreneurs who walk the walk</h6>
-                  <p><a href="#">Quarterly</a></p>
+                  <p><a href="#!">Quarterly</a></p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title">Dialog <i class="mdi-navigation-close right"></i></span>
-                  <p>Dialog is a forum where scientists and physicians, entrepreneurs and investors, students and seasoned mentors alike share their stories, their path to industry, and their big ideas with Houston's life science entrepreneurship community.</p>
-                  <p><a href="#">Learn More</a></p>
+                  <p>Dialog is a forum where scientists, physicians, entrepreneurs, and investors share their stories, their path to industry, and their big ideas with Houston's life science entrepreneurship community.</p>
                 </div>
               </div>
             </div>
@@ -192,7 +188,7 @@
             <!--Your Class-->
             <div class="col s12 m6 l4">
               <div class="card">
-                <div class="card-image blank waves-effect waves-block waves-light">
+                <div class="card-image blank waves-effect waves-block waves-light activator">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator">Your Class Here <i class="mdi-navigation-more-vert right"></i></span>
@@ -200,8 +196,8 @@
                 </div>
                 <div class="card-reveal">
                   <span class="card-title">Your Class Here <i class="mdi-navigation-close right"></i></span>
-                  <p>Our curriculum is constantly growing. Let us know about your school's offerings so we can share it with the community.</p>
-                  <p><a href="#">Learn More</a></p>
+                  <p>Houston's free + open curriculum is constantly growing. Let us know about your school's offerings so we can share it with the community.</p>
+                  <p><a href="mailto:team@enventure.org">Contact Us</a></p>
                 </div>
               </div>
             </div>
@@ -219,7 +215,7 @@
                   <div class="bullet-content">
                     <h4>free +<br>open</h4>
                   </div>
-                  <p>We know what it's like to be a student or budding entrepreneur. That's why all of our events are <strong>free</strong>: so there's no reason you can't have the resources you need.</p>                  
+                  <p>We know what it's like to be a student or budding entrepreneur. That's why all of our events are <strong>free</strong>, so there's no reason you can't have the resources you need.</p>                  
                 </li>  
                 <li class="col s12 l4">
                   <div class="bullet-icon bullet-icon-2">
@@ -274,13 +270,7 @@
 
   	
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!--script src="js/jquery.min.js"></script-->
-    <!--script src="js/jquery.timeago.js"></script-->  
-    <!--script src="js/prism.js"></script-->
-    <script src="js/bin/materialize.js"></script>
-    <!--script src="js/jquery.smoothState.js"></script-->
-    <!--script src="js/init.js"></script-->
+    <!--  calendar-->
     <script type="text/javascript">
         // this apiKey is managed in shane's google developer account
         var apiKey = 'AIzaSyA7vutcePGMNNPpjnuUW3JxuCHDy_4_Mm0';
@@ -364,14 +354,14 @@
                         var ampm = timeRaw.indexOf('AM') > -1 ? 'AM' : 'PM'
                         var time = timeRaw.slice(0, timeRaw.length - 6) + ' ' + ampm
 
-                        html.push("<div class=\"col m2 hide-on-small-only\">")
+                        html.push("<div class=\"col m2 hide-on-small-only scene_element scene_element--fadeinup\">")
                         html.push("<h3>" + dayNum + "</h3>")
                         html.push("<h5>" + month + "</h5>")
                         html.push("</div>")
-                        html.push("<div class=\"col s12 hide-on-med-and-up\">")
+                        html.push("<div class=\"col s12 hide-on-med-and-up scene_element scene_element--fadeinup\">")
                         html.push("<h5>" + day + ', ' + month + ' ' + dayNum + "</h5>")
                         html.push("</div>")
-                        html.push("<div class=\"col s12 m10\">")
+                        html.push("<div class=\"col s12 m10 scene_element scene_element--fadeinup\">")
                         html.push("<a href=\"" + link + "\"" + " target=\"_blank\">")
                         html.push("<div class=\"card-panel\">")
                         html.push("<h5 class=\"medium\">" + summary + "</h5>")
@@ -389,21 +379,37 @@
             })
         }
     </script>
+
     <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--script src="js/jquery.min.js"></script>
+    <!--script src="js/jquery.timeago.js"></script-->  
+    <!--script src="js/prism.js"></script-->
+    <script src="bin/materialize.js"></script>
+    <script src="jquery.smoothState.js"></script>
+    <script src="functions.js"></script>
+    <script src="readyExec.js"></script>
     <script>
       $(document).ready(function(){
-        $('.collapsible').collapsible();
-        $('.tooltipped').tooltip({delay: 50});
+        $('.scrollspy').scrollSpy();
+        if ($('nav').length) {
+          $('.toc-wrapper').pushpin({ top: $('nav').height() });
+        }
+        else if ($('#index-banner').length) {
+          $('.toc-wrapper').pushpin({ top: $('#index-banner').height() });
+        }
+        else {
+          $('.toc-wrapper').pushpin({ top: 0 });
+        }
       });
     </script>
+
+    
     <script type="text/javascript" src="https://www.universe.com/embed.js"></script>
-    <!--script src="js/smoothState.js"></script-->
 
     <!-- Twitter btn -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-    <!-- Google Plus btn-->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
     
     <!--  Google Analytics  -->
     <script>
