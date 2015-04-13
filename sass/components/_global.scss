@@ -25,16 +25,18 @@ ul {
 }
 
 a {
-	color: color("blue", "darken-1");
+	color: $link-color;
 	text-decoration: none;
+
+  // Gets rid of tap active state
+  -webkit-tap-highlight-color: transparent;
 }
 
 
 // Positioning
 .valign-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexbox();
+  @include align(center);
 
   .valign {
     display: block;
@@ -44,10 +46,16 @@ a {
 
 ul {
   padding: 0;
+  li {
+    list-style-type: none;
+  }
 }
-li {
-  list-style-type: none;
+
+// classic clearfix
+.clearfix {
+  clear: both;
 }
+
 
 // Z-levels
 
@@ -100,6 +108,9 @@ i {
     float: right;
     margin-left: 15px;
   }
+  &.tiny {
+    font-size: 1rem;
+  }
   &.small {
     font-size: 2rem;
   }
@@ -112,13 +123,43 @@ i {
 }
 
 // Images
-img.responsive-img {
+img.responsive-img,
+video.responsive-video {
   max-width: 100%;
   height: auto;
 }
 
 
-// parallax
+// Pagination
+
+.pagination {
+
+  li {
+    font-size: 1.2rem;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    @include border-radius(2px);
+    text-align: center;
+
+    a { color: #444; }
+
+    &.active a { color: #fff; }
+
+    &.active { background-color: $primary-color; }
+
+    &.disabled a { color: #999; }
+
+    i {
+      font-size: 2rem;
+      line-height: 1.8rem;
+    }
+  }
+}
+
+
+// Parallax
 .parallax-container {
   position: relative;
   overflow: hidden;
@@ -138,63 +179,89 @@ img.responsive-img {
     position: absolute;
     bottom: 0;
     width: 100%;
+    min-height: 100%;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
-@media #{$medium-and-down} {
-  .parallax-container {
-    height: auto;
-  }
-  .parallax {
-    position: relative;
-    width: 100%;
-
-    img {
-      position: relative;
-    }
-  }
-}
-
 
 // Pushpin
 .pin-top, .pin-bottom {
   position: relative;
 }
 .pinned {
-  position: fixed;
+  position: fixed !important;
+}
+
+/*********************
+  Transition Classes
+**********************/
+
+ul.staggered-list li {
+  @include opacity(0);
+}
+
+.fade-in {
+  @include opacity(0);
+  transform-origin: 0 50%;
 }
 
 
-
-// Browser Size Dependent Visibility
+/*********************
+  Media Query Classes
+**********************/
 .hide-on-small-only, .hide-on-small-and-down {
   @media #{$small-and-down} {
     display: none !important;
   }
 }
-
 .hide-on-med-and-down {
   @media #{$medium-and-down} {
     display: none !important;
   }
 }
-
 .hide-on-med-and-up {
   @media #{$medium-and-up} {
     display: none !important;
   }
 }
-
 .hide-on-med-only {
   @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {
     display: none !important;
   }
 }
-
 .hide-on-large-only {
   @media #{$large-and-up} {
     display: none !important;
   }
 }
+.show-on-large {
+  @media #{$large-and-up} {
+    display: initial !important;
+  }
+}
+.show-on-medium {
+  @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+    display: initial !important;
+  }
+}
+.show-on-small {
+  @media #{$small-and-down} {
+    display: initial !important;
+  }
+}
+.show-on-medium-and-up {
+  @media #{$medium-and-up} {
+    display: initial !important;
+  }
+}
+.show-on-medium-and-down {
+  @media #{$medium-and-down} {
+    display: initial !important;
+  }
+}
+
 
 // Center text on mobile
 .center-on-small-only {
@@ -203,15 +270,15 @@ img.responsive-img {
   }
 }
 
-
 // Footer
-
-footer {
+footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: color("materialize-red", "lighten-2");
+  background-color: $footer-bg-color;
 
   .footer-copyright {
+    overflow: hidden;
+    height: 50px;
     line-height: 50px;
     color: rgba(255,255,255,.8);
     background-color: rgba(51,51,51,.08);;
@@ -266,13 +333,13 @@ td, th{
   display: table-cell;
   text-align: left;
   vertical-align: middle;
-  border-radius: 2px;
+  @include border-radius(2px);
 }
 
 // Responsive Table
 @media #{$medium-and-down} {
 
-  table {
+  table.responsive-table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
@@ -338,19 +405,63 @@ td, th{
 
 // Collections
 .collection {
-  background-color: $collection-bg-color;
+  background-color: #999;
   margin: $element-top-margin 0 $element-bottom-margin 0;
   border: 1px solid $collection-border-color;
-  border-radius: 2px;
+  @include border-radius(2px);
+  overflow: hidden;
 
   .collection-item {
+    background-color: $collection-bg-color;
     line-height: 1.5rem;
     padding: 10px 20px;
     margin: 0px;
     border-bottom: 1px solid $collection-border-color;
-      &:last-child {
-        border-bottom: none;
+
+    // Avatar Collection
+    &.avatar {
+      height: 84px;
+      padding-left: 72px;
+      position: relative;
+
+      .circle {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        overflow: hidden;
+        left: 15px;
+        display: inline-block;
+        vertical-align: middle;
       }
+      i.circle {
+        font-size: 18px;
+        line-height: 42px;
+        color: #fff;
+        background-color: #999;
+        text-align: center;
+      }
+
+
+      .title {
+        font-size: 16px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .secondary-content {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+      }
+
+    }
+
+
+    &:last-child {
+      border-bottom: none;
+    }
 
     &.active {
       background-color: $collection-active-bg-color;
@@ -360,6 +471,7 @@ td, th{
   a.collection-item{
     display: block;
     @include transition(.25s);
+    color: $secondary-color;
     &:not(.active) {
       &:hover {
         background-color: $collection-hover-bg-color;
@@ -369,6 +481,7 @@ td, th{
 
   &.with-header {
     .collection-header {
+      background-color: $collection-bg-color;
       border-bottom: 1px solid $collection-border-color;
       padding: 10px 20px;
     }
@@ -377,40 +490,13 @@ td, th{
     }
   }
 
-  .secondary-content {
-    float: right;
-  }
-
-  //Pagination
-  &.pagination {
-    display: inline-block;
-
-      ul{
-        background-color: transparent;
-        font-size: 0;
-        display: inline-block;
-      }
-    li {
-      display: inline;
-      font-weight: 500;
-      margin: 0px;
-      padding: 0px;
-      font-size: 1rem;
-
-      a {
-       padding: 0px 5px;
-      }
-      &.active {
-        background-color: color('light-blue', 'base');
-        color: #FFF;
-      }
-      &:hover {
-        background-color: color('light-blue', 'lighten-5');
-      }
-    }
-  }
-
 }
+// Made less specific to allow easier overriding
+.secondary-content {
+  float: right;
+  color: $secondary-color;
+}
+
 
 // Badges
 span.badge {
@@ -427,7 +513,7 @@ span.badge {
     font-weight: 300;
     font-size: 0.8rem;
     color: #fff;
-    background-color: color('blue', 'base');
+    background-color: $badge-bg-color;
     @include border-radius(2px);
   }
   &.new:after {
@@ -479,6 +565,8 @@ span.badge {
       top: 0;
       left:0;
       bottom: 0;
+      will-change: left, right;
+      // Custom bezier
       @include animation(indeterminate 2.1s cubic-bezier(0.650, 0.815, 0.735, 0.395) infinite);
 
     }
@@ -489,6 +577,7 @@ span.badge {
       top: 0;
       left:0;
       bottom: 0;
+      will-change: left, right;
       // Custom bezier
       @include animation(indeterminate-short 2.1s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite);
       @include animation-delay(1.15s);
@@ -524,6 +613,8 @@ span.badge {
       right: -8%;
     }
 }
+
+
 /*******************
   Utility Classes
 *******************/
@@ -565,4 +656,10 @@ span.badge {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

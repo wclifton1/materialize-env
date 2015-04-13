@@ -9,20 +9,20 @@
     <meta name="author" content="enventure">
     <!-- Favicons -->
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 
@@ -43,13 +43,13 @@
   </head>
   
   <body>
-    <main>
-      <div class="section scene_element scene_element--fadein" id="index-banner">
+    <main id="main" class="m-scene">
+      <div class="index-banner scene_element scene_element--fadein" id="index-banner">
         <div class="container">
           <a id="about" href="about.html" class="frosted btn btn-floating btn-large tooltipped" data-position="bottom" data-tooltip="we love to help"><i class="mdi-communication-textsms"></i></a>
           <div class="env-header">
-            <h4 id="tagline">houston's home for entrepreneurs.</h4>
-            <h2><enventure id="title">enventure.</enventure> <light>2015</light></h2>
+            <h4 id="tagline">houston's home for entrepreneurs</h4>
+            <h2><enventure id="title">enventure.</enventure> <light class="hide-me">2015</light></h2>
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@
             <div class="col s12 m4">
               <blockquote>sign up for our newsletter and join the community</blockquote>
             </div>
-            <form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+            <form action="http://enventure.us5.list-manage.com/subscribe/post?u=ef4088dbaa790eaf363197ef4&id=7335f3f183" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe" target="_blank" novalidate="">
               <div class="input-field col s10 m7">
                 <i class="mdi-content-send prefix"></i>
                 <input id="email" name="EMAIL" type="email" class="validate">
@@ -70,12 +70,11 @@
                 <button id="subbtn" class="btn btn-large btn-floating tooltipped" data-position="bottom" data-tooltip="subscribe to our newsletter" type="submit" name="action"><i class="mdi-social-group-add"></i></button>
               </div>
             </form>
-            <!--have this transition to mdi-action-favorite (heart)-->
           </div>
         </div>
       </div>
 
-      <div class="scene_element scene_element--fadeinup scene_element--delayed">
+      <div class="scene_element scene_element--fadeinup">
         <div class="container">
           <div class="collection">
             <a href="#!" class="collection-item active">Event 1</a>
@@ -103,59 +102,40 @@
       <div class="scene_element scene_element--fadeinup scene_element--delayed">
         <div class="container">
           <div class="row">
-            
-            <!--Meetups-->
-            <div class="col s12 m6 l4">
-              <div class="card">
-                <div class="card-image meetups waves-effect waves-block waves-light">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator">Meetups <i class="mdi-navigation-more-vert right"></i></span>
-                  <h6>Get to know your community</h6>
-                  <p><a href="http://www.meetup.com/enventure">Monthly</a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title">Meetups <i class="mdi-navigation-close right"></i></span>
-                  <p>Enventure Meetups give entrepreneurs an avenue to connect outside of the lab, class, or office.</p>
-                  <p>Meetups are a great way to find your multi-disciplinary team, build relationships with experienced entrepreneurs, or find a job you didn’t know existed.</p>
-                  <p><a href="http://www.meetup.com/enventure">Learn More</a></p>
-                </div>
-              </div>
+            <div class="col s12">
+              <h3 class="medium light">Upcoming Events</h3>
+              <a class="waves-effect waves-light btn valign" target="blank" href="https://www.google.com/calendar/embed?src=40gskl3c1kh46nrbeg9p1gnlj0%40group.calendar.google.com&ctz=America/Chicago"><i class="mdi-notification-event-note left"></i>Calendar</a>
             </div>
+          </div>
 
-            <!--Dialog-->
+          <div class="row">
+            <div id="myEvent" class="event"></div>
+          </div>
+
+        <div class="divider"></div>
+          
+        </div>
+
+      </div>
+
+      <div class="scene_element scene_element--fadeinup delay">
+        
+        <div class="container">
+          <div class="row section">
+
+            <!--MGMT 633-->
             <div class="col s12 m6 l4">
               <div class="card">
-                <div class="card-image dialog waves-effect waves-block waves-light">
-                </div>
+                <div class="card-image mgmt waves-effect waves-block waves-light activator"></div>
                 <div class="card-content">
-                  <span class="card-title activator">Dialog <i class="mdi-navigation-more-vert right"></i></span>
-                  <h6>Hear from entrepreneurs who walk the walk</h6>
-                  <p><a href="#">Quarterly</a></p>
+                  <span class="card-title activator" style="line-height:24px">Intro to Life Science Entrepreneurship<i class="mdi-navigation-more-vert right"></i></span>
+                  <h6>The class that started it all w/ Jack Gill and George McLendon</h6>
+                  <p><a href="http://mgmt.enventure.org/">Spring</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title">Dialog <i class="mdi-navigation-close right"></i></span>
-                  <p>Dialog is a forum where scientists and physicians, entrepreneurs and investors, students and seasoned mentors alike share their stories, their path to industry, and their big ideas with Houston's life science entrepreneurship community.</p>
-                  <p><a href="#">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-
-            <!--bioventures-->
-            <div class="col s12 m6 l4">
-              <div class="card">
-                <div class="card-image bioventures waves-effect waves-block waves-light">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator"><span style="font-weight:300">bio</span><enventure>ventures</enventure> <i class="mdi-navigation-more-vert right"></i></span>
-                  <h6>Take your idea from concept to company</h6>
-                  <p><a href="#">Spring</a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title"><span style="font-weight:300">bio</span><enventure>ventures</enventure> <i class="mdi-navigation-close right"></i></span>
-                  <p>BioVentures gives students practical experience commercializing their <strong>ideas</strong> or <strong>existing IP</strong>.</p>
-                  <p>Mentored by experienced life science entrepreneurs, each team develops a business plan for our investor pitch day.</p>
-                  <p><a href="#">Learn More</a></p>
+                  <span class="card-title">Intro to Life Science Entrepreneurship <i class="mdi-navigation-close right"></i></span>
+                  <p>Jack Gill, a silicon valley VC, and George McLendon, former Provost at Rice University, teach this inspiring course featuring top local entrepreneurs.</p>
+                  <p><a href="http://mgmt.enventure.org/">Learn More</a></p>
                 </div>
               </div>
             </div>
@@ -163,44 +143,77 @@
             <!--Foundations-->
             <div class="col s12 m6 l4">
               <div class="card">
-                <div class="card-image foundations waves-effect waves-block waves-light">
+                <div class="card-image foundations waves-effect waves-block waves-light activator">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator">Foundations <i class="mdi-navigation-more-vert right"></i></span>
-                  <h6>Entry-level startup curriculum for budding entrepreneurs</h6>
-                  <p><a href="#">Monthly</a></p>
+                  <h6>Practical skills for budding entrepreneurs</h6>
+                  <p><a href="foundations.html">Monthly</a></p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title">Foundations <i class="mdi-navigation-close right"></i></span>
-                  <p>Whether you're a physician full of ideas or an engineer looking for a new medical challenge, these classes will address the early obstacles and pitfalls encountered when starting up a medical startup.</p>
-                  <p><a href="#">Learn More</a></p>
+                  <p>Whether you're an MD with an idea or a scientist with new tech, Foundations' experienced, approachable lecturers will address early obstacles and strategy for launching your medical startup.</p>
+                  <p><a href="foundations.html">Begins May 2015</a></p>
                 </div>
               </div>
             </div>
 
-
-            <!--MGMT 633-->
+            <!--bioventures-->
             <div class="col s12 m6 l4">
               <div class="card">
-                <div class="card-image mgmt waves-effect waves-block waves-light">
+                <div class="card-image bioventures waves-effect waves-block waves-light activator">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator">MGMT 633 <i class="mdi-navigation-more-vert right"></i></span>
-                  <h6>The class that started it all...</h6>
-                  <p><a href="#">Spring</a></p>
+                  <span class="card-title activator"><span class="activator" style="font-weight:300">bio</span><enventure class="activator">ventures</enventure> <i class="mdi-navigation-more-vert right"></i></span>
+                  <h6>Take your idea from concept to company</h6>
+                  <p><a href="bioventures.html">Spring</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title">MGMT 633 <i class="mdi-navigation-close right"></i></span>
-                  <p>Jack Gill, a silicon valley VC, and George McLendon, former Provost at Rice University, teach this inspiring course featuring top local entrepreneurs.</p>
-                  <p><a href="#">Learn More</a></p>
+                  <span class="card-title"><span style="font-weight:300">bio</span><enventure>ventures</enventure> <i class="mdi-navigation-close right"></i></span>
+                  <p>BioVentures gives students practical experience commercializing their ideas or existing IP. Local life science mentors coach each team to develop a business plan for our investor pitch day.</p>
+                  <p><a href="bioventures.html">Learn More</a></p>
                 </div>
               </div>
             </div>
 
+            <!--Network-->
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-image meetups waves-effect waves-block waves-light activator">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator">Network <i class="mdi-navigation-more-vert right"></i></span>
+                  <h6>Get to know your community</h6>
+                  <p><a href="#!">Monthly</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">Network <i class="mdi-navigation-close right"></i></span>
+                  <p>Enventure gives entrepreneurs an avenue to connect outside of the lab, class, or office. Networking events are a great way to find your multi-disciplinary team, build relationships with experienced entrepreneurs, or find a job you didn’t know existed.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Dialog-->
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-image dialog waves-effect waves-block waves-light activator">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator">Dialog <i class="mdi-navigation-more-vert right"></i></span>
+                  <h6>Hear from entrepreneurs who walk the walk</h6>
+                  <p><a href="#!">Quarterly</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">Dialog <i class="mdi-navigation-close right"></i></span>
+                  <p>Dialog is a forum where scientists, physicians, entrepreneurs, and investors share their stories, their path to industry, and their big ideas with Houston's life science entrepreneurship community.</p>
+                </div>
+              </div>
+            </div>
+            
             <!--Your Class-->
             <div class="col s12 m6 l4">
               <div class="card">
-                <div class="card-image blank waves-effect waves-block waves-light">
+                <div class="card-image blank waves-effect waves-block waves-light activator">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator">Your Class Here <i class="mdi-navigation-more-vert right"></i></span>
@@ -208,8 +221,8 @@
                 </div>
                 <div class="card-reveal">
                   <span class="card-title">Your Class Here <i class="mdi-navigation-close right"></i></span>
-                  <p>Our curriculum is constantly growing. Let us know about your school's offerings so we can share it with the community.</p>
-                  <p><a href="#">Learn More</a></p>
+                  <p>Houston's free + open curriculum is constantly growing. Let us know about your school's offerings so we can share it with the community.</p>
+                  <p><a href="mailto:team@enventure.org">Contact Us</a></p>
                 </div>
               </div>
             </div>
@@ -220,16 +233,16 @@
             <div class="row">
               <h3><enventure>enventure</enventure> is...</h3>
               <ul class="bullets">
-                <li class="bullet col s12 l4">
+                <li class="col s12 l4">
                   <div class="bullet-icon bullet-icon-1">
                     <i class="mdi-social-school"></i>
                   </div>
                   <div class="bullet-content">
                     <h4>free +<br>open</h4>
                   </div>
-                  <p>We know what it's like to be a student or budding entrepreneur. That's why all of our events are <strong>free</strong>: so there's no reason you can't have the resources you need.</p>                  
+                  <p>We know what it's like to be a student or budding entrepreneur. That's why all of our events are <strong>free</strong>, so there's no reason you can't have the resources you need.</p>                  
                 </li>  
-                <li class="bullet col s12 l4">
+                <li class="col s12 l4">
                   <div class="bullet-icon bullet-icon-2">
                     <i class="mdi-image-healing"></i>
                   </div>
@@ -238,7 +251,7 @@
                   </div>
                    <p>We love entrepreneurs of all sorts. But healthcare entrepreneurs have a <strong>special set of challenges</strong> that we need to talk about.</p>
                 </li>
-                <li class="bullet col s12 l4">
+                <li class="col s12 l4">
                   <div class="bullet-icon bullet-icon-3">
                     <i class="mdi-maps-location-history"></i>
                   </div>
@@ -258,17 +271,17 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Write us a letter</h5>
-            <p class="white-text">6500 Main St #1040<br>
+          <div class="col m6 s12">
+            <h5>Write us a letter</h5>
+            <p>6500 Main St #1040<br>
             Houston, TX 77030</p>
           </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Social</h5>
-            <li><div class="fb-follow" data-href="https://www.facebook.com/enventuremed" data-width="300" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div></li>
-            <li><a href="https://twitter.com/enventuremed" class="twitter-follow-button" data-show-count="false">Follow @enventuremed</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
-            <li><a class="waves-effect waves-light btn" target="blank" href="http://www.meetup.com/enventure"><i class="mdi-social-people left"></i>Meetup</a></li>
-            <li><a class="waves-effect waves-light btn" target="blank" href="https://www.google.com/calendar/embed?src=40gskl3c1kh46nrbeg9p1gnlj0%40group.calendar.google.com&ctz=America/Chicago"><i class="mdi-notification-event-note left"></i>Full Calendar</a></li>
+          <div class="col m4 offset-m2 s12">
+            <h5>Social</h5>
+            <ul>
+              <li><div class="fb-follow" data-href="https://www.facebook.com/enventuremed" data-width="300" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div></li>
+              <li><a href="https://twitter.com/enventuremed" class="twitter-follow-button" data-show-count="false">Follow @enventuremed</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -282,20 +295,146 @@
 
   	
     <!--  Scripts-->
-    <!--script src="https://code.jquery.com/jquery-2.1.1.min.js"></script-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.timeago.js"></script>  
-    <script src="js/prism.js"></script>
+    <!--  calendar-->
+    <script type="text/javascript">
+        // this apiKey is managed in shane's google developer account
+        var apiKey = 'AIzaSyA7vutcePGMNNPpjnuUW3JxuCHDy_4_Mm0';
+        var scopes = 'https://www.googleapis.com/auth/calendar';
+
+        function handleClientLoad() {
+            gapi.client.setApiKey(apiKey);
+            makeApiCall();
+        }
+
+        function milToStandard(value) {
+            if (value !== null && value !== undefined) { //If value is passed in
+                if (value.indexOf('AM') > -1 || value.indexOf('PM') > -1) { //If time is already in standard time then don't format.
+                    return value;
+                } else {
+                    if (value.length == 8) { //If value is the expected length for military time then process to standard time.
+                        var hour = value.substring(0, 2); //Extract hour
+                        var minutes = value.substring(3, 5); //Extract minutes
+                        var identifier = 'AM'; //Initialize AM PM identifier
+
+                        if (hour == 12) { //If hour is 12 then should set AM PM identifier to PM
+                            identifier = 'PM';
+                        }
+                        if (hour == 0) { //If hour is 0 then set to 12 for standard time 12 AM
+                            hour = 12;
+                        }
+                        if (hour > 12) { //If hour is greater than 12 then convert to standard 12 hour format and set the AM PM identifier to PM
+                            hour = hour - 12;
+                            identifier = 'PM';
+                        }
+                        return hour + ':' + minutes + ' ' + identifier; //Return the constructed standard time
+                    } else { //If value is not the expected length than just return the value as is
+                        return value;
+                    }
+                }
+            }
+        };
+
+
+        function makeApiCall() {
+            gapi.client.load('calendar', 'v3', function() {
+                var request = gapi.client.calendar.events.list({
+                    // calendar id specific to enventure calendar
+                    'calendarId': '40gskl3c1kh46nrbeg9p1gnlj0@group.calendar.google.com',
+                    // look up only future events (after current time)
+                    'timeMin': new Date().toISOString()
+                });
+                request.execute(function(resp) {
+                    var futureEvents = resp.items
+                        // make sure future events are sorted by date from now
+                    futureEvents.sort(function(a, b) {
+                        return new Date(a.start.dateTime) - new Date(b.start.dateTime);
+                    });
+
+                    var featuredFutureEvents = []
+                    for (var i = 0; i < futureEvents.length; i++) {
+                        if (futureEvents[i].description) {
+                            if (futureEvents[i].description.indexOf('[featured]') > -1) {
+                                featuredFutureEvents.push(futureEvents[i])
+                            }
+                        }
+                    }
+
+                    var html = []
+
+                    var maxLength = featuredFutureEvents.length < 3 ? featuredFutureEvents.length : 3
+
+                    for (var i = 0; i < maxLength; i++) {
+                        var summary = featuredFutureEvents[i].summary
+                        var description = featuredFutureEvents[i].description.slice(0, featuredFutureEvents[i].description.indexOf('\n'))
+                        var location = featuredFutureEvents[i].location
+                        var linkStart = featuredFutureEvents[i].description.indexOf('Link: ') + 5
+                        var linkPlus = featuredFutureEvents[i].description.slice(linkStart)
+                        var link = linkPlus.slice(0, linkPlus.indexOf('\n'))
+                        var dateRaw = featuredFutureEvents[i].start.dateTime
+                        var dateStr = new Date(dateRaw).toString()
+                        var day = dateStr.slice(0, 3)
+                        var month = dateStr.slice(4, 7)
+                        var dayNum = dateStr.slice(8, 10)
+                        var timeRaw = milToStandard(new Date(dateRaw).toLocaleTimeString()).toString().trim()
+                        var ampm = timeRaw.indexOf('AM') > -1 ? 'AM' : 'PM'
+                        var time = timeRaw.slice(0, timeRaw.length - 6) + ' ' + ampm
+
+                        html.push("<div class=\"col m2 hide-on-small-only scene_element scene_element--fadeinup\">")
+                        html.push("<h3>" + dayNum + "</h3>")
+                        html.push("<h5>" + month + "</h5>")
+                        html.push("</div>")
+                        html.push("<div class=\"col s12 hide-on-med-and-up scene_element scene_element--fadeinup\">")
+                        html.push("<h5>" + day + ', ' + month + ' ' + dayNum + "</h5>")
+                        html.push("</div>")
+                        html.push("<div class=\"col s12 m10 scene_element scene_element--fadeinup\">")
+                        html.push("<a href=\"" + link + "\"" + " target=\"_blank\">")
+                        html.push("<div class=\"card-panel\">")
+                        html.push("<h5 class=\"medium\">" + summary + "</h5>")
+                        html.push("<p>" + time + ' at ' + location + "</p>")
+                        html.push("<p class=\"thin\">" + description + "</p>")
+                        html.push("<button class=\"waves-effect waves-light btn\">Learn More + RSVP</button>")
+                        html.push("</div>")
+                        html.push("</a>")
+                        html.push("</div>")
+
+                        document.getElementById("myEvent").innerHTML = html.join("")
+
+                    }
+                });
+            })
+        }
+    </script>
+
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--script src="js/jquery.min.js"></script>
+    <!--script src="js/jquery.timeago.js"></script-->  
+    <!--script src="js/prism.js"></script-->
     <script src="bin/materialize.js"></script>
-    <script src="js/jquery.smoothState.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/smoothState.js"></script>
+    <script src="jquery.smoothState.js"></script>
+    <script src="functions.js"></script>
+    <script src="readyExec.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+        if ($('nav').length) {
+          $('.toc-wrapper').pushpin({ top: $('nav').height() });
+        }
+        else if ($('#index-banner').length) {
+          $('.toc-wrapper').pushpin({ top: $('#index-banner').height() });
+        }
+        else {
+          $('.toc-wrapper').pushpin({ top: 0 });
+        }
+      });
+    </script>
+
+    
+    <script type="text/javascript" src="https://www.universe.com/embed.js"></script>
 
     <!-- Twitter btn -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-    <!-- Google Plus btn-->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
     
     <!--  Google Analytics  -->
     <script>
