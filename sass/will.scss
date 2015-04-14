@@ -515,5 +515,15 @@ ul.table-of-contents a {
   }
 }
 
+.switch label input[type=checkbox]:checked + .lever {
+  background-color:color("light-blue", "lighten-3");
+}
+.switch label input[type=checkbox]:checked + .lever:after {
+  background-color:color("light-blue", "lighten-2");
+}
+button:focus {
+  background-color:rgba($env-dark-color,.5)
+}
+
 //animation
 //transition: all cubic-bezier(.62,.28,.23,.99) 0.7s;

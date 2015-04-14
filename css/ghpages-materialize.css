@@ -7301,4 +7301,13 @@ ul.table-of-contents a {
     color: rgba(0, 0, 0, 0.26);
     border-left: 1px solid #FF4081; }
 
+.switch label input[type=checkbox]:checked + .lever {
+  background-color: #81d4fa; }
+
+.switch label input[type=checkbox]:checked + .lever:after {
+  background-color: #4fc3f7; }
+
+button:focus {
+  background-color: rgba(1, 87, 155, 0.5); }
+
 /*# sourceMappingURL=ghpages-materialize.css.map */

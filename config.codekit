@@ -161,6 +161,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/foundations.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/foundations.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/ghpages-materialize.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -234,6 +243,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/foundation.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/foundation.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/foundations.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/foundations.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/functions.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -244,6 +271,28 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/img\/1477215.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 84836,
+		"inputAbbreviatedPath": "\/img\/1477215.jpg",
+		"outputAbbreviatedPath": "\/img\/1477215.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/1534efc.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16209,
+		"inputAbbreviatedPath": "\/img\/1534efc.jpg",
+		"outputAbbreviatedPath": "\/img\/1534efc.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/2015-sm.jpg": {
 		"fileType": 16384,
@@ -274,6 +323,17 @@
 		"initialSize": 60031,
 		"inputAbbreviatedPath": "\/img\/billy-sm.jpg",
 		"outputAbbreviatedPath": "\/img\/billy-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/bryan.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6981,
+		"inputAbbreviatedPath": "\/img\/bryan.jpg",
+		"outputAbbreviatedPath": "\/img\/bryan.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -311,6 +371,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/engagement (37 of 50).jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 361112,
+		"inputAbbreviatedPath": "\/img\/engagement (37 of 50).jpg",
+		"outputAbbreviatedPath": "\/img\/engagement (37 of 50).jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/foundations.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -318,6 +389,17 @@
 		"initialSize": 307049,
 		"inputAbbreviatedPath": "\/img\/foundations.jpg",
 		"outputAbbreviatedPath": "\/img\/foundations.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 270345,
+		"inputAbbreviatedPath": "\/img\/gray.png",
+		"outputAbbreviatedPath": "\/img\/gray.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -672,6 +754,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/jquery.smoothState.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/jquery.smoothState.js",
+		"outputAbbreviatedPath": "\/js\/min\/jquery.smoothState-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/jquery.timeago.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -733,6 +826,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/pushpin.js",
 		"outputAbbreviatedPath": "\/js\/min\/pushpin-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/reveal.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/reveal.js",
+		"outputAbbreviatedPath": "\/js\/min\/reveal-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
