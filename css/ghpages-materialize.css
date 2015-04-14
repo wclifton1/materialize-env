@@ -7310,4 +7310,9 @@ ul.table-of-contents a {
 button:focus {
   background-color: rgba(1, 87, 155, 0.5); }
 
+#foundations .collapsible-body p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0; }
+
 /*# sourceMappingURL=ghpages-materialize.css.map */

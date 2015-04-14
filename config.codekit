@@ -371,6 +371,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/collin.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16561,
+		"inputAbbreviatedPath": "\/img\/collin.jpg",
+		"outputAbbreviatedPath": "\/img\/collin.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/engagement (37 of 50).jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -389,6 +400,17 @@
 		"initialSize": 307049,
 		"inputAbbreviatedPath": "\/img\/foundations.jpg",
 		"outputAbbreviatedPath": "\/img\/foundations.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gray.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26139,
+		"inputAbbreviatedPath": "\/img\/gray.jpg",
+		"outputAbbreviatedPath": "\/img\/gray.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
