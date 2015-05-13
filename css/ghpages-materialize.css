@@ -6986,8 +6986,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
 .card {
-  height: 18rem;
   color: rgba(0, 0, 0, 0.87); }
+  .card.home {
+    height: 18rem; }
+    .card.home .card-action {
+      border-top: none;
+      padding: 0; }
   .card .card-title {
     color: rgba(0, 0, 0, 0.54);
     font-weight: 900; }
@@ -7037,9 +7041,6 @@ h1, h2, h3, h4, h5, h6 {
       background-image: url(../img/byob-trans-24.png); }
   .card .card-reveal {
     width: 100%; }
-  .card .card-action {
-    border-top: none;
-    padding: 0; }
 
 header, main, footer {
   padding-left: 0; }
