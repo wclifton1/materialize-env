@@ -243,6 +243,18 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+<<<<<<< HEAD
+=======
+	"\/foundations.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/foundations.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+>>>>>>> origin/master
 	"\/functions.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -298,6 +310,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/bryan.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6981,
+		"inputAbbreviatedPath": "\/img\/bryan.jpg",
+		"outputAbbreviatedPath": "\/img\/bryan.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/byob-sm.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -331,6 +354,20 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+<<<<<<< HEAD
+=======
+	"\/img\/collin.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16561,
+		"inputAbbreviatedPath": "\/img\/collin.jpg",
+		"outputAbbreviatedPath": "\/img\/collin.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+>>>>>>> origin/master
 	"\/img\/engagement (37 of 50).jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -353,6 +390,31 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+<<<<<<< HEAD
+=======
+	"\/img\/gray.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26139,
+		"inputAbbreviatedPath": "\/img\/gray.jpg",
+		"outputAbbreviatedPath": "\/img\/gray.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 270345,
+		"inputAbbreviatedPath": "\/img\/gray.png",
+		"outputAbbreviatedPath": "\/img\/gray.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+>>>>>>> origin/master
 	"\/img\/Hein pic.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -375,6 +437,7 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+<<<<<<< HEAD
 	"\/img\/joanna headshot.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -386,6 +449,8 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+=======
+>>>>>>> origin/master
 	"\/img\/joanna.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

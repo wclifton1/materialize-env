@@ -84,9 +84,16 @@ h1{
 
 
 //_cards
-.card {
+.card{
   $card-height:18rem;
-  height: $card-height;
+
+  &.home{
+    height: $card-height;
+    .card-action {
+      border-top: none;
+      padding: 0;
+    }
+  }
   color: $font-color;
 
   .card-title{
@@ -169,11 +176,6 @@ h1{
   
   .card-reveal{
     width:100%;
-  }
-
-  .card-action {
-    border-top: none;
-    padding: 0;
   }
 }
 
@@ -533,6 +535,21 @@ ul.table-of-contents a {
     color: $b3-color;
     border-left: 1px solid $accent-color;
   }
+}
+
+.switch label input[type=checkbox]:checked + .lever {
+  background-color:color("light-blue", "lighten-3");
+}
+.switch label input[type=checkbox]:checked + .lever:after {
+  background-color:color("light-blue", "lighten-2");
+}
+button:focus {
+  background-color:rgba($env-dark-color,.5)
+}
+#foundations .collapsible-body p {
+  margin-top:1em;
+  margin-bottom:1em;
+  padding:0;
 }
 
 //animation

@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-color"
+			],
+			[
+				"tr",
+				"tr	Tag"
+			],
+			[
+				"en",
+				"enventure"
+			],
+			[
+				"background-",
+				"background-repeat"
+			],
+			[
 				"margin-",
 				"margin-bottom"
 			],
@@ -96,10 +112,6 @@
 				"max-width"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"se",
 				"secondary-font"
 			],
@@ -119,23 +131,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 22422,
+				"buffer_size": 22489,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/wclifton1/Sites/materialize/test.html",
+			"file": "foundations.html",
 			"settings":
 			{
-				"buffer_size": 22250,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "bioventures.html",
-			"settings":
-			{
-				"buffer_size": 51680,
+				"buffer_size": 27215,
 				"line_ending": "Unix"
 			}
 		},
@@ -167,42 +171,7 @@
 			"file": "sass/will.scss",
 			"settings":
 			{
-				"buffer_size": 10561,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/keyframes.scss",
-			"settings":
-			{
-				"buffer_size": 388,
-				"line_ending": "Unix",
-				"name": "/*!"
-			}
-		},
-		{
-			"file": "sass/pageTransitions.scss",
-			"settings":
-			{
-				"buffer_size": 788,
-				"line_ending": "Unix",
-				"name": "/* @mixin respond-to"
-			}
-		},
-		{
-			"file": "functions.js",
-			"settings":
-			{
-				"buffer_size": 813,
-				"line_ending": "Unix",
-				"name": "// Contents of functions.js"
-			}
-		},
-		{
-			"file": "readyExec.js",
-			"settings":
-			{
-				"buffer_size": 1474,
+				"buffer_size": 11445,
 				"line_ending": "Unix"
 			}
 		},
@@ -229,20 +198,17 @@
 				"buffer_size": 11202,
 				"line_ending": "Unix"
 			}
-		},
-		{
-			"file": "sass/components/_variables.scss",
-			"settings":
-			{
-				"buffer_size": 4375,
-				"line_ending": "Unix"
-			}
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 392.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -274,10 +240,19 @@
 	},
 	"file_history":
 	[
+		"/Users/wclifton1/Google Drive/SeedSprout/BioHouston/Membership/Becoming a Biohouston Member.txt",
+		"/Users/wclifton1/Sites/materialize-env/sass/components/_variables.scss",
+		"/Users/wclifton1/Sites/materialize-env/sass/keyframes.scss",
+		"/Users/wclifton1/Sites/materialize-env/sass/pageTransitions.scss",
+		"/Users/wclifton1/Sites/materialize-env/functions.js",
+		"/Users/wclifton1/Sites/materialize-env/readyExec.js",
+		"/Users/wclifton1/Sites/materialize-env/bioventures.html",
+		"/Users/wclifton1/Sites/materialize-env/foundation.html",
+		"/Users/wclifton1/Sites/materialize-env/materialize-env.sublime-project",
+		"/Users/wclifton1/Sites/materialize/test.html",
 		"/Users/wclifton1/Library/Caches/Cleanup At Startup/Transmit/209189C2-6A52-4106-807B-933863A6C439/readme.txt",
 		"/Users/wclifton1/Sites/materialize-env/sass/components/_typography.scss",
 		"/Users/wclifton1/Sites/materialize-env/js/bin/materialize.js",
-		"/Users/wclifton1/Sites/materialize/test.html",
 		"/Users/wclifton1/Sites/materialize-env/sass/ghpages-materialize.scss",
 		"/Users/wclifton1/Sites/materialize-env/js/init.js",
 		"/Users/wclifton1/Sites/materialize-env/.htaccess",
@@ -302,7 +277,6 @@
 		"/Users/wclifton1/Sites/materialize-env/sass/will restored.scss",
 		"/Users/wclifton1/Sites/materialize-env/sass/_will.scss",
 		"/Users/wclifton1/Sites/materialize-env/sass/components/_global.scss",
-		"/Users/wclifton1/Sites/materialize-env/sass/components/_variables.scss",
 		"/Users/wclifton1/Sites/materialize-env/index.sublime-workspace",
 		"/Users/wclifton1/Dropbox (Procyrion)/Procyrion - Quality System/~Working Copy/750 Clinical Study Protocols/750-0000-001 High-Risk PCI FIM.txt",
 		"/Users/wclifton1/Sites/2014 Enventure/js/jquery-scrolltofixed.js",
@@ -334,7 +308,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 46.0
 	},
 	"find_in_files":
 	{
@@ -349,6 +323,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<div class=\"row center\">\n                      <div class=\"col m6\">",
+			"m10",
+			"hide-on-med-and-up",
+			"hide-on-large-only",
+			"m2 hide-on-small-only",
+			"accent",
+			"small",
+			"card",
+			"$off-black",
+			".card",
+			"collin",
+			"startup",
+			"s12 m6 l6",
+			"send",
+			"HLA",
+			"practi",
+			"$env-color",
+			"bioventures",
+			"foundat",
 			"cubic",
 			"transition",
 			"cubic",
@@ -457,26 +450,7 @@
 			"-screen",
 			"ehrunner@gmail.com",
 			"lmclifton1@gmail.com",
-			"ginadestaffany@gmail.com",
-			"wclifton",
-			"joanna.c",
-			"515151",
-			"#333333",
-			"51B7B7",
-			"19949F",
-			"header",
-			"color-1",
-			"font-we",
-			"      ",
-			"     ",
-			"    ",
-			"   ",
-			"  ",
-			"                ",
-			"                    ",
-			"            ",
-			"                ",
-			"                    "
+			"ginadestaffany@gmail.com"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -484,6 +458,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"l2 hide-on-med-and-down",
+			"home"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -494,7 +470,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -503,15 +479,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 22422,
+						"buffer_size": 22489,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14586,
-								20584
+								10535,
+								10535
 							]
 						],
 						"settings":
@@ -522,57 +498,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5259.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/wclifton1/Sites/materialize/test.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 22250,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15262,
-								15147
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4435.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "bioventures.html",
+					"buffer": 1,
+					"file": "foundations.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 51680,
+						"buffer_size": 27215,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								50737,
-								50737
+								6375,
+								6375
 							]
 						],
 						"settings":
@@ -582,14 +528,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 24642.0,
+						"translation.y": 1869.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "team.html",
 					"semi_transient": false,
 					"settings":
@@ -615,17 +561,17 @@
 						"translation.y": 4917.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 5,
+			"selected": 4,
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "sass/ghpages-materialize.scss",
 					"semi_transient": false,
 					"settings":
@@ -649,11 +595,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "sass/materialize.scss",
 					"semi_transient": false,
 					"settings":
@@ -665,8 +611,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								539,
+								539
 							]
 						],
 						"settings":
@@ -677,24 +623,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "sass/will.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10561,
+						"buffer_size": 11445,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6012,
-								6012
+								5346,
+								5352
 							]
 						],
 						"settings":
@@ -705,135 +651,14 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3683.0,
+						"translation.y": 3175.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "sass/keyframes.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 388,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								388,
-								388
-							]
-						],
-						"settings":
-						{
-							"auto_name": "/*!",
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "sass/pageTransitions.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 788,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								174,
-								174
-							]
-						],
-						"settings":
-						{
-							"auto_name": "/* @mixin respond-to",
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "functions.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 813,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								625,
-								625
-							]
-						],
-						"settings":
-						{
-							"auto_name": "// Contents of functions.js",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "readyExec.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1474,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1350,
-								1350
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
+					"buffer": 6,
 					"file": "sass/custom-variables.scss",
 					"semi_transient": false,
 					"settings":
@@ -845,8 +670,8 @@
 						"selection":
 						[
 							[
-								827,
-								833
+								132,
+								142
 							]
 						],
 						"settings":
@@ -854,14 +679,14 @@
 							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 126.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 7,
 					"file": "sass/style.scss",
 					"semi_transient": false,
 					"settings":
@@ -873,8 +698,8 @@
 						"selection":
 						[
 							[
-								1079,
-								1081
+								12486,
+								12496
 							]
 						],
 						"settings":
@@ -884,14 +709,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 639.0,
+						"translation.y": 8504.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 8,
 					"file": "sass/components/_global.scss",
 					"semi_transient": false,
 					"settings":
@@ -903,8 +728,8 @@
 						"selection":
 						[
 							[
-								2883,
-								2893
+								94,
+								94
 							]
 						],
 						"settings":
@@ -914,38 +739,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 9032.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "sass/components/_variables.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4375,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage"
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -979,7 +776,7 @@
 		"cols":
 		[
 			0.0,
-			0.405208333333,
+			0.525772127906,
 			1.0
 		],
 		"rows":
@@ -993,15 +790,17 @@
 	{
 		"height": 0.0
 	},
+	"pinned_build_system": "",
 	"project": "materialize-env.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 86.0
 	},
 	"save_all_on_build": true,
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1010,6 +809,7 @@
 	"select_project":
 	{
 		"height": 500.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1018,6 +818,7 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
