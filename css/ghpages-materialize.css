@@ -5756,6 +5756,29 @@ a.waves-effect .waves-ripple {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     margin: 16px 0; }
 
+.chip {
+  display: inline-block;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  background-color: #E4E4E4; }
+  .chip img {
+    float: left;
+    margin: 0 8px 0 -12px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%; }
+  .chip i.material-icons {
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 8px; }
+
 /* Remove Focus Boxes */
 select:focus {
   outline: 1px solid #c9f3ef; }
@@ -7494,13 +7517,10 @@ h1, h2, h3, h4, h5, h6 {
     display: -ms-flexbox;
     display: flex;
     padding: 0 0.75rem;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -webkit-flex-shrink: 1;
-        -ms-flex-negative: 1;
-            flex-shrink: 1; }
+    -webkit-box-flex: 1,;
+    -webkit-flex: 1, 1, 1.5rem;
+        -ms-flex: 1, 1, 1.5rem;
+            flex: 1, 1, 1.5rem; }
     @media only screen and (min-width: 601px) {
       .cards-flex .col-flex {
         width: 50%; } }
@@ -7509,6 +7529,17 @@ h1, h2, h3, h4, h5, h6 {
         width: 33.333333333333%; } }
     .cards-flex .col-flex .card {
       width: 100%; }
+  .cards-flex .big-card {
+    -webkit-box-flex: 4;
+    -webkit-flex-grow: 4;
+        -ms-flex-positive: 4;
+            flex-grow: 4; }
+    @media only screen and (min-width: 601px) {
+      .cards-flex .big-card {
+        width: 100%; } }
+    @media only screen and (min-width: 993px) {
+      .cards-flex .big-card {
+        width: 66.666666666%; } }
 
 .card {
   color: rgba(0, 0, 0, 0.87); }

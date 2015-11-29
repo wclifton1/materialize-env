@@ -102,8 +102,7 @@ h1{
   .col-flex{
     display: flex;
     padding: 0 0.75rem;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex:(1,1,1.5rem);
     @media only screen and (min-width: 601px){
       width: 50%;
     }
@@ -112,6 +111,15 @@ h1{
     }
     .card{
       width:100%;
+    }
+  }
+  .big-card{
+    flex-grow: 4;
+    @media only screen and (min-width: 601px){
+      width: 100%;
+    }
+    @media only screen and (min-width: 993px){
+      width: 66.666666666%;
     }
   }
 }
@@ -146,10 +154,6 @@ h1{
     font-size: 0.9rem;
     display: block;
   }
-  // a {
-  //   color: $card-link-color;
-  //   &:hover { color: $card-link-hover; }
-  // }
 
   .card-content{
     padding:16px;
