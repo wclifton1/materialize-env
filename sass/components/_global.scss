@@ -1,6 +1,3 @@
-@charset "UTF-8";
-
-
 //Default styles
 
 html {
@@ -58,24 +55,31 @@ ul {
 
 
 // Z-levels
-
+.z-depth-0 {
+  box-shadow: none !important;
+}
 .z-depth-1{
-    @include box-shadow-2(0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12));
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .z-depth-1-half{
-    @include box-shadow-2(0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15));
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 .z-depth-2{
-    @include box-shadow-2(0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .z-depth-3{
-    @include box-shadow-2(0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19));
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .z-depth-4{
-    @include box-shadow-2(0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21));
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
 }
 .z-depth-5{
-    @include box-shadow-2(0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22));
+  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+}
+
+.hoverable:hover {
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 // Dividers
@@ -92,7 +96,7 @@ ul {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid color("red", "lighten-3");
+  border-left: 5px solid $primary-color;
 }
 
 // Icon Styles
@@ -135,12 +139,11 @@ video.responsive-video {
 .pagination {
 
   li {
-    font-size: 1.2rem;
     float: left;
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-    @include border-radius(2px);
+    font-size: 1.2rem;
+    padding: 0 10px;
+    line-height: 30px;
+    border-radius: 2px;
     text-align: center;
 
     a { color: #444; }
@@ -149,11 +152,35 @@ video.responsive-video {
 
     &.active { background-color: $primary-color; }
 
-    &.disabled a { color: #999; }
+    &.disabled a {
+      cursor: default;
+      color: #999;
+    }
 
     i {
       font-size: 2rem;
-      line-height: 1.8rem;
+    }
+  }
+
+
+  li.pages ul li {
+    display: inline-block;
+    float: none;
+  }
+}
+@media #{$medium-and-down} {
+  .pagination {
+    width: 100%;
+
+    li.prev,
+    li.next {
+      width: 10%;
+    }
+
+    li.pages {
+      width: 80%;
+      overflow: hidden;
+      white-space: nowrap;
     }
   }
 }
@@ -177,12 +204,13 @@ video.responsive-video {
   img {
     display: none;
     position: absolute;
+    left: 50%;
     bottom: 0;
-    width: 100%;
+    min-width: 100%;
     min-height: 100%;
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+    transform: translateX(-50%);
   }
 }
 
@@ -199,11 +227,11 @@ video.responsive-video {
 **********************/
 
 ul.staggered-list li {
-  @include opacity(0);
+  opacity: 0;
 }
 
 .fade-in {
-  @include opacity(0);
+  opacity: 0;
   transform-origin: 0 50%;
 }
 
@@ -281,7 +309,7 @@ footer.page-footer {
     height: 50px;
     line-height: 50px;
     color: rgba(255,255,255,.8);
-    background-color: rgba(51,51,51,.08);;
+    background-color: rgba(51,51,51,.08);
     @extend .light;
   }
 }
@@ -295,23 +323,25 @@ table {
   width:100%;
   display: table;
 
-  &.bordered tr {
+  &.bordered > thead > tr,
+  &.bordered > tbody > tr {
     border-bottom: 1px solid $table-border-color;
   }
 
-  &.striped {
-    tbody tr:nth-child(odd) {
+  &.striped > tbody {
+    > tr:nth-child(odd) {
       background-color: $table-striped-color;
+    }
+
+    > tr > td {
+      border-radius: 0px;
     }
   }
 
-  &.hoverable {
-
-    tbody tr {
-      @include transition(background-color .25s ease);
-      &:hover {
-        background-color: $table-striped-color;
-      }
+  &.highlight > tbody > tr {
+    @include transition(background-color .25s ease);
+    &:hover {
+      background-color: $table-striped-color;
     }
   }
 
@@ -333,7 +363,7 @@ td, th{
   display: table-cell;
   text-align: left;
   vertical-align: middle;
-  @include border-radius(2px);
+  border-radius: 2px;
 }
 
 // Responsive Table
@@ -360,6 +390,10 @@ td, th{
       tr {
         display: block;
         padding: 0 10px 0 0;
+
+        th::before {
+          content: "\00a0";
+        }
       }
     }
     tbody {
@@ -405,22 +439,22 @@ td, th{
 
 // Collections
 .collection {
-  background-color: #999;
   margin: $element-top-margin 0 $element-bottom-margin 0;
   border: 1px solid $collection-border-color;
-  @include border-radius(2px);
+  border-radius: 2px;
   overflow: hidden;
+  position: relative;
 
   .collection-item {
     background-color: $collection-bg-color;
     line-height: 1.5rem;
     padding: 10px 20px;
-    margin: 0px;
+    margin: 0;
     border-bottom: 1px solid $collection-border-color;
 
     // Avatar Collection
     &.avatar {
-      height: 84px;
+      min-height: 84px;
       padding-left: 72px;
       position: relative;
 
@@ -466,6 +500,10 @@ td, th{
     &.active {
       background-color: $collection-active-bg-color;
       color: $collection-active-color;
+
+      .secondary-content {
+        color: #fff;
+      }
     }
   }
   a.collection-item{
@@ -486,7 +524,10 @@ td, th{
       padding: 10px 20px;
     }
     .collection-item {
-     padding-left: 30px;
+      padding-left: 30px;
+    }
+    .collection-item.avatar {
+      padding-left: 72px;
     }
   }
 
@@ -506,7 +547,8 @@ span.badge {
   font-size: 1rem;
   line-height: inherit;
   color: color('grey', 'darken-1');
-  float: right;
+  position: absolute;
+  right: 15px;
   @include box-sizing(border-box);
 
   &.new {
@@ -514,7 +556,7 @@ span.badge {
     font-size: 0.8rem;
     color: #fff;
     background-color: $badge-bg-color;
-    @include border-radius(2px);
+    border-radius: 2px;
   }
   &.new:after {
     content: " new";
@@ -528,6 +570,9 @@ span.badge {
     padding-top: 30px;
     height: 0;
     overflow: hidden;
+    &.no-controls {
+      padding-top: 0;
+    }
 
     iframe, object, embed {
       position: absolute;
@@ -545,13 +590,14 @@ span.badge {
     display: block;
     width: 100%;
     background-color: lighten($progress-bar-color, 40%);
-    @include border-radius(2px);
+    border-radius: 2px;
     margin: $element-top-margin 0 $element-bottom-margin 0;
     overflow: hidden;
   .determinate {
     position: absolute;
     background-color: inherit;
     top: 0;
+    left: 0;
     bottom: 0;
     background-color: $progress-bar-color;
     @include transition(width .3s linear);
@@ -619,6 +665,10 @@ span.badge {
   Utility Classes
 *******************/
 
+.hide {
+  display: none !important;
+}
+
 // Text Align
 .left-align {
   text-align: left;
@@ -647,9 +697,8 @@ span.badge {
   user-select: none;
 }
 
-// Circle
 .circle {
-  @include border-radius(50%);
+  border-radius: 50%;
 }
 
 .center-block {
@@ -659,7 +708,12 @@ span.badge {
 }
 
 .truncate {
+  display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.no-padding {
+  padding: 0 !important;
 }

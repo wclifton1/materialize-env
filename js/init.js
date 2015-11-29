@@ -8,9 +8,13 @@
       if (/^#[0-9A-F]{6}$/i.test(rgb)) { return rgb; }
 
       rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+
+      if (rgb === null) { return "N/A"; }
+
       function hex(x) {
           return ("0" + parseInt(x).toString(16)).slice(-2);
       }
+
       return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
     }
 
@@ -19,7 +23,7 @@
         var color = $(this).css('background-color'),
             classes = $(this).attr('class');
         $(this).html(rgb2hex(color) + " " + classes);
-        if (classes.indexOf("darken") >= 0) {
+        if (classes.indexOf("darken") >= 0 || $(this).hasClass('black')) {
           $(this).css('color', 'rgba(255,255,255,.9');
         }
       });
@@ -49,7 +53,7 @@
             setTimeout(checkForChanges, 500);
           }
           else {
-            var donateAd = $('<div id="carbonads"><span><a class="carbon-text" href="#" onclick="document.getElementById("paypal_donate").submit();"><img src="images/donate.png" /> Help support us by turning off adblock. If you still prefer to keep adblock on for this page but still want to support us, feel free to donate. Any little bit helps.</a></form></span></div>');
+            var donateAd = $('<div id="carbonads"><span><a class="carbon-text" href="#!" onclick="document.getElementById(\'paypal-donate\').submit();"><img src="images/donate.png" /> Help support us by turning off adblock. If you still prefer to keep adblock on for this page but still want to support us, feel free to donate. Any little bit helps.</a></form></span></div>');
 
             $bsa.append(donateAd);
           }
@@ -77,11 +81,11 @@
     }
 
     // Toggle Flow Text
-    var toggleFlowTextButton = $('#flow-toggle')
+    var toggleFlowTextButton = $('#flow-toggle');
     toggleFlowTextButton.click( function(){
       $('#flow-text-demo').children('p').each(function(){
           $(this).toggleClass('flow-text');
-        })
+        });
     });
 
 //    Toggle Containers on page
@@ -109,14 +113,17 @@
       }
     }
     if (is_touch_device()) {
-      $('#nav-mobile').css({ overflow: 'auto'})
+      $('#nav-mobile').css({ overflow: 'auto'});
     }
+
+    // Set checkbox on forms.html to indeterminate
+    var indeterminateCheckbox = document.getElementById('indeterminate-checkbox');
+    if (indeterminateCheckbox !== null)
+      indeterminateCheckbox.indeterminate = true;
 
 
     // Plugin initialization
     $('.slider').slider({full_width: true});
-    $('.dropdown-button').dropdown({hover: false});
-    $('.tab-demo').show().tabs();
     $('.parallax').parallax();
     $('.modal-trigger').leanModal();
     $('.scrollspy').scrollSpy();

@@ -2,7 +2,7 @@
   $(document).ready(function() {
 
     $(document).on('click.card', '.card', function (e) {
-      if ($(this).find('.card-reveal').length) {
+      if ($(this).find('> .card-reveal').length) {
         if ($(e.target).is($('.card-reveal .card-title')) || $(e.target).is($('.card-reveal .card-title i'))) {
           // Make Reveal animate down and display none
           $(this).find('.card-reveal').velocity(
@@ -10,7 +10,7 @@
               duration: 225,
               queue: false,
               easing: 'easeInOutQuad',
-              complete: function() { $(this).css({ display: 'none'}) }
+              complete: function() { $(this).css({ display: 'none'}); }
             }
           );
         }
