@@ -7462,13 +7462,13 @@ html {
   color: rgba(0, 0, 0, 0.87); }
   @media only screen and (min-width: 0) {
     html {
-      font-size: 16px; } }
+      font-size: 14px; } }
   @media only screen and (min-width: 992px) {
     html {
-      font-size: 18px; } }
+      font-size: 15px; } }
   @media only screen and (min-width: 1200px) {
     html {
-      font-size: 19px; } }
+      font-size: 16px; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
@@ -7536,7 +7536,7 @@ h1, h2, h3, h4, h5, h6 {
             flex-grow: 4; }
     @media only screen and (min-width: 601px) {
       .cards-flex .big-card {
-        width: 100%; } }
+        width: 50%; } }
     @media only screen and (min-width: 993px) {
       .cards-flex .big-card {
         width: 66.666666666%; } }
@@ -7547,6 +7547,10 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 64px;
     padding: 0 16px;
     height: 36px; }
+    .card .btn.disabled, .card .disabled.btn-large, .card .mission .bullets .disabled.bullet-icon, .mission .bullets .card .disabled.bullet-icon, .card .btn-flat.disabled {
+      color: rgba(0, 0, 0, 0.26); }
+      .card .btn.disabled:hover, .card .disabled.btn-large:hover, .card .mission .bullets .disabled.bullet-icon:hover, .mission .bullets .card .disabled.bullet-icon:hover, .card .btn-flat.disabled:hover {
+        color: rgba(0, 0, 0, 0.26); }
   .card .card-title {
     color: rgba(0, 0, 0, 0.54);
     font-weight: 900; }
@@ -7656,8 +7660,7 @@ form.subscribe {
   will-change: box-shadow, transform;
   cursor: pointer;
   text-decoration: none;
-  text-align: center;
-  line-height: 36px; }
+  text-align: center; }
 
 .btn, .btn-large, .mission .bullets .bullet-icon {
   -webkit-transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.2s;
@@ -7736,7 +7739,8 @@ a.button-collapse.top-nav {
   font-weight: 500; }
 
 .heavy, h1, heavy {
-  font-weight: 700; }
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.54); }
 
 .light, footer.page-footer .footer-copyright, h1, light {
   color: rgba(0, 0, 0, 0.54); }
@@ -7800,6 +7804,12 @@ a {
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(179, 157, 219, 0.33), rgba(179, 157, 219, 0.33)), url("../img/foundations.jpg");
   background-position: center, center; }
 
+.about-banner {
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(0, 145, 234, 0.33), rgba(0, 145, 234, 0.33)), url("../img/morning-meetup-sm.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(0, 145, 234, 0.33), rgba(0, 145, 234, 0.33)), url("../img/morning-meetup-sm.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(0, 145, 234, 0.33), rgba(0, 145, 234, 0.33)), url("../img/morning-meetup-sm.jpg");
+  background-position: center, center; }
+
 .env-header {
   position: absolute;
   padding-right: 1.5rem;
@@ -7821,30 +7831,32 @@ a {
     .env-header light.hide-me {
       display: none; } }
 
-.mission .bullets {
-  margin-bottom: 1.5em; }
-  .mission .bullets .bullet-icon {
-    float: left; }
-  .mission .bullets .bullet-icon-1 {
-    background-color: #89229b; }
-    .mission .bullets .bullet-icon-1:hover, .mission .bullets .bullet-icon-1:active, .mission .bullets .bullet-icon-1:focus {
-      background-color: #9c27b0; }
-  .mission .bullets .bullet-icon-2 {
-    background-color: #d81558; }
-    .mission .bullets .bullet-icon-2:hover, .mission .bullets .bullet-icon-2:active, .mission .bullets .bullet-icon-2:focus {
-      background-color: #e91e63; }
-  .mission .bullets .bullet-icon-3 {
-    background-color: #3f51b5; }
-    .mission .bullets .bullet-icon-3:hover, .mission .bullets .bullet-icon-3:active, .mission .bullets .bullet-icon-3:focus {
-      background-color: #4d5ec1; }
-  .mission .bullets .bullet-content {
-    margin-left: 78.4px;
-    margin-bottom: 2em; }
-  .mission .bullets h4 {
-    margin-top: 0;
-    margin-bottom: 9.3333333333px;
-    display: inline-block;
-    color: rgba(0, 0, 0, 0.54); }
+.mission {
+  padding-top: 2rem; }
+  .mission .bullets {
+    margin-bottom: 1.5em; }
+    .mission .bullets .bullet-icon {
+      float: left; }
+    .mission .bullets .bullet-icon-1 {
+      background-color: #89229b; }
+      .mission .bullets .bullet-icon-1:hover, .mission .bullets .bullet-icon-1:active, .mission .bullets .bullet-icon-1:focus {
+        background-color: #9c27b0; }
+    .mission .bullets .bullet-icon-2 {
+      background-color: #d81558; }
+      .mission .bullets .bullet-icon-2:hover, .mission .bullets .bullet-icon-2:active, .mission .bullets .bullet-icon-2:focus {
+        background-color: #e91e63; }
+    .mission .bullets .bullet-icon-3 {
+      background-color: #3f51b5; }
+      .mission .bullets .bullet-icon-3:hover, .mission .bullets .bullet-icon-3:active, .mission .bullets .bullet-icon-3:focus {
+        background-color: #4d5ec1; }
+    .mission .bullets .bullet-content {
+      margin-left: 78.4px;
+      margin-bottom: 2em; }
+    .mission .bullets h4 {
+      margin-top: 0;
+      margin-bottom: 9.3333333333px;
+      display: inline-block;
+      color: rgba(0, 0, 0, 0.54); }
 
 .modal {
   position: absolute;
@@ -7861,6 +7873,17 @@ nav ul li:hover, nav ul li.active {
 
 .header {
   color: #4fc3f7; }
+
+.collapsible {
+  background-color: white; }
+
+.collapsible-body {
+  border-bottom: none;
+  padding: 0 1rem; }
+
+.collapsible-header {
+  border-bottom: none;
+  border-top: 1px solid #ddd; }
 
 ul.side-nav .collapsible-body li.active {
   background-color: #81d4fa; }

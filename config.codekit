@@ -380,17 +380,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/engagement (37 of 50).jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 361112,
-		"inputAbbreviatedPath": "\/img\/engagement (37 of 50).jpg",
-		"outputAbbreviatedPath": "\/img\/engagement (37 of 50).jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/foundations.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -640,17 +629,6 @@
 		"initialSize": 17150,
 		"inputAbbreviatedPath": "\/img\/will.jpg",
 		"outputAbbreviatedPath": "\/img\/will.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/yael.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 196567,
-		"inputAbbreviatedPath": "\/img\/yael.png",
-		"outputAbbreviatedPath": "\/img\/yael.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

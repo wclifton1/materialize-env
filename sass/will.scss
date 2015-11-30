@@ -41,15 +41,15 @@ blockquote {
 //_typography
 html{ 
   @media only screen and (min-width: 0) {
-    font-size: 16px;
+    font-size: 14px;
   }
   
   @media only screen and (min-width: $medium-screen) {
-    font-size: 18px;
+    font-size: 15px;
   }
   
   @media only screen and (min-width: $large-screen) {
-    font-size: 19px;
+    font-size: 16px;
   }
   
   font-family: $sans-serif;
@@ -116,7 +116,7 @@ h1{
   .big-card{
     flex-grow: 4;
     @media only screen and (min-width: 601px){
-      width: 100%;
+      width: 50%;
     }
     @media only screen and (min-width: 993px){
       width: 66.666666666%;
@@ -133,6 +133,12 @@ h1{
     min-width: 64px;
     padding: 0 16px;
     height:36px;
+    &.disabled{
+      color:$b3-color;
+      &:hover{
+        color:$b3-color;
+      }
+    }
   }
 
   .card-title{
@@ -295,7 +301,7 @@ form.subscribe{
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  line-height: 36px;
+  //line-height: 36px;
 }
 
 //_buttons
@@ -394,7 +400,7 @@ a.button-collapse.top-nav{
 
 .thin, thin {font-weight: 300}
 .medium, medium {font-weight: 500}
-.heavy, heavy {font-weight: 700}
+.heavy, heavy {font-weight: 700; color:$b2-color}
 .light, light {color:$b2-color}
 
 accent{
@@ -482,6 +488,15 @@ a {
   background-position: center, center;
 }
 
+.about-banner{
+  $gradient-angle: 0deg;
+  $hero-background-top: rgba($env-color, .33);
+  $hero-background-bottom: rgba(white, .9);
+  $hero-image: '../img/morning-meetup-sm.jpg';
+  @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top, $hero-background-top), url($hero-image));
+  background-position: center, center;
+}
+
 .env-header{
   position:absolute;
   padding-right: 1.5rem;
@@ -502,6 +517,7 @@ a {
 }
 
 .mission {
+    padding-top:2rem;
     .bullets {
       //$icon-bullet-size: 3.5em;
       margin-bottom: 1.5em;
@@ -575,6 +591,20 @@ nav {
 
 .header {
   color: color("light-blue", "lighten-2");
+}
+
+.collapsible{
+  background-color:white;
+}
+
+.collapsible-body {
+  border-bottom: none;
+  padding:0 1rem;
+}
+
+.collapsible-header {
+  border-bottom: none;
+  border-top: 1px solid #ddd;
 }
 
 ul.side-nav .collapsible-body li.active {
