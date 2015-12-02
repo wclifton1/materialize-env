@@ -31,8 +31,8 @@
     <!-- Android 5 Chrome Color -->
     <meta name="theme-color" content="#0091ea">
     <!-- CSS  -->
-    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -56,12 +56,13 @@
           
         </div>
       </div>
-      <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-        <a href="about.html" class="btn-floating btn-large">
-          <i class="large material-icons">info</i>
-        </a>
+      <div class="fixed-action-btn">
+        <a href="about.html" class="btn-floating btn-large tooltipped" data-position="left" data-delay="25" data-tooltip="about us"><i class="large material-icons">info</i></a>
         <ul>
-          <li><a class="btn-floating red" target="blank" href="https://www.google.com/calendar/embed?src=40gskl3c1kh46nrbeg9p1gnlj0%40group.calendar.google.com&ctz=America/Chicago"><i class="material-icons">event</i>calendar</a></li>
+          <li><a class="btn-floating tooltipped" data-position="left" data-delay="25" data-tooltip="event calendar" href="http://www.eventbrite.com/o/enventure-7960884822"><i class="material-icons">event</i></a></li>
+          <li><a class="purple btn-floating tooltipped" data-position="left" data-delay="25" data-tooltip="intro to life sci entrepreneurship" href="mgmt.enventure.org"><i class="material-icons">school</i></a></li>
+          <li><a class="pink btn-floating tooltipped" data-position="left" data-delay="25" data-tooltip="foundations" href="foundations.html"><i class="material-icons">account_balance</i></a></li>
+          <li><a class="indigo btn-floating tooltipped" data-position="left" data-delay="25" data-tooltip="bioventures" href="bioventures.html"><i class="material-icons">spa</i></a></li>
         </ul>
       </div>
 
@@ -91,11 +92,7 @@
 
       <div class="scene_element scene_element--fadeinup">
         <div class="container">
-          <div class="row">
-            <div class="col s12">
-              <h3 class="medium light">Upcoming Events</h3>
-            </div>
-          </div>
+          <h3 class="medium light">Upcoming Events</h3>
 
           <div class="row">
             <div id="myEvent" class="event"></div>
@@ -111,6 +108,7 @@
         
         <div class="container">
           <div class="section">
+          <h3 class="medium light">Curriculum</h3>
             <div class="cards-flex">
               <div class="col-flex">
                 <div class="card home">
@@ -388,8 +386,8 @@
 
     <!--script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script-->
 
-    <!--script src="https://code.jquery.com/jquery-2.1.1.min.js"></script-->
-    <script src="js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--script src="js/jquery.min.js"></script>
     <!--script src="js/jquery.timeago.js"></script-->  
     <script src="bin/materialize.js"></script>
     <!--script src="jquery.smoothState.js"></script-->

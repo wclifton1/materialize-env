@@ -1,6 +1,6 @@
 $env-color:#0091ea;
 $env-dark-color:#01579B;
-$env-light-color:#B3E5FC;
+$env-light-color: color("light-blue", "lighten-3");
 $accent-color:#FF4081;
 $base-accent-color:#FF4081;
 $b1-color:$off-black;
@@ -12,6 +12,7 @@ $w2-color:rgba(white,.87);
 $w3-color:rgba(white,.54);
 $w4-color:rgba(white,.26);
 $background-color:#ebebeb;
+$btn-color:color("light-blue","base");
 
 //_typography
 $nl-weight: 300;

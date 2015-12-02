@@ -7440,8 +7440,15 @@ body.parallax-demo footer {
     -webkit-animation-direction: alternate-reverse;
             animation-direction: alternate-reverse; }
 
+img.responsive-img, video.responsive-video {
+  max-width: 100%;
+  height: auto; }
+
 blockquote {
   border-left: 5px solid #0091ea; }
+
+#subscribe {
+  margin-bottom: 0; }
 
 #social {
   position: absolute;
@@ -7676,6 +7683,19 @@ form.subscribe {
   .btn-floating:hover, .mission .bullets .bullet-icon:hover {
     background-color: #ff5a92; }
 
+.fixed-action-btn {
+  bottom: 45px;
+  right: 16px; }
+  @media only screen and (min-width: 601px) {
+    .fixed-action-btn {
+      right: 24px; } }
+
+.fixed-action-btn > ul > li > a {
+  background-color: #81d4fa; }
+  .fixed-action-btn > ul > li > a:hover {
+    background-color: #68ccf9;
+    color: white; }
+
 a.btn:hover, a.btn-large:hover, .mission .bullets a.bullet-icon:hover, a.btn:active, a.btn-large:active, .mission .bullets a.bullet-icon:active, a.btn:focus, a.btn-large:focus, .mission .bullets a.bullet-icon:focus {
   color: white; }
 
@@ -7747,6 +7767,9 @@ a.button-collapse.top-nav {
 
 accent {
   color: #FF4081; }
+
+.bullets p {
+  color: rgba(0, 0, 0, 0.54); }
 
 .event h3 {
   margin-top: .2rem;
@@ -7862,7 +7885,7 @@ a {
   position: absolute;
   top: 500; }
 
-footer {
+footer, .light-blue {
   background-color: #b3e5fc; }
 
 footer .footer-copyright {
@@ -7880,6 +7903,9 @@ nav ul li:hover, nav ul li.active {
 .collapsible-body {
   border-bottom: none;
   padding: 0 1rem; }
+  .collapsible-body p {
+    margin: 15px 0;
+    padding: 0; }
 
 .collapsible-header {
   border-bottom: none;
@@ -7889,7 +7915,8 @@ ul.side-nav .collapsible-body li.active {
   background-color: #81d4fa; }
 
 .promo i {
-  color: #81d4fa; }
+  color: rgba(0, 0, 0, 0.54);
+  margin: 1.5rem 0; }
 
 #front-page-nav a {
   color: #81d4fa; }
@@ -7915,10 +7942,5 @@ ul.table-of-contents a {
 
 button:focus {
   background-color: rgba(1, 87, 155, 0.5); }
-
-#foundations .collapsible-body p {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 0; }
 
 /*# sourceMappingURL=ghpages-materialize.css.map */
