@@ -347,17 +347,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/byob-trans-24.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 607062,
-		"inputAbbreviatedPath": "\/img\/byob-trans-24.png",
-		"outputAbbreviatedPath": "\/img\/byob-trans-24.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/byob-trans.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -402,24 +391,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/gray.png": {
-		"fileType": 32768,
+	"\/img\/hertzog.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 270345,
-		"inputAbbreviatedPath": "\/img\/gray.png",
-		"outputAbbreviatedPath": "\/img\/gray.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/Hein pic.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.99312e+06,
-		"inputAbbreviatedPath": "\/img\/Hein pic.png",
-		"outputAbbreviatedPath": "\/img\/Hein pic.png",
+		"initialSize": 18050,
+		"inputAbbreviatedPath": "\/img\/hertzog.jpg",
+		"outputAbbreviatedPath": "\/img\/hertzog.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -501,17 +479,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/possibilities.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3.37369e+06,
-		"inputAbbreviatedPath": "\/img\/possibilities.jpg",
-		"outputAbbreviatedPath": "\/img\/possibilities.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/sarah.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -578,13 +545,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/TimShen.PNG": {
-		"fileType": 32768,
+	"\/img\/tim.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 397375,
-		"inputAbbreviatedPath": "\/img\/TimShen.PNG",
-		"outputAbbreviatedPath": "\/img\/TimShen.PNG",
+		"initialSize": 41042,
+		"inputAbbreviatedPath": "\/img\/tim.jpg",
+		"outputAbbreviatedPath": "\/img\/tim.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
