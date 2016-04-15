@@ -56,12 +56,9 @@
         </div>
       </div>
       <div class="fixed-action-btn">
-        <a href="about.html" class="btn-floating btn-large tooltipped" data-position="left" data-delay="25" data-tooltip="about us"><i class="large material-icons">info</i></a>
+        <a href="index.html" class="btn-floating btn-large tooltipped" data-position="left" data-delay="25" data-tooltip="home"><i class="large material-icons">home</i></a>
         <ul>
-          <li><a class="btn-floating tooltipped" data-position="left" data-delay="25" data-tooltip="event calendar" href="http://www.eventbrite.com/o/enventure-7960884822"><i class="material-icons">event</i></a></li>
-          <li><a class="purple btn-floating tooltipped" data-position="left" data-delay="25" data-tooltip="intro to life sci entrepreneurship" href="mgmt.enventure.org"><i class="material-icons">school</i></a></li>
-          <li><a class="pink btn-floating tooltipped" data-position="left" data-delay="25" data-tooltip="foundations" href="foundations.html"><i class="material-icons">account_balance</i></a></li>
-          <li><a class="indigo btn-floating tooltipped" data-position="left" data-delay="25" data-tooltip="bioventures" href="bioventures.html"><i class="material-icons">spa</i></a></li>
+          <li><a class="btn-floating tooltipped" data-position="left" data-delay="25" data-tooltip="about us" href="about.html"><i class="material-icons">info</i></a></li>
         </ul>
       </div>
 
@@ -91,11 +88,17 @@
 
       <div class="scene_element scene_element--fadeinup">
         <div class="container">
-          <h3 class="medium light">Community Events</h3>
+          <h3 class="medium light">Community Calendar</h3>
+          <a href="https://calendar.google.com/calendar/render?cid=40gskl3c1kh46nrbeg9p1gnlj0%40group.calendar.google.com"><table id="footer1" class="footer" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="bottom" style="text-align:right;"><div class="subscribe-image" style="display:inline-block;" title="Add to Google Calendar"><div class="logo-plus-button"><div class="logo-plus-button-plus-icon"></div><div class="logo-plus-button-lockup"><span class="logo-plus-button-lockup-text">Calendar</span></div></div></div></td></tr></tbody></table></a>
 
           <div class="row">
             <div id="myEvent" class="event"></div>
           </div>
+          <div class="row">
+            <div class="col s12">
+              <a class="waves-effect waves-light btn valign" target="blank" href="https://www.google.com/calendar/embed?src=40gskl3c1kh46nrbeg9p1gnlj0%40group.calendar.google.com&ctz=America/Chicago"><i class="mdi-notification-event-note left"></i>Full Calendar</a>
+            </div>
+          </div>          
 
         <div class="divider"></div>
           
@@ -212,24 +215,38 @@
 
                     var html = []
 
-                    var maxLength = featuredFutureEvents.length < 10 ? featuredFutureEvents.length : 10
+                    var maxLength = featuredFutureEvents.length < 20 ? featuredFutureEvents.length : 20
 
                     for (var i = 0; i < maxLength; i++) {
                         var summaryStart = featuredFutureEvents[i].summary.indexOf(']')
-                        var summary = featuredFutureEvents[i].summary.slice(summaryStart+1,summaryStart+10)
+                        var summary = featuredFutureEvents[i].summary.slice(summaryStart+1)
 
-                        //var labelPlus = featuredFutureEvents[i].summary.slice(labelStart)
-                        //var label = labelPlus.slice(0, labelStart.indexOf(']'))
+                        var labelStart = featuredFutureEvents[i].summary.indexOf('[')
+                        var labelPlus = featuredFutureEvents[i].summary.slice(labelStart+1)
+                        var label = labelPlus.slice(0, labelPlus.indexOf(']'))
 
                         var description = featuredFutureEvents[i].description.slice(0, featuredFutureEvents[i].description.indexOf('\n'))
                         var location = featuredFutureEvents[i].location
 
                         var linkStart = featuredFutureEvents[i].description.indexOf('Link: ') + 5
                         var linkPlus = featuredFutureEvents[i].description.slice(linkStart)
-                        var link = linkPlus.slice(0, linkPlus.indexOf('\n'))
+                        if (featuredFutureEvents[i].description.indexOf('Link: ') > -1){
+                          var link = linkPlus.slice(0, linkPlus.indexOf('\n'))
+                        }
+                        else {
+                          var link = 'javascript:;'
+                        }
 
                         var dateRaw = featuredFutureEvents[i].start.dateTime
                         var dateStr = new Date(dateRaw).toString()
+
+                        if (i>0){
+                          var sameDate = dateStr.slice(0,7) == new Date(featuredFutureEvents[i-1].start.dateTime).toString().slice(0,7)
+                        }
+                        else {
+                          var sameDate = false
+                        }
+
                         var day = dateStr.slice(0, 3)
                         var month = dateStr.slice(4, 7)
                         var dayNum = dateStr.slice(8, 10)
@@ -238,8 +255,13 @@
                         var time = timeRaw.slice(0, timeRaw.length - 6) + ' ' + ampm
 
                         html.push("<div class=\"col m2 hide-on-small-only scene_element scene_element--fadeinup\">")
-                        html.push("<h3>" + dayNum + "</h3>")
-                        html.push("<h5>" + month + "</h5>")
+                        if (!sameDate){
+                          html.push("<h3>" + dayNum + "</h3>")
+                          html.push("<h5>" + month + "</h5>")
+                        }
+                        else{
+                          html.push("<h3>&nbsp</h3>")
+                        }
                         html.push("</div>")
                         html.push("<div class=\"col s12 hide-on-med-and-up scene_element scene_element--fadeinup\">")
                         html.push("<h5>" + day + ', ' + month + ' ' + dayNum + "</h5>")
@@ -247,11 +269,17 @@
                         html.push("<div class=\"col s12 m10 scene_element scene_element--fadeinup\">")
                         html.push("<a href=\"" + link + "\"" + " target=\"_blank\">")
                         html.push("<div class=\"card-panel\">")
-                        html.push("<h5 class=\"medium\">" + summary + "</h5>")
-                        html.push("<p>" + time + ' at ' + location + "</p>")
+                        html.push("<h5 class=\"medium\">" + summary)
+                        if (featuredFutureEvents[i].summary.indexOf('[')>-1) {
+                          html.push("<div class=\"chip right\"><img src=\"img/"+label+".jpg\" alt=\""+label+"\" onerror=\"this.src='img/default.png'\">" + label + "</div>")
+                        }
+                        html.push("</h5>")
+                        html.push("<p class=\"light\"><i class=\"material-icons\">watch</i>&nbsp" + time + '<br><i class=\"material-icons\">location_on</i>&nbsp' + location + "</p>")
                         html.push("<p class=\"thin\">" + description + "</p>")
-                        html.push("<button class=\"waves-effect waves-light btn\">Learn More + RSVP</button>")
-                        //html.push("<div class=\"chip\">TESTED" + label + "</div>")
+                        
+                        if (link != 'javascript:;'){
+                          html.push("<div class=\"right-align\"><button class=\"waves-effect waves-light btn-flat\">Learn More + RSVP</button></div>")
+                        }
                         html.push("</div>")
                         html.push("</a>")
                         html.push("</div>")
