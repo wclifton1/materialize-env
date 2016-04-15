@@ -1,0 +1,9 @@
+image guidelines
+
+team pictures and bio pics
+600x840
+jpg ~25% quality <40kb
+
+community icons
+100x100
+jpg ~25% quality <4kb
