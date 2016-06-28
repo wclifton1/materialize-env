@@ -441,7 +441,7 @@
                         var dateStr = new Date(dateRaw).toString()
 
                         if (i>0){
-                          var sameDate = dateStr.slice(0,7) == new Date(featuredFutureEvents[i-1].start.dateTime).toString().slice(0,7)
+                          var sameDate = dateStr.slice(4,10) == new Date(featuredFutureEvents[i-1].start.dateTime).toString().slice(4,10)
                         }
                         else {
                           var sameDate = false
@@ -475,7 +475,15 @@
                           html.push("<div class=\"chip right\"><img src=\"img/"+label+".jpg\" alt=\""+label+"\" onerror=\"this.src='img/default.png'\">" + label + "</div>")
                         }
                         html.push("</h5>")
-                        html.push("<p class=\"light\"><i class=\"material-icons\">watch</i>&nbsp" + time + '<br><i class=\"material-icons\">location_on</i>&nbsp' + location + "</p>")
+
+                        // fix for absent location
+                        if (location) {
+                          html.push("<p class=\"light\"><i class=\"material-icons\">watch</i>&nbsp" + time + '<br><i class=\"material-icons\">location_on</i>&nbsp' + location + "</p>")
+                        }
+                        else {
+                          html.push("<p class=\"light\"><i class=\"material-icons\">watch</i>&nbsp" + time + "</p>")
+                        }
+                        
                         html.push("<p class=\"thin\">" + description + "</p>")
                         
                         if (link != 'javascript:;'){
