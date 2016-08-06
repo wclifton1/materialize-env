@@ -6,3 +6,5 @@
 *.codekit
 
 config.codekit
+
+*.sublime-workspace
