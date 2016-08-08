@@ -2,10 +2,6 @@
 //NOTE: get rid of roboto from materialize
 //NOTE: materialize.js is a compiled version of all the separate *.js files, can slim it down. init.js initializes all of them, or you can do it individually
 
-/* Disable ugly boxes around images in IE10 */
-a img{
-  border: 0px;
-}
 
 //nav
 nav{
@@ -478,13 +474,16 @@ a {
   padding-bottom: .1em;
   height:400px;
   background-color:$env-color;
+  h4 {
+    margin-bottom: 0;
+  }
 }
 .index-banner{
   $gradient-angle: 0deg;
-  $hero-background-top: rgba(white, 0.9); 
-  $hero-background-bottom: rgba($env-color, .25);
+  $hero-background-top: rgba($env-color, .25); 
+  $hero-background-bottom: rgba(white, 0.9);
   $hero-image: '../img/sky.jpg';
-  @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-bottom, $hero-background-top), url($hero-image));
+  @include background-image(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top, $hero-background-top), url($hero-image));
   background-position: center, center;
 }
 
@@ -522,6 +521,7 @@ a {
   color: #FFF;
   h2{font-size: $h2-fontsize*.8; line-height: 1.1*$h2-fontsize*.8; margin: 0 0 ($h2-fontsize*.8 / 2.5) 0;}
   h4 {
+    font-size: 1.66rem; line-height: 1.1*1.66rem; margin: (1.66rem / 2) 0 (1.66rem / 2.5) 0; letter-spacing: .05rem;
     @media #{$smallest-and-down}{
       display:none;
     }
