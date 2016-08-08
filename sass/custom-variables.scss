@@ -3,7 +3,7 @@ $env-dark-color:#01579B;
 $env-light-color: color("light-blue", "lighten-3");
 $accent-color:#FF4081;
 $base-accent-color:#FF4081;
-$b1-color:$off-black;
+$b1-color:rgba(black,.87);
 $b2-color:rgba(black,.54);
 $b3-color:rgba(black,.26);
 $b4-color:rgba(black,.12);
@@ -17,7 +17,6 @@ $btn-color:color("light-blue","base");
 //_typography
 $nl-weight: 300;
 $base-font-color:$b2-color;
-@import url(http://fonts.googleapis.com/css?family=Roboto:500,300,900);
 
 $sliding-menu-border-color: $b1-color;
 $sliding-menu-background: lighten($sliding-menu-border-color, 5);
@@ -37,7 +36,7 @@ $banana:#fbc02d; //yellow darken-2
 $pumpkin:#ef6c00; //orange darken-3
 $grid-item-colors: $radish, $wisteria, $teal, $sage, $indigo, $banana, $pumpkin, $radish, $wisteria, $teal, $sage, $indigo, $banana, $pumpkin;
 
-$sans-serif: 'Roboto', sans-serif;
+$sans-serif: 'Lato', "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: 'Georgia', Times, "Times New Roman", serif;
 
 $icon-size: 56px;
